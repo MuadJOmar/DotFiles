@@ -1,5 +1,5 @@
 # .dotfiles
-a Repo for My Dotfiles
-ZSHrc
+a Repo for My Dotfiles for 
+zshrc
 Kitty
 Fastfetch
