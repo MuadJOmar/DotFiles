@@ -6,7 +6,7 @@ ZSH_THEME="dstufft"
 
 plugins=(
     git
-    dnf
+    archlinux
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
@@ -17,7 +17,7 @@ export EDITOR="micro"
 
 alias zshconfig="micro ~/.zshrc"
 alias ls="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
-alias code="codium"
+#alias code="codium"
 alias toipe="~/Apps/Toipe/toipe -w top5000 -n"
 alias whats="tldr"
 alias rm='trash -v'
