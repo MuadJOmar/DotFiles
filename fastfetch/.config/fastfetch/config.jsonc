@@ -7,17 +7,18 @@
         }
     },
     "display": {
-        "separator": "   ",
+        "separator": " 󰑃  ",
         "color": "cyan"
     },
     "modules": [
         {
             "type": "custom", // SoftwareStart
-            "format": "├─────────── \u001b[1mSoftware Information\u001b[0m ───────────┤"
+            "format": "┌───────────── \u001b[1mSoftware Information\u001b[0m ─────────────┐"
         },
         {
             "type": "os",
-            "key": "  " // Just get your distro's logo off nerdfonts.com,
+            "key": "  ", // Just get your distro's logo off nerdfonts.com
+            "format": "{2}"
         },
         {
             "type": "kernel",
@@ -25,20 +26,30 @@
             "format": "{1} {2}"
         },
         {
+            "type": "packages",
+            "key": "  󰏖",
+        },    
+        {
             "type": "wm",
             "key": "  "
         },
         {
             "type": "shell",
+            "format": "{1} {4}",
+            "key": "  "
+        },
+        {
+            "type": "terminal",
             "key": "  "
         },
         {
             "type": "custom", // HardwareStart
-            "format": "┌─────────── \u001b[1mHardware Information\u001b[0m ───────────┐" // `\u001b` is `\033`, or `\e`
+            "format": "├───────────── \u001b[1mHardware Information\u001b[0m ─────────────┤" // `\u001b` is `\033`, or `\e`
         },
         {
             "type": "host",
             "key": "  󰌢",
+            "format": "{5} {2}",
             "keyColor": "green"
         },
         {
@@ -50,6 +61,7 @@
             "type": "gpu",
             "detectionMethod": "pci",
             "key": "  ",
+            "format": "{1} {2}",
             "keyColor": "green"
         },
         {
@@ -60,11 +72,34 @@
         {
             "type": "memory",
             "key": "  ",
+            "format": "{1} / {2} {3}",
             "keyColor": "green"
         },
         {
             "type": "custom",
-            "format": "|────────────── \u001b[1mUptime / Age\u001b[0m ──────────────────|"
+            "format": "├───────────── \u001b[1mAudio Information\u001b[0m ────────────────┤"
+        },
+        {
+            "type": "sound",
+            "key": "  \ue638",
+            "format": "{2} {5}",
+            "keyColor": "yellow"
+        },
+       {
+            "type": "player",
+            "key": "  󰥠",
+            "format": "{1}",
+            "keyColor": "yellow"
+       },
+       {
+             "type": "media",
+             "key": "  󰝚",
+             "format": "{3} : {2}",
+             "keyColor": "yellow"
+        },
+        {
+            "type": "custom",
+            "format": "├──────────────── \u001b[1mUptime / Age\u001b[0m ──────────────────┤"
         },
         {
             "type": "command",
@@ -79,11 +114,11 @@
         },
         {
             "type": "custom", // InformationEnd
-            "format": "└───────────────────────────────────────────────┘"
+            "format": "└────────────────────────────────────────────────┘"
         },
         {
             "type": "custom",
-            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[39m  \u001b[39m  \u001b[39m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m "
+            "format":  "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[39m  \u001b[39m  \u001b[39m  \u001b[36m  \u001b[35m  \u001b[34m  \u001b[33m  \u001b[32m  \u001b[31m  \u001b[90m "
          },
     ]
 }
