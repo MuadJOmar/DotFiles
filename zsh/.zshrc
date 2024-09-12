@@ -10,6 +10,7 @@ plugins=(
     archlinux
     systemd
     eza
+    zoxide
     fzf
     themes
     zsh-autosuggestions
