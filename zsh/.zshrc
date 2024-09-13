@@ -19,6 +19,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 export EDITOR="micro"
+export HISTCONTROL=ignoreboth:erasedups
 
 alias zshconfig="micro ~/.zshrc"
 alias ls="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
