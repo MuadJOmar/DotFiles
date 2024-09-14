@@ -24,11 +24,11 @@ export HISTCONTROL=ignoreboth:erasedups
 alias zshconfig="micro ~/.zshrc"
 alias ls="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias toipe="~/Apps/Toipe/toipe -w top5000 -n"
-alias rm='trash -v'
+alias rm='trash'
 
 eval "$(zoxide init --cmd cd zsh)"
 
-function yy() {
+function y() {
         local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
         yazi "$@" --cwd-file="$tmp"
         if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
