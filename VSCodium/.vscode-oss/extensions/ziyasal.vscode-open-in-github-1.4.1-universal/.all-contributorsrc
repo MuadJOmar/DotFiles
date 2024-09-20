@@ -1,0 +1,136 @@
+{
+  "projectName": "vscode-open-in-github",
+  "projectOwner": "ziyasal",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 75,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "bradyholt",
+      "name": "Brady Holt",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/759811?v=4",
+      "profile": "https://www.geekytidbits.com",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "gdziadkiewicz",
+      "name": "Grzegorz Dziadkiewicz",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/8547855?v=4",
+      "profile": "https://github.com/gdziadkiewicz",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "itiut",
+      "name": "Yuichi Tanikawa",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1145226?v=4",
+      "profile": "http://itiut.hatenablog.com/",
+      "contributions": [
+        "code",
+        "doc",
+        "test"
+      ]
+    },
+    {
+      "login": "suan",
+      "name": "Suan Yeo",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/192727?v=4",
+      "profile": "http://suanaikyeo.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bpasero",
+      "name": "Benjamin Pasero",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/900690?v=4",
+      "profile": "http://code.visualstudio.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "stuartleeks",
+      "name": "Stuart Leeks",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/1824461?v=4",
+      "profile": "http://blogs.msdn.com/stuartleeks",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "marvinhagemeister",
+      "name": "Marvin Hagemeister",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1062408?v=4",
+      "profile": "https://marvinhagemeister.github.io",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "linarnan",
+      "name": "linarnan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/649067?v=4",
+      "profile": "https://github.com/linarnan",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "danseethaler",
+      "name": "Dan Seethaler",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/11202705?v=4",
+      "profile": "https://github.com/danseethaler",
+      "contributions": [
+        "code",
+        "test"
+      ]
+    },
+    {
+      "login": "johnpaularthur",
+      "name": "John Arthur",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/7483101?v=4",
+      "profile": "https://github.com/johnpaularthur",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ziluvatar",
+      "name": "Eduardo Diaz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1424663?v=4",
+      "profile": "https://github.com/ziluvatar",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "testerez",
+      "name": "Tom Esterez",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/815236?v=4",
+      "profile": "https://github.com/testerez",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "antxxxx",
+      "name": "Anthony Brown",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/2149559?v=4",
+      "profile": "https://github.com/antxxxx",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
+}

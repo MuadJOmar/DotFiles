@@ -1,0 +1,10 @@
+2024-09-18 09:10:30.648 [info] Started local extension host with pid 14904.
+2024-09-18 09:10:32.171 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2024-09-18 09:10:36.252 [error] Offline: Offline: Offline
+    at L (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:105:2290)
+    at async S.c (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:705:48548)
+    at async y (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1825:2606)
+    at async y.z (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1825:3296)
+    at async d.value (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1825:2509)
+2024-09-18 09:10:36.683 [info] [perf] Render performance baseline is 99ms
+2024-09-18 09:10:36.955 [warning] Failed to fetch chat participant registry Offline

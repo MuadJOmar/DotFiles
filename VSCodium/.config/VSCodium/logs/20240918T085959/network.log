@@ -1,0 +1,7 @@
+2024-09-18 09:00:03.091 [error] electron #1: https://az764295.vo.msecnd.net/extensions/marketplace.json - error GET net::ERR_INTERNET_DISCONNECTED
+2024-09-18 09:00:04.891 [error] electron #2: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_INTERNET_DISCONNECTED
+2024-09-18 09:00:05.239 [error] electron #3: https://update.code.visualstudio.com/api/update/linux-x64/stable/38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40 - error undefined net::ERR_INTERNET_DISCONNECTED
+2024-09-18 09:00:07.031 [error] electron #4: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_INTERNET_DISCONNECTED
+2024-09-18 09:00:07.434 [error] electron #5: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_INTERNET_DISCONNECTED
+2024-09-18 09:00:07.951 [error] electron #6: https://vscode-sync.trafficmanager.net/v1/manifest - error GET net::ERR_INTERNET_DISCONNECTED
+2024-09-18 09:00:09.939 [error] electron #7: https://mobile.events.data.microsoft.com/OneCollector/1.0?cors=true&content-type=application/x-json-stream - error POST net::ERR_INTERNET_DISCONNECTED

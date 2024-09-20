@@ -1,0 +1,54 @@
+        <img class="thumbnail-2" src="thumbnails/thumbnail-2.webp">
+        
+        <img class="thumbnail-3" src="thumbnails/thumbnail-3.webp">
+        
+        <img class="thumbnail-4" src="thumbnails/thumbnail-4.webp">
+        
+        <img class="thumbnail-5" src="thumbnails/thumbnail-5.webp">
+        
+        <img class="thumbnail-6" src="thumbnails/thumbnail-6.webp">
+        
+        <img class="thumbnail-7" src="thumbnails/thumbnail-7.webp">
+        
+        <img class="thumbnail-8" src="thumbnails/thumbnail-8.webp">
+
+
+
+                <div>
+            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            <p class="title-1">Try Not To Laugh Challenge #9</p>
+            <p class="youtuber-1">Markiplier</p>
+            <p class="views-1">19M views &middot; 4 years ago</p>
+        </div>
+
+
+
+
+        <p class="title-1">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+        <p class="youtuber-1">Marques Brownlee</p>
+        <p class="views-1">3.4M views &middot; 6 months ago</p>
+
+
+
+
+
+
+
+
+        <div class="video">
+            <div>
+                <img class="thumbnail" src="thumbnails/thumbnail-2.webp">   
+            </div>
+    
+            <div>
+                <div>
+                    <img class="channel" src="channel/channel-2.jpeg">
+                </div>
+    
+                <div class="disc">
+                <p class="title-2">Try Not To Laugh Challenge #9</p>
+                <p class="youtuber-2">Markiplier</p>
+                <p class="views-2">19M views &middot; 4 years ago</p>
+                </div>
+            </div>
+        </div>

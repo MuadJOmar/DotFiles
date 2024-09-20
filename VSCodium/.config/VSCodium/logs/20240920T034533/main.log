@@ -1,0 +1,25 @@
+2024-09-20 03:45:33.617 [info] update#setState disabled
+2024-09-20 03:45:33.621 [info] update#ctor - updates are disabled as there is no update URL
+2024-09-20 03:45:36.346 [error] vscode-file: Refused to load resource /opt/visual-studio-code/resources/app/extensions/theme-seti/icons/seti.woff from vscode-file: protocol (original URL: vscode-file://vscode-app/opt/visual-studio-code/resources/app/extensions/theme-seti/icons/seti.woff)
+2024-09-20 03:45:42.866 [error] Error: Error while decrypting the ciphertext provided to safeStorage.decryptString.
+    at R.decrypt (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:69:1432)
+    at Object.call (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:51:6376)
+    at w.onPromise (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:49:6080)
+    at w.onRawMessage (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:49:5407)
+    at I.value (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:49:4597)
+    at t._deliver (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:44:928)
+    at t._deliverQueue (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:44:1024)
+    at t.fire (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:44:1362)
+    at I.value (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:39:31022)
+    at t._deliver (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:44:928)
+    at t.fire (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:44:1253)
+    at I.value (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:39:31225)
+    at t._deliver (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:44:928)
+    at t.fire (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:44:1253)
+    at de (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:39:33679)
+    at IpcMainImpl.c (/opt/vscodium-bin/resources/app/out/vs/code/electron-main/main.js:51:25134)
+    at IpcMainImpl.emit (node:events:519:28)
+    at WebContents.<anonymous> (node:electron/js2c/browser_init:2:82518)
+    at WebContents.emit (node:events:519:28)
+2024-09-20 03:45:54.921 [error] [UtilityProcessWorker]: terminated unexpectedly with code 382400608, signal: unknown
+2024-09-20 03:45:54.925 [info] Extension host with pid 19312 exited with code: 0, signal: unknown.

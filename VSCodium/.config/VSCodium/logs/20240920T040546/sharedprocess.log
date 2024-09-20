@@ -1,0 +1,22 @@
+2024-09-20 04:06:42.575 [info] Getting Manifest... codechecker.codechecker
+2024-09-20 04:06:42.818 [info] Installing extension: codechecker.codechecker {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/muadjomar/.vscode-oss/extensions/extensions.json","path":"/home/muadjomar/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.93.1","date":"2024-09-12T18:27:33.186Z"}}
+2024-09-20 04:06:57.978 [info] Extracted extension to file:///home/muadjomar/.vscode-oss/extensions/codechecker.codechecker-1.5.1-universal: codechecker.codechecker
+2024-09-20 04:06:57.996 [info] Renamed to /home/muadjomar/.vscode-oss/extensions/codechecker.codechecker-1.5.1-universal
+2024-09-20 04:06:58.050 [info] Extension installed successfully: codechecker.codechecker vscode-userdata:/home/muadjomar/.vscode-oss/extensions/extensions.json
+2024-09-20 04:06:58.106 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/muadjomar/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/muadjomar/.vscode-oss/extensions/extensions.json.vsctmp'
+    at o.create (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22224)
+    at h (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22355)
+    at p.toFileSystemProviderError (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:48003)
+    at p.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:38485)
+    at async c.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:19784)
+    at async B.onDidFilesChange (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:148257)
+2024-09-20 04:07:10.054 [info] Uninstalling extension from the profile: codechecker.codechecker@1.5.1 vscode-userdata:/home/muadjomar/.vscode-oss/extensions/extensions.json
+2024-09-20 04:07:10.150 [info] Marked extension as uninstalled codechecker.codechecker-1.5.1-universal
+2024-09-20 04:07:10.212 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/muadjomar/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/muadjomar/.vscode-oss/extensions/extensions.json.vsctmp'
+    at o.create (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22224)
+    at h (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:54:22355)
+    at p.toFileSystemProviderError (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:48003)
+    at p.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:38485)
+    at async c.stat (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:59:19784)
+    at async B.onDidFilesChange (/opt/vscodium-bin/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:105:148257)
+2024-09-20 04:07:10.355 [info] Successfully uninstalled extension from the profile codechecker.codechecker@1.5.1 vscode-userdata:/home/muadjomar/.vscode-oss/extensions/extensions.json

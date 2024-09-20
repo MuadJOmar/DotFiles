@@ -1,0 +1,32 @@
+.search-bar {
+    font-size: 20px;    
+    display: block;
+}
+
+.video {
+    display: inline-block;
+    width: 330px;
+    vertical-align: top;
+    margin-right: 15px;
+}
+
+.thumbnail {
+    cursor: pointer;
+    width: 330px;
+    height: 185.156;
+    display: inline-block;
+}
+
+.channel {
+    width: 40px;
+    border-radius: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.info {
+    width: 286px;
+    vertical-align: top;
+    margin-top: 2px;
+    display: inline-block;
+}

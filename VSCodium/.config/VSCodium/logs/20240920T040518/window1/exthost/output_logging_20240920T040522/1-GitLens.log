@@ -1,0 +1,3 @@
+GitLens v15.5.1 activating in VSCodium (1.93.1) on the desktop; language='en', logLevel='warn', defaultDateLocale='null' (someValue.machineId|someValue.sessionId)
+To enable debug logging, set `"gitlens.outputLevel: "debug"` or run "GitLens: Enable Debug Logging" from the Command Palette
+[2024-09-20 02:05:23.895] [GIT          ] [/home/muadjomar/Documents/HTML-CSS Course] git rev-parse --show-toplevel • Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel • not a git repository (or any parent up to mount point /) • Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set). [37ms]

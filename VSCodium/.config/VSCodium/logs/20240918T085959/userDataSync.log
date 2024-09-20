@@ -1,0 +1,18 @@
+2024-09-18 09:00:03.045 [info] Using settings sync service https://vscode-sync.trafficmanager.net/
+2024-09-18 09:00:03.046 [info] Auto Sync is enabled.
+2024-09-18 09:00:03.046 [info] Auto Sync: Suspended until auth token is available.
+2024-09-18 09:00:07.946 [info] Auto Sync: Triggered by Interval
+2024-09-18 09:00:07.946 [info] Sync started.
+2024-09-18 09:00:07.958 [info] Request failed https://vscode-sync.trafficmanager.net/v1/manifest
+2024-09-18 09:00:07.958 [error] RequestFailed (UserDataSyncError) syncResource:unknown operationId:unknown: Connection refused for the request 'https://vscode-sync.trafficmanager.net/v1/manifest'.
+    at O.D (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:114:137100)
+    at async O.manifest (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:114:134426)
+    at async r.createSyncTask (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:114:108328)
+    at async i.I (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:114:97354)
+    at async i.H (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:114:96972)
+2024-09-18 09:00:07.959 [error] RequestFailed (UserDataSyncError) syncResource:unknown operationId:unknown: Connection refused for the request 'https://vscode-sync.trafficmanager.net/v1/manifest'.
+    at O.D (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:114:137100)
+    at async O.manifest (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:114:134426)
+    at async r.createSyncTask (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:114:108328)
+    at async i.I (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:114:97354)
+    at async i.H (/opt/visual-studio-code/resources/app/out/vs/code/node/sharedProcess/sharedProcessMain.js:114:96972)

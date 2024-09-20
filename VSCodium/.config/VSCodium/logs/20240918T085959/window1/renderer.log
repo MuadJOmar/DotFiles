@@ -1,0 +1,20 @@
+2024-09-18 09:00:02.237 [info] Started local extension host with pid 13067.
+2024-09-18 09:00:04.201 [warning] [twxs.cmake]: Cannot register 'cmake.cmakePath'. This property is already registered.
+2024-09-18 09:00:07.587 [error] Offline: Offline: Offline
+    at L (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:105:2290)
+    at async S.c (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:705:48548)
+    at async y (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1825:2606)
+    at async y.z (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1825:3296)
+    at async d.value (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:1825:2509)
+2024-09-18 09:00:09.014 [info] [perf] Render performance baseline is 101ms
+2024-09-18 09:00:09.132 [error] Offline: Offline
+    at ie.E (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:826:40098)
+    at async ie.C (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:826:36801)
+    at async ie.z (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:826:33282)
+    at async ie.getExtensions (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:826:32380)
+    at async se.getExtensions (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2752:16142)
+    at async Re.Oc (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2688:24253)
+    at async Re.Xc (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2688:27101)
+    at async Re.uc (vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2688:13456)
+    at async vscode-file://vscode-app/opt/visual-studio-code/resources/app/out/vs/workbench/workbench.desktop.main.js:2688:11715
+2024-09-18 09:00:09.225 [warning] Failed to fetch chat participant registry Offline

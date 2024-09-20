@@ -1,0 +1,11 @@
+>>> No database found in the following paths:
+>>>   <no path set in settings>
+>>>   <no workspace folder searched>
+>>> No database found in the following paths:
+>>>   <no path set in settings>
+>>>   <no workspace folder searched>
+>>> Process 'CodeChecker analyzer-version' errored: spawn CodeChecker ENOENT
+>>> CodeChecker error while checking version
+>>> No database found in the following paths:
+>>>   <no path set in settings>
+>>>   <no workspace folder searched>

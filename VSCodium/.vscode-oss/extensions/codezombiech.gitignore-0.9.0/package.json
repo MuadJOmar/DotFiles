@@ -1,0 +1,114 @@
+{
+	"name": "gitignore",
+	"displayName": "gitignore",
+	"description": "Lets you pull .gitignore templates from the https://github.com/github/gitignore repository. Language support for .gitignore files.",
+	"version": "0.9.0",
+	"author": "Marc-André Bühler",
+	"publisher": "codezombiech",
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/CodeZombieCH/vscode-gitignore"
+	},
+	"bugs": {
+		"url": "https://github.com/CodeZombieCH/vscode-gitignore/issues"
+	},
+	"homepage": "https://github.com/CodeZombieCH/vscode-gitignore/issues",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.18.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Other"
+	],
+	"keywords": [
+		"multi-root ready"
+	],
+	"activationEvents": [
+		"onCommand:gitignore.addgitignore"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "gitignore.addgitignore",
+				"title": "Add gitignore"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "gitignore extension configuration",
+			"properties": {
+				"gitignore.cacheExpirationInterval": {
+					"type": "integer",
+					"default": 3600,
+					"description": "Number of seconds the list of `.gitignore` files retrieved from github will be cached"
+				}
+			}
+		},
+		"languages": [
+			{
+				"id": "gitignore",
+				"aliases": [
+					"Gitignore"
+				],
+				"filenames": [
+					".gitignore"
+				],
+				"configuration": "./gitignore.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "gitignore",
+				"scopeName": "text.gitignore",
+				"path": "./syntaxes/gitignore.json"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"compile-tests": "tsc -p . --outDir out",
+		"watch-tests": "tsc -p . -w --outDir out",
+		"pretest": "npm run compile-tests && npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.1",
+		"@types/node": "16.x",
+		"@types/vscode": "1.18.x",
+		"@typescript-eslint/eslint-plugin": "^5.30.0",
+		"@typescript-eslint/parser": "^5.30.0",
+		"@vscode/test-electron": "^2.1.5",
+		"eslint": "^8.18.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.0.0",
+		"ts-loader": "^9.3.1",
+		"typescript": "^4.7.4",
+		"vsce": "^2.9.2",
+		"webpack": "^5.73.0",
+		"webpack-cli": "^4.10.0"
+	},
+	"dependencies": {
+		"https-proxy-agent": "^4.0.0"
+	},
+	"__metadata": {
+		"id": "3e891cf9-53cb-49a3-8d01-8f0b1f0afb29",
+		"publisherDisplayName": "CodeZombie",
+		"publisherId": "930310c4-ca8b-4e80-9d19-2b1507b2af61",
+		"isPreReleaseVersion": false,
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1726039968189,
+		"pinned": false,
+		"preRelease": false,
+		"source": "gallery"
+	}
+}

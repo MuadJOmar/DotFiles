@@ -1,0 +1,11 @@
+2024-09-18 09:10:28.523 [info] update#setState idle
+2024-09-18 09:10:33.058 [error] update#isLatestVersion(): failed to check for updates
+2024-09-18 09:10:33.059 [error] Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114482)
+    at SimpleURLLoaderWrapper.emit (node:events:519:28)
+2024-09-18 09:10:36.914 [error] update#isLatestVersion(): failed to check for updates
+2024-09-18 09:10:36.914 [error] Error: net::ERR_INTERNET_DISCONNECTED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114482)
+    at SimpleURLLoaderWrapper.emit (node:events:519:28)
+2024-09-18 09:10:40.821 [error] [UtilityProcessWorker]: terminated unexpectedly with code 631723120, signal: unknown
+2024-09-18 09:10:40.825 [info] Extension host with pid 14904 exited with code: 0, signal: unknown.

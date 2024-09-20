@@ -1,0 +1,15 @@
+{
+	"name": "Gitignore",
+	"scopeName": "text.gitignore",
+	"fileTypes": [
+		".gitignore"
+	],
+	"patterns": [
+		{
+			"match": "^#.*",
+			"name": "comment.gitignore",
+			"comment": "Comments"
+		}
+	],
+	"uuid": "2e829dfc-3206-466c-9cca-5f2251dd5758"
+}
