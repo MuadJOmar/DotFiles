@@ -6,7 +6,7 @@
 #Variuys-Fixes for some Problems 
 
 ## + Screen Resolution Fix Using Grub Config
-###Add This Line
-###"video=(The Active Port for Your Moniter):(TheCorrect Resolution@The Correct Refresh Rate)"
-###in The `/etc/default/grub` in "GRUB_CMDLINE_LINUX_DEFAULT"
+### Add This Line
+### "video=(The Active Port for Your Moniter):(TheCorrect Resolution@The Correct Refresh Rate)"
+### in The `/etc/default/grub` in "GRUB_CMDLINE_LINUX_DEFAULT"
 
