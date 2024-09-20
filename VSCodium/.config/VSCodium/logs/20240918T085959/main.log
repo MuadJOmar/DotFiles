@@ -1,7 +1,0 @@
-2024-09-18 09:00:00.121 [info] update#setState idle
-2024-09-18 09:00:05.239 [error] update#isLatestVersion(): failed to check for updates
-2024-09-18 09:00:05.240 [error] Error: net::ERR_INTERNET_DISCONNECTED
-    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:114482)
-    at SimpleURLLoaderWrapper.emit (node:events:519:28)
-2024-09-18 09:00:14.214 [info] Extension host with pid 13067 exited with code: 0, signal: unknown.
-2024-09-18 09:00:14.232 [error] [UtilityProcessWorker]: terminated unexpectedly with code 607835248, signal: unknown
