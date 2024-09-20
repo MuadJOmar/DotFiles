@@ -7,6 +7,7 @@
 
 ## • Screen Resolution Fix Using Grub Config
 Add This Line 
+
 "video=(The Active Port for Your Moniter):(The Resolution@The Refresh Rate)"
  in The `/etc/default/grub` File in "GRUB_CMDLINE_LINUX_DEFAULT" Line
 
