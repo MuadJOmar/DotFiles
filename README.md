@@ -1,4 +1,4 @@
-# My DotFiles Repo
-## This Where I Store My Configuration Foles For Verios Apps
+# Welcome to my Dotfiles Repository!
+## This is a place where most of my configurations will be. 
 
-` sudo pacman -Syu `
+
