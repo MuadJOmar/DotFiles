@@ -13,8 +13,9 @@ plugins=(
     zoxide
     fzf
     themes
-    zsh-autosuggestions
-    zsh-syntax-highlighting
+	zsh-autosuggestions 
+	zsh-syntax-highlighting 
+	fast-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -25,6 +26,9 @@ alias zshconfig="micro ~/.zshrc"
 alias ls="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias toipe="~/Apps/Toipe/toipe -w top5000 -n"
 alias rm='trash'
+alias pik='pikaur'
+alias grub-update='pikaur'
+
 
 eval "$(zoxide init --cmd cd zsh)"
 

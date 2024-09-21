@@ -1,3 +1,0 @@
-2024-09-18 09:10:35.369 [error] browser #1: https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery - error POST Offline
-2024-09-18 09:10:36.211 [error] browser #2: https://api.github.com/copilot_internal/user - error GET Offline
-2024-09-18 09:10:36.955 [error] browser #3: https://az764295.vo.msecnd.net/extensions/chat.json - error GET Offline
