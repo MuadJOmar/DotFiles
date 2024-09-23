@@ -5,17 +5,17 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="dstufft"
 
 plugins=(
-    git
-    vscode
-    archlinux
-    systemd
-    eza
-    zoxide
-    fzf
-    themes
-	zsh-autosuggestions 
-	zsh-syntax-highlighting 
-	fast-syntax-highlighting
+    	git
+    	vscode
+    	archlinux
+    	systemd
+    	eza
+    	zoxide
+    	fzf
+    	themes
+		zsh-autosuggestions 
+		zsh-syntax-highlighting 
+		fast-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
