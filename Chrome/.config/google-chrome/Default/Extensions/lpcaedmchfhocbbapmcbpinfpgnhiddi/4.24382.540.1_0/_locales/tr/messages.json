@@ -1,0 +1,419 @@
+{
+   "1055686627716339120": {
+      "message": "Arşiv"
+   },
+   "11138431688427255": {
+      "message": "Etiket ekle"
+   },
+   "1122146167985532789": {
+      "message": "dün"
+   },
+   "1333255388111908292": {
+      "message": "Market Alışverişi"
+   },
+   "1338300799355131761": {
+      "message": "Adsız not"
+   },
+   "1429848477922945853": {
+      "message": "Boş not"
+   },
+   "1512114410402431831": {
+      "message": "Yenile"
+   },
+   "156056758267077118": {
+      "message": "Nane Yeşili"
+   },
+   "1694896269813520248": {
+      "message": "Çizim ekle"
+   },
+   "1796799676667865488": {
+      "message": "Uygulama yüklemeyle ilgili değişiklik nedeniyle not düzenlenemiyor."
+   },
+   "1817584332952897497": {
+      "message": "Mercan"
+   },
+   "1943542607990075955": {
+      "message": "Tekrar dene"
+   },
+   "1963323419655107448": {
+      "message": "İşaretli öğeleri silin"
+   },
+   "1986228872461282439": {
+      "message": "Varsayılan"
+   },
+   "1988879857371940328": {
+      "message": "$1​ etiketini kaldır"
+   },
+   "2054706891655675688": {
+      "message": "Kil"
+   },
+   "2125543233832238809": {
+      "message": "Adaçayı"
+   },
+   "2159130950882492111": {
+      "message": "İptal"
+   },
+   "223492684871721243": {
+      "message": "Not Oluştur"
+   },
+   "2259263507947555096": {
+      "message": "Panoya Kopyala"
+   },
+   "2269286357657606271": {
+      "message": "Sayfa adresi kaldırıldı"
+   },
+   "2312889521150470080": {
+      "message": "Yemek Tarifleri"
+   },
+   "2323249770683736002": {
+      "message": "Yeni etiket oluştur"
+   },
+   "2336058986978607910": {
+      "message": "Bir hata oluştu. Lütfen tekrar deneyin."
+   },
+   "2452145367257933677": {
+      "message": "Geri al"
+   },
+   "2456149916345384862": {
+      "message": "Biçimlendirme seçenekleri"
+   },
+   "2583571751348768508": {
+      "message": "Alaca Karanlık"
+   },
+   "2633701539319779732": {
+      "message": "Geri bildirim gönder (yalnızca test sürümü)"
+   },
+   "2680303811435018716": {
+      "message": "Daha fazla öğe eklenemiyor"
+   },
+   "2725627412280194969": {
+      "message": "Market Alışverişi"
+   },
+   "2780054062282129350": {
+      "message": "Başlık ekleyin"
+   },
+   "2930974997943171554": {
+      "message": "Koyu tema devre dışı bırakıldı"
+   },
+   "2971623719720688041": {
+      "message": "İşlem geri alındı"
+   },
+   "2973306402585941108": {
+      "message": "Sabah"
+   },
+   "2983318659047499045": {
+      "message": "Hatırlatıcılar"
+   },
+   "3091440425606975088": {
+      "message": "Adsız liste"
+   },
+   "3121560585545725724": {
+      "message": "$1​, $2​"
+   },
+   "3190546672187601036": {
+      "message": "Gece"
+   },
+   "3249966726137025950": {
+      "message": "Ortak Çalışanın Aile Grubu"
+   },
+   "3258100527833044153": {
+      "message": "Boş çizim silindi"
+   },
+   "3385831848537487538": {
+      "message": "Seyahat"
+   },
+   "3411924303211138921": {
+      "message": "Video"
+   },
+   "3418677553313974490": {
+      "message": "Çöp Kutusu"
+   },
+   "3542768157572111342": {
+      "message": "Liste düzenlenemez"
+   },
+   "3551522853788442530": {
+      "message": "Geri git"
+   },
+   "3571704286086017611": {
+      "message": "Hatırlatıcı silindi"
+   },
+   "3623199266894863617": {
+      "message": "Not Oluştur"
+   },
+   "3708201433602754428": {
+      "message": "Not kaydediliyor…"
+   },
+   "3714239567487848851": {
+      "message": "Koyu tema etkinleştirildi"
+   },
+   "3769279410443855918": {
+      "message": "Sihirli liste"
+   },
+   "3907816292084809686": {
+      "message": "İşlem yeniden yapıldı"
+   },
+   "4035272937326361881": {
+      "message": "Notlar çevrimdışıyken kaydedilemez. İnternete yeniden bağlanıp tekrar deneyin."
+   },
+   "4047470251075013857": {
+      "message": "Sayfa bağlantısını kaldır"
+   },
+   "4144331746856352764": {
+      "message": "Varsayılan"
+   },
+   "4153306913989815073": {
+      "message": "Gizli resim kaydedilemez."
+   },
+   "4184329490330819477": {
+      "message": "Uygulama yüklemeyle ilgili değişiklik nedeniyle not kaydedilemedi."
+   },
+   "4343848624651344174": {
+      "message": "Öğleden sonra"
+   },
+   "4409688924773693376": {
+      "message": "Kaydediliyor"
+   },
+   "4424410218593071962": {
+      "message": "Kum Beji"
+   },
+   "4494250072784000771": {
+      "message": "Ekran kalemi algılandı. Parmakla Yatay Kaydırma etkinleştirildi."
+   },
+   "4514241210910366093": {
+      "message": "Tablo görünümü"
+   },
+   "4533605085334699862": {
+      "message": "Alıntılar"
+   },
+   "456512308416555173": {
+      "message": "Kitaplar"
+   },
+   "4701373951880414388": {
+      "message": "Yerler"
+   },
+   "4840513623749850224": {
+      "message": "Filmler"
+   },
+   "4914875522213193145": {
+      "message": "Fırtına"
+   },
+   "4930506384627295710": {
+      "message": "Ayarlar"
+   },
+   "4962916837925056840": {
+      "message": "Düzenlemeye devam etmek için internete yeniden bağlanmanız gerekiyor."
+   },
+   "4974261966265341751": {
+      "message": "Koyu temayı devre dışı bırak"
+   },
+   "5061847320181369179": {
+      "message": "Not alın…"
+   },
+   "5207635742003539443": {
+      "message": "Oturum aç"
+   },
+   "5259541708332520733": {
+      "message": "Kaynak kaldırıldı"
+   },
+   "5275304974990264425": {
+      "message": "Liste görünümü"
+   },
+   "5403636185480096151": {
+      "message": "TV"
+   },
+   "546766753072101168": {
+      "message": "Etiketler"
+   },
+   "5510222038351634163": {
+      "message": "Keep Chrome Uygulamasının kullanımdan kaldırılması hakkında daha fazla bilgi edinin"
+   },
+   "5570885401952336951": {
+      "message": "İstemci günlüğü"
+   },
+   "5592884381280360832": {
+      "message": "Anladım"
+   },
+   "5775346636203685655": {
+      "message": "Geri al"
+   },
+   "577539731512680648": {
+      "message": "Keep'te aç"
+   },
+   "5782779707150593352": {
+      "message": "Çevrimdışı"
+   },
+   "6069780031254134657": {
+      "message": "Tamamlandı olarak işaretle"
+   },
+   "6114840739553123863": {
+      "message": "Yiyecek"
+   },
+   "6127627095904149725": {
+      "message": "Sis Rengi"
+   },
+   "6175061706159277390": {
+      "message": "Sayfa adresi kaydedildi"
+   },
+   "6252259197986158120": {
+      "message": "Dün"
+   },
+   "6366376928558090914": {
+      "message": "Yiyecek"
+   },
+   "6497197865876438261": {
+      "message": "Müzik"
+   },
+   "6510131849363684615": {
+      "message": "Yarın"
+   },
+   "6579707685908557993": {
+      "message": "Akşam"
+   },
+   "6717438461651235082": {
+      "message": "Notunuz başarıyla kaydedildi."
+   },
+   "6731295782882669401": {
+      "message": "Kutlama"
+   },
+   "6822520214440117457": {
+      "message": "İş yeri"
+   },
+   "6857703948759289202": {
+      "message": "Bağlantı kaldırıldı."
+   },
+   "689017442055275529": {
+      "message": "$1​ Adlı Kullanıcının Aile Grubu"
+   },
+   "6932835915069019531": {
+      "message": "Resmi kaldır"
+   },
+   "7005745151564974365": {
+      "message": "Klavye kısayolları"
+   },
+   "7102649289752747375": {
+      "message": "Geri bildirim gönder"
+   },
+   "7253527966847172544": {
+      "message": "$1​ tarihinden itibaren, burada oluşturulan notlar otomatik olarak kaydedilmeyecek. URL ile ilişkilendirilmiş olan mevcut notlara erişip bunları düzenlemek için Keep kullanmanız gerekecek."
+   },
+   "7254411458460045711": {
+      "message": "Güncellenemedi, lütfen daha sonra tekrar deneyin. Şu anda internete bağlı değilseniz yeniden denemeden önce lütfen internete bağlanın."
+   },
+   "733701029503338559": {
+      "message": "Google Keep Chrome Uzantısı'nı kullanmak için oturum açmalısınız"
+   },
+   "7384785369409503695": {
+      "message": "Koyu temayı etkinleştir"
+   },
+   "7420364754178516134": {
+      "message": "Hata ayıklama araçları"
+   },
+   "7528441140724145783": {
+      "message": "Etiketleri düzenleyin"
+   },
+   "7585826646011739428": {
+      "message": "Düzenle"
+   },
+   "7624042048123264803": {
+      "message": "Notu aç"
+   },
+   "7669846901402551021": {
+      "message": "Bugün"
+   },
+   "7687507512675715498": {
+      "message": "Keep'te göster"
+   },
+   "7733569569331009603": {
+      "message": "$1​ etiketi eklendi."
+   },
+   "7735981667219692675": {
+      "message": "{resultCount,plural, =1{# arama sonucu}other{# arama sonucu}}"
+   },
+   "7780849812478835865": {
+      "message": "Şeftali"
+   },
+   "7819314041543176992": {
+      "message": "Kapat"
+   },
+   "7911416166208830577": {
+      "message": "Yardım"
+   },
+   "8104421162933956065": {
+      "message": "Notlar"
+   },
+   "8133866583554546341": {
+      "message": "$1​, $2​"
+   },
+   "8149439558305434788": {
+      "message": "$1​, $2​"
+   },
+   "8161188819557037260": {
+      "message": "Google Keep Chrome Uzantısı"
+   },
+   "8169232898590866289": {
+      "message": "+ \"$1​\" etiketini oluştur"
+   },
+   "8193677552005249631": {
+      "message": "Uygulama indirme işlemleri"
+   },
+   "824468664656304495": {
+      "message": "İnternete bağlı değilsiniz. Bazı işlevler kullanılamayabilir."
+   },
+   "8342620486324515462": {
+      "message": "Kapat"
+   },
+   "8384308820923710821": {
+      "message": "Seyahat"
+   },
+   "8388956891956075130": {
+      "message": "Kireçtaşı"
+   },
+   "8412733496413412439": {
+      "message": "Çevrimdışı"
+   },
+   "8504497109904866374": {
+      "message": "Müzik"
+   },
+   "8506292502710287776": {
+      "message": "Uzun notlar mı alıyorsunuz? Alt kısma geldiğinizde otomatik olarak daha fazla alan ekleriz."
+   },
+   "8602525917014156029": {
+      "message": "Yerler"
+   },
+   "865638597375909527": {
+      "message": "Ağaç Çiçeği"
+   },
+   "900086393693234779": {
+      "message": "Ev"
+   },
+   "9012868245012782693": {
+      "message": "Notlar"
+   },
+   "9116610943383363940": {
+      "message": "Kaydedildi"
+   },
+   "911698676339750373": {
+      "message": "Aile Grubu"
+   },
+   "9146862513672039744": {
+      "message": "Hesabı temizle"
+   },
+   "9167784195765779453": {
+      "message": "Keep'e git"
+   },
+   "9218540601355708194": {
+      "message": "Notu sil"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Tek bir tıklamayla Google Keep'e kaydedin!"
+   },
+   "appName": {
+      "description": "App name",
+      "message": "Google Keep Chrome Uzantısı"
+   },
+   "shortName": {
+      "description": "App short name",
+      "message": "Keep'e Kayıt"
+   }
+}

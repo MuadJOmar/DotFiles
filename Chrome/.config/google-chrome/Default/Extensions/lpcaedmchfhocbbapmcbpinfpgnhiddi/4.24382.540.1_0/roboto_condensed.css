@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Roboto Condensed';
+    src: url(RobotoCondensed-Light.ttf);
+    src: url(RobotoCondensed-Light.ttf) format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+    src: url(RobotoCondensed-Regular.ttf);
+    src: url(RobotoCondensed-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+    src: url(RobotoCondensed-Bold.ttf);
+    src: url(RobotoCondensed-Bold.ttf) format('truetype');
+  font-weight: 700;
+}

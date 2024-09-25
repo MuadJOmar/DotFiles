@@ -1,0 +1,419 @@
+{
+   "1055686627716339120": {
+      "message": "Arkisto"
+   },
+   "11138431688427255": {
+      "message": "Lisää tunniste"
+   },
+   "1122146167985532789": {
+      "message": "eilen"
+   },
+   "1333255388111908292": {
+      "message": "Ruokaostokset"
+   },
+   "1338300799355131761": {
+      "message": "Nimetön muistiinpano"
+   },
+   "1429848477922945853": {
+      "message": "Tyhjä muistiinpano"
+   },
+   "1512114410402431831": {
+      "message": "Päivitä"
+   },
+   "156056758267077118": {
+      "message": "Mintunvihreä"
+   },
+   "1694896269813520248": {
+      "message": "Lisää piirros"
+   },
+   "1796799676667865488": {
+      "message": "Muistiinpanoa ei voi muokata sovelluksen asennuksen muutoksen vuoksi."
+   },
+   "1817584332952897497": {
+      "message": "Koralli"
+   },
+   "1943542607990075955": {
+      "message": "Yritä uudelleen"
+   },
+   "1963323419655107448": {
+      "message": "Poista valitut kohteet"
+   },
+   "1986228872461282439": {
+      "message": "Oletus"
+   },
+   "1988879857371940328": {
+      "message": "Poista tunniste $1​"
+   },
+   "2054706891655675688": {
+      "message": "Savi"
+   },
+   "2125543233832238809": {
+      "message": "Salvianvihreä"
+   },
+   "2159130950882492111": {
+      "message": "Peru"
+   },
+   "223492684871721243": {
+      "message": "Luo muistiinpano"
+   },
+   "2259263507947555096": {
+      "message": "Kopioi leikepöydälle"
+   },
+   "2269286357657606271": {
+      "message": "Sivun osoite on poistettu"
+   },
+   "2312889521150470080": {
+      "message": "Reseptit"
+   },
+   "2323249770683736002": {
+      "message": "Luo uusi tunniste"
+   },
+   "2336058986978607910": {
+      "message": "Jotain meni pieleen. Yritä uudelleen."
+   },
+   "2452145367257933677": {
+      "message": "Kumoa"
+   },
+   "2456149916345384862": {
+      "message": "Muotoiluasetukset"
+   },
+   "2583571751348768508": {
+      "message": "Hämärä"
+   },
+   "2633701539319779732": {
+      "message": "Lähetä palautetta (vain testaajille)"
+   },
+   "2680303811435018716": {
+      "message": "Useampien kohteiden lisääminen ei onnistu."
+   },
+   "2725627412280194969": {
+      "message": "Ruokaostokset"
+   },
+   "2780054062282129350": {
+      "message": "Lisää otsikko"
+   },
+   "2930974997943171554": {
+      "message": "Tumma teema pois käytöstä"
+   },
+   "2971623719720688041": {
+      "message": "Toiminto kumottiin."
+   },
+   "2973306402585941108": {
+      "message": "Aamu"
+   },
+   "2983318659047499045": {
+      "message": "Muistutukset"
+   },
+   "3091440425606975088": {
+      "message": "Nimetön luettelo"
+   },
+   "3121560585545725724": {
+      "message": "$1​, $2​"
+   },
+   "3190546672187601036": {
+      "message": "Yö"
+   },
+   "3249966726137025950": {
+      "message": "Yhteiskäyttäjän perheryhmä"
+   },
+   "3258100527833044153": {
+      "message": "Tyhjä piirros hylättiin."
+   },
+   "3385831848537487538": {
+      "message": "Matkailu"
+   },
+   "3411924303211138921": {
+      "message": "Video"
+   },
+   "3418677553313974490": {
+      "message": "Roskakori"
+   },
+   "3542768157572111342": {
+      "message": "Luetteloa ei voi muokata"
+   },
+   "3551522853788442530": {
+      "message": "Takaisin"
+   },
+   "3571704286086017611": {
+      "message": "Muistutus poistettiin."
+   },
+   "3623199266894863617": {
+      "message": "Luo muistiinpano"
+   },
+   "3708201433602754428": {
+      "message": "Tallennetaan muistiinpanoa..."
+   },
+   "3714239567487848851": {
+      "message": "Tumma teema käytössä"
+   },
+   "3769279410443855918": {
+      "message": "Magic List ‑lista"
+   },
+   "3907816292084809686": {
+      "message": "Toiminto toistettiin"
+   },
+   "4035272937326361881": {
+      "message": "Muistiinpanoja ei voi tallentaa offline-tilassa. Yritä uudelleen, kun olet yhteydessä internetiin."
+   },
+   "4047470251075013857": {
+      "message": "Poista sivun linkki"
+   },
+   "4144331746856352764": {
+      "message": "Oletus"
+   },
+   "4153306913989815073": {
+      "message": "Yksityistä kuvaa ei voi tallentaa."
+   },
+   "4184329490330819477": {
+      "message": "Muistiinpanoa ei voitu tallentaa sovelluksen asennuksen muutoksen vuoksi."
+   },
+   "4343848624651344174": {
+      "message": "Iltapäivä"
+   },
+   "4409688924773693376": {
+      "message": "Tallennetaan"
+   },
+   "4424410218593071962": {
+      "message": "Hiekka"
+   },
+   "4494250072784000771": {
+      "message": "Näyttökynä havaittiin. Panorointi koskettamalla on käytössä."
+   },
+   "4514241210910366093": {
+      "message": "Ruudukkonäkymä"
+   },
+   "4533605085334699862": {
+      "message": "Lainaukset"
+   },
+   "456512308416555173": {
+      "message": "Kirjat"
+   },
+   "4701373951880414388": {
+      "message": "Paikat"
+   },
+   "4840513623749850224": {
+      "message": "Elokuvat"
+   },
+   "4914875522213193145": {
+      "message": "Myrsky"
+   },
+   "4930506384627295710": {
+      "message": "Asetukset"
+   },
+   "4962916837925056840": {
+      "message": "Muokkaamisen jatkaminen edellyttää internetyhteyttä."
+   },
+   "4974261966265341751": {
+      "message": "Ota tumma teema pois päältä"
+   },
+   "5061847320181369179": {
+      "message": "Tee muistiinpano…"
+   },
+   "5207635742003539443": {
+      "message": "Kirjaudu sisään"
+   },
+   "5259541708332520733": {
+      "message": "Lähde poistettu"
+   },
+   "5275304974990264425": {
+      "message": "Luettelonäkymä"
+   },
+   "5403636185480096151": {
+      "message": "Televisio"
+   },
+   "546766753072101168": {
+      "message": "Tunnisteet"
+   },
+   "5510222038351634163": {
+      "message": "Lue lisää Keepin Chrome-sovelluksen käytöstä poistamisesta"
+   },
+   "5570885401952336951": {
+      "message": "Sovellusloki"
+   },
+   "5592884381280360832": {
+      "message": "OK"
+   },
+   "5775346636203685655": {
+      "message": "Kumoa"
+   },
+   "577539731512680648": {
+      "message": "Avaa Keepissä"
+   },
+   "5782779707150593352": {
+      "message": "Offline-tila"
+   },
+   "6069780031254134657": {
+      "message": "Merkitse valmiiksi"
+   },
+   "6114840739553123863": {
+      "message": "Ruoka"
+   },
+   "6127627095904149725": {
+      "message": "Sumu"
+   },
+   "6175061706159277390": {
+      "message": "Sivun osoite tallennettu"
+   },
+   "6252259197986158120": {
+      "message": "Eilen"
+   },
+   "6366376928558090914": {
+      "message": "Ruoka"
+   },
+   "6497197865876438261": {
+      "message": "Musiikki"
+   },
+   "6510131849363684615": {
+      "message": "Huomenna"
+   },
+   "6579707685908557993": {
+      "message": "Ilta"
+   },
+   "6717438461651235082": {
+      "message": "Muistiinpanon tallentaminen onnistui."
+   },
+   "6731295782882669401": {
+      "message": "Juhla"
+   },
+   "6822520214440117457": {
+      "message": "Työ"
+   },
+   "6857703948759289202": {
+      "message": "Linkki on poistettu."
+   },
+   "689017442055275529": {
+      "message": "Käyttäjän $1​ perheryhmä"
+   },
+   "6932835915069019531": {
+      "message": "Poista kuva"
+   },
+   "7005745151564974365": {
+      "message": "Pikanäppäimet"
+   },
+   "7102649289752747375": {
+      "message": "Lähetä palautetta"
+   },
+   "7253527966847172544": {
+      "message": "Täällä luotuja muistiinpanoja ei tallenneta automaattisesti $1​ alkaen. Aiemmin luotuja URL-osoitteeseen liittyviä muistiinpanoja voi avata ja muokata Keepin kautta."
+   },
+   "7254411458460045711": {
+      "message": "Päivittäminen epäonnistui. Yritä myöhemmin uudelleen. Jos olet offline-tilassa, muodosta yhteys internetiin ennen kuin yrität uudelleen."
+   },
+   "733701029503338559": {
+      "message": "Sinun täytyy kirjautua sisään, jotta voit käyttää Google Keepin Chrome-laajennusta."
+   },
+   "7384785369409503695": {
+      "message": "Ota tumma teema käyttöön"
+   },
+   "7420364754178516134": {
+      "message": "Virheiden jäljitys- ja korjaustyökalut"
+   },
+   "7528441140724145783": {
+      "message": "Muokkaa tunnisteita"
+   },
+   "7585826646011739428": {
+      "message": "Muokkaa"
+   },
+   "7624042048123264803": {
+      "message": "Avaa muistiinpano"
+   },
+   "7669846901402551021": {
+      "message": "Tänään"
+   },
+   "7687507512675715498": {
+      "message": "Näytä Keepissä"
+   },
+   "7733569569331009603": {
+      "message": "Tunniste $1​ lisätty."
+   },
+   "7735981667219692675": {
+      "message": "{resultCount,plural, =1{# hakutulos}other{# hakutulosta}}"
+   },
+   "7780849812478835865": {
+      "message": "Persikka"
+   },
+   "7819314041543176992": {
+      "message": "Sulje"
+   },
+   "7911416166208830577": {
+      "message": "Ohje"
+   },
+   "8104421162933956065": {
+      "message": "Muistiinpanoja"
+   },
+   "8133866583554546341": {
+      "message": "$1​, $2​"
+   },
+   "8149439558305434788": {
+      "message": "$1​, $2​"
+   },
+   "8161188819557037260": {
+      "message": "Google Keepin Chrome-laajennus"
+   },
+   "8169232898590866289": {
+      "message": "+ luo $1​"
+   },
+   "8193677552005249631": {
+      "message": "Sovellusten lataukset"
+   },
+   "824468664656304495": {
+      "message": "Olet offline-tilassa. Osa toiminnoista ei ole käytettävissä."
+   },
+   "8342620486324515462": {
+      "message": "Ohita"
+   },
+   "8384308820923710821": {
+      "message": "Matkailu"
+   },
+   "8388956891956075130": {
+      "message": "Liitu"
+   },
+   "8412733496413412439": {
+      "message": "Offline-tila"
+   },
+   "8504497109904866374": {
+      "message": "Musiikki"
+   },
+   "8506292502710287776": {
+      "message": "Teetkö pitkiä muistiinpanoja? Tilaa lisätään automaattisesti, kun pääset alareunaan asti."
+   },
+   "8602525917014156029": {
+      "message": "Paikat"
+   },
+   "865638597375909527": {
+      "message": "Kukka"
+   },
+   "900086393693234779": {
+      "message": "Koti"
+   },
+   "9012868245012782693": {
+      "message": "Muistiinpanot"
+   },
+   "9116610943383363940": {
+      "message": "Tallennettu"
+   },
+   "911698676339750373": {
+      "message": "Perheryhmä"
+   },
+   "9146862513672039744": {
+      "message": "Tyhjennä tili"
+   },
+   "9167784195765779453": {
+      "message": "Siirry Keepiin"
+   },
+   "9218540601355708194": {
+      "message": "Poista muistiinpano"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Tallenna Google Keepiin yhdellä klikkauksella!"
+   },
+   "appName": {
+      "description": "App name",
+      "message": "Google Keepin Chrome-laajennus"
+   },
+   "shortName": {
+      "description": "App short name",
+      "message": "Tallenna Keepiin"
+   }
+}

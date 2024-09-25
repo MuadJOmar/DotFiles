@@ -1,0 +1,36 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "browser_style": true,
+      "default_icon": "icon_32.png",
+      "default_popup": "popup.html"
+   },
+   "commands": {
+      "toggle-interruption": {
+         "description": "Toggle interruption",
+         "suggested_key": {
+            "default": "Ctrl+Shift+U",
+            "mac": "Command+Shift+U"
+         }
+      }
+   },
+   "description": "uGet Browser Integration extension replaces default download manager by uGet Download Manager.",
+   "homepage_url": "http://ugetdm.com/",
+   "icons": {
+      "128": "icon_128.png",
+      "32": "icon_32.png",
+      "48": "icon_48.png",
+      "64": "icon_64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnI/ECgghIqV+/wQ7b6N+m5tupHZlieWd6nbqqSoqmhUlFg3DmqOi2G/LpVhxoSGHnbRBnemoO2Hs+6aLnlpHKyJ1/DQUHwTjPnvGc9sjTvks1L1dKWTFGcJLiQZPMsjs5g1b8ZNQCH8nGE4uqeSzVK7Hey61gwsS5+OwZYw5/3C/HfBZNNzQfphm7j+eMTuXJTBowA3A3I2ywPRTSOt8n/CxZUIL9O44QOs/WiZFjtERnZocvbHmkWLproj1MIcJVJd0OI11VAfqYznuwsCTIe7annsBpWL1UJUNK+EwVW8Jpj4CUeauC5c0HUWdAecLyx01yKtfokBvwX5fldB1YQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "19.0",
+   "name": "uGet Integration",
+   "offline_enabled": true,
+   "permissions": [ "\u003Call_urls>", "webRequest", "webRequestBlocking", "nativeMessaging", "contextMenus", "downloads", "storage", "cookies", "activeTab", "tabs" ],
+   "short_name": "uGet",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.3"
+}

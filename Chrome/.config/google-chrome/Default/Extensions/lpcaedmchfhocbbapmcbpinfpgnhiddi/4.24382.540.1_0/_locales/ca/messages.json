@@ -1,0 +1,419 @@
+{
+   "1055686627716339120": {
+      "message": "Arxiva"
+   },
+   "11138431688427255": {
+      "message": "Afegeix una etiqueta"
+   },
+   "1122146167985532789": {
+      "message": "ahir"
+   },
+   "1333255388111908292": {
+      "message": "Botigues d'alimentació"
+   },
+   "1338300799355131761": {
+      "message": "Nota sense títol"
+   },
+   "1429848477922945853": {
+      "message": "Nota buida"
+   },
+   "1512114410402431831": {
+      "message": "Actualitza"
+   },
+   "156056758267077118": {
+      "message": "Menta"
+   },
+   "1694896269813520248": {
+      "message": "Afegeix un dibuix"
+   },
+   "1796799676667865488": {
+      "message": "No es pot editar la nota a causa d'un canvi en la instal·lació de l'aplicació."
+   },
+   "1817584332952897497": {
+      "message": "Coral"
+   },
+   "1943542607990075955": {
+      "message": "Torna-ho a provar"
+   },
+   "1963323419655107448": {
+      "message": "Suprimeix els elements marcats"
+   },
+   "1986228872461282439": {
+      "message": "Predeterminat"
+   },
+   "1988879857371940328": {
+      "message": "Suprimeix l'etiqueta $1​"
+   },
+   "2054706891655675688": {
+      "message": "Argila"
+   },
+   "2125543233832238809": {
+      "message": "Sàlvia"
+   },
+   "2159130950882492111": {
+      "message": "Cancel·la"
+   },
+   "223492684871721243": {
+      "message": "Crea una nota"
+   },
+   "2259263507947555096": {
+      "message": "Copia al porta-retalls"
+   },
+   "2269286357657606271": {
+      "message": "L'adreça de la pàgina s'ha suprimit"
+   },
+   "2312889521150470080": {
+      "message": "Receptes"
+   },
+   "2323249770683736002": {
+      "message": "Crea una etiqueta"
+   },
+   "2336058986978607910": {
+      "message": "S'ha produït un error. Torna-ho a provar."
+   },
+   "2452145367257933677": {
+      "message": "Desfés"
+   },
+   "2456149916345384862": {
+      "message": "Opcions de format"
+   },
+   "2583571751348768508": {
+      "message": "Capvespre"
+   },
+   "2633701539319779732": {
+      "message": "Envia suggeriments (només per a proves internes)"
+   },
+   "2680303811435018716": {
+      "message": "No es poden afegir més elements"
+   },
+   "2725627412280194969": {
+      "message": "Queviures"
+   },
+   "2780054062282129350": {
+      "message": "Afegeix un títol"
+   },
+   "2930974997943171554": {
+      "message": "El tema fosc s'ha desactivat"
+   },
+   "2971623719720688041": {
+      "message": "S'ha desfet l'acció"
+   },
+   "2973306402585941108": {
+      "message": "Matí"
+   },
+   "2983318659047499045": {
+      "message": "Recordatoris"
+   },
+   "3091440425606975088": {
+      "message": "Llista sense títol"
+   },
+   "3121560585545725724": {
+      "message": "$1​, $2​"
+   },
+   "3190546672187601036": {
+      "message": "Nit"
+   },
+   "3249966726137025950": {
+      "message": "Grup familiar del col·laborador"
+   },
+   "3258100527833044153": {
+      "message": "El dibuix en blanc s'ha descartat"
+   },
+   "3385831848537487538": {
+      "message": "Viatges"
+   },
+   "3411924303211138921": {
+      "message": "Vídeo"
+   },
+   "3418677553313974490": {
+      "message": "Paperera"
+   },
+   "3542768157572111342": {
+      "message": "No es pot editar la llista"
+   },
+   "3551522853788442530": {
+      "message": "Torna"
+   },
+   "3571704286086017611": {
+      "message": "El recordatori s'ha suprimit"
+   },
+   "3623199266894863617": {
+      "message": "Crea una nota"
+   },
+   "3708201433602754428": {
+      "message": "S'està desant la nota..."
+   },
+   "3714239567487848851": {
+      "message": "El tema fosc s'ha activat"
+   },
+   "3769279410443855918": {
+      "message": "Llista màgica"
+   },
+   "3907816292084809686": {
+      "message": "S'ha refet l'acció"
+   },
+   "4035272937326361881": {
+      "message": "Les notes no es poden desar sense connexió. Torna-ho a provar després de connectar-te de nou a Internet."
+   },
+   "4047470251075013857": {
+      "message": "Suprimeix l'enllaç de la pàgina"
+   },
+   "4144331746856352764": {
+      "message": "Predeterminat"
+   },
+   "4153306913989815073": {
+      "message": "La imatge privada no es pot desar."
+   },
+   "4184329490330819477": {
+      "message": "No s'ha pogut desar la nota a causa d'un canvi en la instal·lació de l'aplicació."
+   },
+   "4343848624651344174": {
+      "message": "Tarda"
+   },
+   "4409688924773693376": {
+      "message": "S'està desant"
+   },
+   "4424410218593071962": {
+      "message": "Sorra"
+   },
+   "4494250072784000771": {
+      "message": "S'ha detectat un llapis òptic. Pots desplaçar-te per la pantalla amb gestos."
+   },
+   "4514241210910366093": {
+      "message": "Visualització de quadrícula"
+   },
+   "4533605085334699862": {
+      "message": "Citacions"
+   },
+   "456512308416555173": {
+      "message": "Llibres"
+   },
+   "4701373951880414388": {
+      "message": "Llocs"
+   },
+   "4840513623749850224": {
+      "message": "Pel·lícules"
+   },
+   "4914875522213193145": {
+      "message": "Temporal"
+   },
+   "4930506384627295710": {
+      "message": "Configuració"
+   },
+   "4962916837925056840": {
+      "message": "T'has de tornar a connectar a Internet per continuar amb l'edició."
+   },
+   "4974261966265341751": {
+      "message": "Desactiva el tema fosc"
+   },
+   "5061847320181369179": {
+      "message": "Crea una nota…"
+   },
+   "5207635742003539443": {
+      "message": "Inicia la sessió"
+   },
+   "5259541708332520733": {
+      "message": "La font s'ha suprimit"
+   },
+   "5275304974990264425": {
+      "message": "Visualització de llista"
+   },
+   "5403636185480096151": {
+      "message": "Televisió"
+   },
+   "546766753072101168": {
+      "message": "Etiquetes"
+   },
+   "5510222038351634163": {
+      "message": "Més informació sobre la discontinuació de l'aplicació Keep de Chrome"
+   },
+   "5570885401952336951": {
+      "message": "Registre del client"
+   },
+   "5592884381280360832": {
+      "message": "Entesos"
+   },
+   "5775346636203685655": {
+      "message": "Desfa"
+   },
+   "577539731512680648": {
+      "message": "Obre a Keep"
+   },
+   "5782779707150593352": {
+      "message": "Sense connexió"
+   },
+   "6069780031254134657": {
+      "message": "Marca com a fet"
+   },
+   "6114840739553123863": {
+      "message": "Menjar"
+   },
+   "6127627095904149725": {
+      "message": "Gris boira"
+   },
+   "6175061706159277390": {
+      "message": "S'ha desat l'adreça de la pàgina"
+   },
+   "6252259197986158120": {
+      "message": "Ahir"
+   },
+   "6366376928558090914": {
+      "message": "Menjar"
+   },
+   "6497197865876438261": {
+      "message": "Música"
+   },
+   "6510131849363684615": {
+      "message": "Demà"
+   },
+   "6579707685908557993": {
+      "message": "Vespre"
+   },
+   "6717438461651235082": {
+      "message": "La nota s'ha desat correctament."
+   },
+   "6731295782882669401": {
+      "message": "Celebració"
+   },
+   "6822520214440117457": {
+      "message": "Feina"
+   },
+   "6857703948759289202": {
+      "message": "L'enllaç s'ha suprimit."
+   },
+   "689017442055275529": {
+      "message": "Grup familiar de: $1​"
+   },
+   "6932835915069019531": {
+      "message": "Suprimeix la imatge"
+   },
+   "7005745151564974365": {
+      "message": "Tecles de drecera"
+   },
+   "7102649289752747375": {
+      "message": "Envia suggeriments"
+   },
+   "7253527966847172544": {
+      "message": "A partir del dia $1​, les notes creades aquí no es desaran automàticament. Per accedir a les notes existents associades a un URL, així com per editar-les, hauràs d'utilitzar Keep."
+   },
+   "7254411458460045711": {
+      "message": "Ha fallat l'actualització. Torna-ho a provar més tard. Si en aquests moments no tens connexió, connecta't a Internet abans de tornar-ho a provar."
+   },
+   "733701029503338559": {
+      "message": "Has d'iniciar la sessió per utilitzar l'extensió de Chrome per a Google Keep"
+   },
+   "7384785369409503695": {
+      "message": "Activa el tema fosc"
+   },
+   "7420364754178516134": {
+      "message": "Eines de depuració"
+   },
+   "7528441140724145783": {
+      "message": "Edita les etiquetes"
+   },
+   "7585826646011739428": {
+      "message": "Edita"
+   },
+   "7624042048123264803": {
+      "message": "Obre la nota"
+   },
+   "7669846901402551021": {
+      "message": "Avui"
+   },
+   "7687507512675715498": {
+      "message": "Mostra a Keep"
+   },
+   "7733569569331009603": {
+      "message": "L'etiqueta $1​ s'ha afegit."
+   },
+   "7735981667219692675": {
+      "message": "{resultCount,plural, =1{# resultat de la cerca}other{# resultats de la cerca}}"
+   },
+   "7780849812478835865": {
+      "message": "Préssec"
+   },
+   "7819314041543176992": {
+      "message": "Tanca"
+   },
+   "7911416166208830577": {
+      "message": "Ajuda"
+   },
+   "8104421162933956065": {
+      "message": "Notes"
+   },
+   "8133866583554546341": {
+      "message": "$1​, $2​"
+   },
+   "8149439558305434788": {
+      "message": "$1​, $2​"
+   },
+   "8161188819557037260": {
+      "message": "Extensió de Chrome per a Google Keep"
+   },
+   "8169232898590866289": {
+      "message": "+Crea \"$1​\""
+   },
+   "8193677552005249631": {
+      "message": "Baixades d'aplicacions"
+   },
+   "824468664656304495": {
+      "message": "No tens connexió. És possible que algunes funcions no estiguin disponibles."
+   },
+   "8342620486324515462": {
+      "message": "Ignora"
+   },
+   "8384308820923710821": {
+      "message": "Viatges"
+   },
+   "8388956891956075130": {
+      "message": "Guix"
+   },
+   "8412733496413412439": {
+      "message": "Sense connexió"
+   },
+   "8504497109904866374": {
+      "message": "Música"
+   },
+   "8506292502710287776": {
+      "message": "Vols crear una nota llarga? Hi afegirem més espai automàticament a mesura que arribis a la part inferior."
+   },
+   "8602525917014156029": {
+      "message": "Llocs"
+   },
+   "865638597375909527": {
+      "message": "Flor"
+   },
+   "900086393693234779": {
+      "message": "Casa"
+   },
+   "9012868245012782693": {
+      "message": "Notes"
+   },
+   "9116610943383363940": {
+      "message": "S'han desat"
+   },
+   "911698676339750373": {
+      "message": "Grup familiar"
+   },
+   "9146862513672039744": {
+      "message": "Neteja el compte"
+   },
+   "9167784195765779453": {
+      "message": "Ves a Keep"
+   },
+   "9218540601355708194": {
+      "message": "Suprimeix la nota"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Deseu contingut a Google Keep amb un sol clic!"
+   },
+   "appName": {
+      "description": "App name",
+      "message": "Extensió de Chrome per a Google Keep"
+   },
+   "shortName": {
+      "description": "App short name",
+      "message": "Deseu contingut a Keep"
+   }
+}

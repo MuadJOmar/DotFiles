@@ -1,0 +1,419 @@
+{
+   "1055686627716339120": {
+      "message": "Archívum"
+   },
+   "11138431688427255": {
+      "message": "Címke hozzáadása"
+   },
+   "1122146167985532789": {
+      "message": "tegnap"
+   },
+   "1333255388111908292": {
+      "message": "Élelmiszer"
+   },
+   "1338300799355131761": {
+      "message": "Cím nélküli jegyzet"
+   },
+   "1429848477922945853": {
+      "message": "Üres jegyzet"
+   },
+   "1512114410402431831": {
+      "message": "Frissítés"
+   },
+   "156056758267077118": {
+      "message": "Mentazöld"
+   },
+   "1694896269813520248": {
+      "message": "Rajz hozzáadása"
+   },
+   "1796799676667865488": {
+      "message": "A jegyzet egy alkalmazástelepítési módosítás miatt nem szerkeszthető."
+   },
+   "1817584332952897497": {
+      "message": "Korall"
+   },
+   "1943542607990075955": {
+      "message": "Újra"
+   },
+   "1963323419655107448": {
+      "message": "Kijelölt elemek törlése"
+   },
+   "1986228872461282439": {
+      "message": "Alapértelmezett"
+   },
+   "1988879857371940328": {
+      "message": "$1​ címke eltávolítása"
+   },
+   "2054706891655675688": {
+      "message": "Agyag"
+   },
+   "2125543233832238809": {
+      "message": "Zsályazöld"
+   },
+   "2159130950882492111": {
+      "message": "Mégse"
+   },
+   "223492684871721243": {
+      "message": "Jegyzet létrehozása"
+   },
+   "2259263507947555096": {
+      "message": "Másolás a vágólapra"
+   },
+   "2269286357657606271": {
+      "message": "Az oldalcím eltávolítva"
+   },
+   "2312889521150470080": {
+      "message": "Receptek"
+   },
+   "2323249770683736002": {
+      "message": "Új címke létrehozása"
+   },
+   "2336058986978607910": {
+      "message": "Hiba történt. Próbálkozzon újra."
+   },
+   "2452145367257933677": {
+      "message": "Visszavonás"
+   },
+   "2456149916345384862": {
+      "message": "Formázási lehetőségek"
+   },
+   "2583571751348768508": {
+      "message": "Alkonyat"
+   },
+   "2633701539319779732": {
+      "message": "Visszajelzés küldése (csak dogfood-tesztelés)"
+   },
+   "2680303811435018716": {
+      "message": "További elemek hozzáadása nem lehetséges"
+   },
+   "2725627412280194969": {
+      "message": "Bevásárlás"
+   },
+   "2780054062282129350": {
+      "message": "Cím megadása"
+   },
+   "2930974997943171554": {
+      "message": "Sötét téma kikapcsolva"
+   },
+   "2971623719720688041": {
+      "message": "Művelet visszavonva"
+   },
+   "2973306402585941108": {
+      "message": "Reggel"
+   },
+   "2983318659047499045": {
+      "message": "Emlékeztetők"
+   },
+   "3091440425606975088": {
+      "message": "Névtelen lista"
+   },
+   "3121560585545725724": {
+      "message": "$1​, $2​"
+   },
+   "3190546672187601036": {
+      "message": "Éjszaka"
+   },
+   "3249966726137025950": {
+      "message": "Együttműködő családi csoportja"
+   },
+   "3258100527833044153": {
+      "message": "Üres rajz elvetve"
+   },
+   "3385831848537487538": {
+      "message": "Utazás"
+   },
+   "3411924303211138921": {
+      "message": "Videó"
+   },
+   "3418677553313974490": {
+      "message": "Kuka"
+   },
+   "3542768157572111342": {
+      "message": "A listaszerkesztési funkció nem érhető el"
+   },
+   "3551522853788442530": {
+      "message": "Vissza"
+   },
+   "3571704286086017611": {
+      "message": "Emlékeztető törölve"
+   },
+   "3623199266894863617": {
+      "message": "Jegyzet létrehozása"
+   },
+   "3708201433602754428": {
+      "message": "Jegyzet mentése..."
+   },
+   "3714239567487848851": {
+      "message": "Sötét téma bekapcsolva"
+   },
+   "3769279410443855918": {
+      "message": "Lista megfogalmazási javaslatokhoz"
+   },
+   "3907816292084809686": {
+      "message": "Művelet megismételve"
+   },
+   "4035272937326361881": {
+      "message": "Offline módban nem menthetők a jegyzetek. Próbálkozzon újra, miután csatlakozott az internethez."
+   },
+   "4047470251075013857": {
+      "message": "Oldallink eltávolítása"
+   },
+   "4144331746856352764": {
+      "message": "Alapértelmezett"
+   },
+   "4153306913989815073": {
+      "message": "A kép privát, ezért nem sikerült menteni."
+   },
+   "4184329490330819477": {
+      "message": "A jegyzetet egy alkalmazástelepítési módosítás miatt nem sikerült menteni."
+   },
+   "4343848624651344174": {
+      "message": "Délután"
+   },
+   "4409688924773693376": {
+      "message": "Mentés"
+   },
+   "4424410218593071962": {
+      "message": "Homokszín"
+   },
+   "4494250072784000771": {
+      "message": "Érintőceruza észlelve. Érintéssel pásztázhat."
+   },
+   "4514241210910366093": {
+      "message": "Rácsnézet"
+   },
+   "4533605085334699862": {
+      "message": "Idézetek"
+   },
+   "456512308416555173": {
+      "message": "Könyvek"
+   },
+   "4701373951880414388": {
+      "message": "Helyek"
+   },
+   "4840513623749850224": {
+      "message": "Filmek"
+   },
+   "4914875522213193145": {
+      "message": "Vihar"
+   },
+   "4930506384627295710": {
+      "message": "Beállítások"
+   },
+   "4962916837925056840": {
+      "message": "A szerkesztés folytatásához újra kapcsolódnia kell az internethez."
+   },
+   "4974261966265341751": {
+      "message": "Sötét téma letiltása"
+   },
+   "5061847320181369179": {
+      "message": "Jegyzet…"
+   },
+   "5207635742003539443": {
+      "message": "Bejelentkezés"
+   },
+   "5259541708332520733": {
+      "message": "Forrás eltávolítva"
+   },
+   "5275304974990264425": {
+      "message": "Listanézet"
+   },
+   "5403636185480096151": {
+      "message": "Tévé"
+   },
+   "546766753072101168": {
+      "message": "Címkék"
+   },
+   "5510222038351634163": {
+      "message": "További információ a Keep Chrome-alkalmazás megszüntetéséről"
+   },
+   "5570885401952336951": {
+      "message": "Kliensnapló"
+   },
+   "5592884381280360832": {
+      "message": "Értem"
+   },
+   "5775346636203685655": {
+      "message": "Visszavonás"
+   },
+   "577539731512680648": {
+      "message": "Megnyitás a Keepben"
+   },
+   "5782779707150593352": {
+      "message": "A naptár offline állapotban van"
+   },
+   "6069780031254134657": {
+      "message": "Megjelölés készként"
+   },
+   "6114840739553123863": {
+      "message": "Étel"
+   },
+   "6127627095904149725": {
+      "message": "Köd"
+   },
+   "6175061706159277390": {
+      "message": "Oldal címe mentve"
+   },
+   "6252259197986158120": {
+      "message": "Tegnap"
+   },
+   "6366376928558090914": {
+      "message": "Étel"
+   },
+   "6497197865876438261": {
+      "message": "Zene"
+   },
+   "6510131849363684615": {
+      "message": "Holnap"
+   },
+   "6579707685908557993": {
+      "message": "Este"
+   },
+   "6717438461651235082": {
+      "message": "A jegyzet mentése sikeres volt."
+   },
+   "6731295782882669401": {
+      "message": "Ünneplés"
+   },
+   "6822520214440117457": {
+      "message": "Munkahely"
+   },
+   "6857703948759289202": {
+      "message": "Link eltávolítva."
+   },
+   "689017442055275529": {
+      "message": "$1​ családi csoportja"
+   },
+   "6932835915069019531": {
+      "message": "Kép eltávolítása"
+   },
+   "7005745151564974365": {
+      "message": "Billentyűparancsok"
+   },
+   "7102649289752747375": {
+      "message": "Visszajelzés"
+   },
+   "7253527966847172544": {
+      "message": "$1​ után az itt létrehozott jegyzeteket nem menti automatikusan a rendszer. Az URL-lel társított meglévő jegyzetekhez is hozzáférhet és szerkesztheti azokat a Keepen keresztül."
+   },
+   "7254411458460045711": {
+      "message": "Sikertelen frissítés. Próbálkozzon újra később. Ha jelenleg nincs internetkapcsolata, csatlakozzon az internethez, mielőtt újrapróbálkozik."
+   },
+   "733701029503338559": {
+      "message": "A Google Keep Chrome-bővítmény használatához be kell jelentkeznie"
+   },
+   "7384785369409503695": {
+      "message": "Sötét téma engedélyezése"
+   },
+   "7420364754178516134": {
+      "message": "Hibakereső eszközök"
+   },
+   "7528441140724145783": {
+      "message": "Címkék szerkesztése"
+   },
+   "7585826646011739428": {
+      "message": "Szerkesztés"
+   },
+   "7624042048123264803": {
+      "message": "Jegyzet megnyitása"
+   },
+   "7669846901402551021": {
+      "message": "Ma"
+   },
+   "7687507512675715498": {
+      "message": "Megnyitás a Keepben"
+   },
+   "7733569569331009603": {
+      "message": "$1​ címke hozzáadva."
+   },
+   "7735981667219692675": {
+      "message": "{resultCount,plural, =1{# keresési találat}other{# keresési találat}}"
+   },
+   "7780849812478835865": {
+      "message": "Barack"
+   },
+   "7819314041543176992": {
+      "message": "Bezárás"
+   },
+   "7911416166208830577": {
+      "message": "Súgó"
+   },
+   "8104421162933956065": {
+      "message": "Jegyzetek"
+   },
+   "8133866583554546341": {
+      "message": "$1​, $2​"
+   },
+   "8149439558305434788": {
+      "message": "$1​, $2​"
+   },
+   "8161188819557037260": {
+      "message": "Google Keep Chrome-bővítmény"
+   },
+   "8169232898590866289": {
+      "message": "+ Létrehozás: „$1​”"
+   },
+   "8193677552005249631": {
+      "message": "Alkalmazásletöltések"
+   },
+   "824468664656304495": {
+      "message": "Nincs internetkapcsolat. Előfordulhat, hogy bizonyos funkciók nem használhatók."
+   },
+   "8342620486324515462": {
+      "message": "Elvetés"
+   },
+   "8384308820923710821": {
+      "message": "Utazás"
+   },
+   "8388956891956075130": {
+      "message": "Szürkésfehér"
+   },
+   "8412733496413412439": {
+      "message": "Nincs internetkapcsolat"
+   },
+   "8504497109904866374": {
+      "message": "Zene"
+   },
+   "8506292502710287776": {
+      "message": "Hosszú jegyzeteket készít? Automatikusan kibővítjük az oldalt, ahogy alulra ér."
+   },
+   "8602525917014156029": {
+      "message": "Helyek"
+   },
+   "865638597375909527": {
+      "message": "Virág"
+   },
+   "900086393693234779": {
+      "message": "Otthon"
+   },
+   "9012868245012782693": {
+      "message": "Jegyzetek"
+   },
+   "9116610943383363940": {
+      "message": "Mentve"
+   },
+   "911698676339750373": {
+      "message": "Családi csoport"
+   },
+   "9146862513672039744": {
+      "message": "Fiókadatok törlése"
+   },
+   "9167784195765779453": {
+      "message": "Ugrás a Keepre"
+   },
+   "9218540601355708194": {
+      "message": "Jegyzet törlése"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "A tartalmakat egyetlen kattintással mentheti a Keepben!"
+   },
+   "appName": {
+      "description": "App name",
+      "message": "Google Keep Chrome-bővítmény"
+   },
+   "shortName": {
+      "description": "App short name",
+      "message": "Mentés a Keepben"
+   }
+}

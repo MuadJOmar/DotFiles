@@ -1,0 +1,419 @@
+{
+   "1055686627716339120": {
+      "message": "Archief"
+   },
+   "11138431688427255": {
+      "message": "Label toevoegen"
+   },
+   "1122146167985532789": {
+      "message": "gisteren"
+   },
+   "1333255388111908292": {
+      "message": "Boodschappen"
+   },
+   "1338300799355131761": {
+      "message": "Naamloze notitie"
+   },
+   "1429848477922945853": {
+      "message": "Lege notitie"
+   },
+   "1512114410402431831": {
+      "message": "Vernieuwen"
+   },
+   "156056758267077118": {
+      "message": "Mintgroen"
+   },
+   "1694896269813520248": {
+      "message": "Tekening toevoegen"
+   },
+   "1796799676667865488": {
+      "message": "De notitie kan niet worden bewerkt vanwege een wijziging in de app-installatie."
+   },
+   "1817584332952897497": {
+      "message": "Koraal"
+   },
+   "1943542607990075955": {
+      "message": "Opnieuw proberen"
+   },
+   "1963323419655107448": {
+      "message": "Aangevinkte items verwijderen"
+   },
+   "1986228872461282439": {
+      "message": "Standaard"
+   },
+   "1988879857371940328": {
+      "message": "Label $1​ verwijderen"
+   },
+   "2054706891655675688": {
+      "message": "Clay"
+   },
+   "2125543233832238809": {
+      "message": "Salie"
+   },
+   "2159130950882492111": {
+      "message": "Annuleren"
+   },
+   "223492684871721243": {
+      "message": "Notitie maken"
+   },
+   "2259263507947555096": {
+      "message": "Kopiëren naar klembord"
+   },
+   "2269286357657606271": {
+      "message": "Pagina-adres is verwijderd"
+   },
+   "2312889521150470080": {
+      "message": "Recepten"
+   },
+   "2323249770683736002": {
+      "message": "Nieuw label maken"
+   },
+   "2336058986978607910": {
+      "message": "Er is iets misgegaan. Probeer het opnieuw."
+   },
+   "2452145367257933677": {
+      "message": "Ongedaan maken"
+   },
+   "2456149916345384862": {
+      "message": "Opmaakopties"
+   },
+   "2583571751348768508": {
+      "message": "Schemering"
+   },
+   "2633701539319779732": {
+      "message": "Feedback sturen (alleen dogfood)"
+   },
+   "2680303811435018716": {
+      "message": "Kan niet meer items toevoegen"
+   },
+   "2725627412280194969": {
+      "message": "Boodschappen"
+   },
+   "2780054062282129350": {
+      "message": "Titel toevoegen"
+   },
+   "2930974997943171554": {
+      "message": "Donker thema staat uit"
+   },
+   "2971623719720688041": {
+      "message": "Actie ongedaan gemaakt"
+   },
+   "2973306402585941108": {
+      "message": "Ochtend"
+   },
+   "2983318659047499045": {
+      "message": "Herinneringen"
+   },
+   "3091440425606975088": {
+      "message": "Naamloze lijst"
+   },
+   "3121560585545725724": {
+      "message": "$1​, $2​"
+   },
+   "3190546672187601036": {
+      "message": "Avond"
+   },
+   "3249966726137025950": {
+      "message": "Gezinsgroep van bijdrager"
+   },
+   "3258100527833044153": {
+      "message": "Lege tekening weggegooid"
+   },
+   "3385831848537487538": {
+      "message": "Reizen"
+   },
+   "3411924303211138921": {
+      "message": "Video"
+   },
+   "3418677553313974490": {
+      "message": "Prullenbak"
+   },
+   "3542768157572111342": {
+      "message": "De lijst kan niet worden bewerkt"
+   },
+   "3551522853788442530": {
+      "message": "Terug"
+   },
+   "3571704286086017611": {
+      "message": "Herinnering verwijderd"
+   },
+   "3623199266894863617": {
+      "message": "Notitie maken"
+   },
+   "3708201433602754428": {
+      "message": "Notitie opslaan…"
+   },
+   "3714239567487848851": {
+      "message": "Donker thema staat aan"
+   },
+   "3769279410443855918": {
+      "message": "Magische lijst"
+   },
+   "3907816292084809686": {
+      "message": "Actie opnieuw uitgevoerd"
+   },
+   "4035272937326361881": {
+      "message": "Je kunt geen notities opslaan als je offline bent. Probeer het opnieuw als je weer verbinding hebt met internet."
+   },
+   "4047470251075013857": {
+      "message": "Paginalink verwijderen"
+   },
+   "4144331746856352764": {
+      "message": "Standaard"
+   },
+   "4153306913989815073": {
+      "message": "Kan privéafbeelding niet opslaan."
+   },
+   "4184329490330819477": {
+      "message": "De notitie kan niet worden opgeslagen vanwege een wijziging in de app-installatie."
+   },
+   "4343848624651344174": {
+      "message": "Middag"
+   },
+   "4409688924773693376": {
+      "message": "Opslaan..."
+   },
+   "4424410218593071962": {
+      "message": "Zand"
+   },
+   "4494250072784000771": {
+      "message": "Stylus gedetecteerd. 'Schuiven met vingers' staat aan."
+   },
+   "4514241210910366093": {
+      "message": "Rasterweergave"
+   },
+   "4533605085334699862": {
+      "message": "Citaten"
+   },
+   "456512308416555173": {
+      "message": "Boeken"
+   },
+   "4701373951880414388": {
+      "message": "Plaatsen"
+   },
+   "4840513623749850224": {
+      "message": "Films"
+   },
+   "4914875522213193145": {
+      "message": "Storm"
+   },
+   "4930506384627295710": {
+      "message": "Instellingen"
+   },
+   "4962916837925056840": {
+      "message": "Maak opnieuw verbinding met internet om door te gaan met bewerken."
+   },
+   "4974261966265341751": {
+      "message": "Donker thema uitzetten"
+   },
+   "5061847320181369179": {
+      "message": "Maak een notitie…"
+   },
+   "5207635742003539443": {
+      "message": "Inloggen"
+   },
+   "5259541708332520733": {
+      "message": "Bron verwijderd"
+   },
+   "5275304974990264425": {
+      "message": "Lijstweergave"
+   },
+   "5403636185480096151": {
+      "message": "Tv"
+   },
+   "546766753072101168": {
+      "message": "Labels"
+   },
+   "5510222038351634163": {
+      "message": "Meer informatie over de beëindiging van de Chrome-app voor Keep"
+   },
+   "5570885401952336951": {
+      "message": "Clientlogboek"
+   },
+   "5592884381280360832": {
+      "message": "OK"
+   },
+   "5775346636203685655": {
+      "message": "Ongedaan maken"
+   },
+   "577539731512680648": {
+      "message": "Openen in Keep"
+   },
+   "5782779707150593352": {
+      "message": "Offline"
+   },
+   "6069780031254134657": {
+      "message": "Markeren als klaar"
+   },
+   "6114840739553123863": {
+      "message": "Eten"
+   },
+   "6127627095904149725": {
+      "message": "Mist"
+   },
+   "6175061706159277390": {
+      "message": "Pagina-adres opgeslagen"
+   },
+   "6252259197986158120": {
+      "message": "Gisteren"
+   },
+   "6366376928558090914": {
+      "message": "Eten"
+   },
+   "6497197865876438261": {
+      "message": "Muziek"
+   },
+   "6510131849363684615": {
+      "message": "Morgen"
+   },
+   "6579707685908557993": {
+      "message": "Namiddag"
+   },
+   "6717438461651235082": {
+      "message": "Je notitie is opgeslagen."
+   },
+   "6731295782882669401": {
+      "message": "Festiviteiten"
+   },
+   "6822520214440117457": {
+      "message": "Werk"
+   },
+   "6857703948759289202": {
+      "message": "Link verwijderd."
+   },
+   "689017442055275529": {
+      "message": "Gezinsgroep van $1​"
+   },
+   "6932835915069019531": {
+      "message": "Afbeelding verwijderen"
+   },
+   "7005745151564974365": {
+      "message": "Sneltoetsen"
+   },
+   "7102649289752747375": {
+      "message": "Feedback sturen"
+   },
+   "7253527966847172544": {
+      "message": "Vanaf $1​ worden notities die je hier maakt niet automatisch opgeslagen. Je moet bestaande notities die aan een URL zijn gekoppeld, ook openen en bewerken via Keep."
+   },
+   "7254411458460045711": {
+      "message": "Update mislukt. Probeer het later opnieuw. Als je momenteel offline bent, moet je verbinding met internet maken voordat je het opnieuw probeert."
+   },
+   "733701029503338559": {
+      "message": "Je moet inloggen om de Chrome-extensie voor Google Keep te gebruiken"
+   },
+   "7384785369409503695": {
+      "message": "Donker thema aanzetten"
+   },
+   "7420364754178516134": {
+      "message": "Foutopsporingstools"
+   },
+   "7528441140724145783": {
+      "message": "Labels bewerken"
+   },
+   "7585826646011739428": {
+      "message": "Bewerken"
+   },
+   "7624042048123264803": {
+      "message": "Notitie openen"
+   },
+   "7669846901402551021": {
+      "message": "Vandaag"
+   },
+   "7687507512675715498": {
+      "message": "Bekijken in Keep"
+   },
+   "7733569569331009603": {
+      "message": "Label $1​ toegevoegd."
+   },
+   "7735981667219692675": {
+      "message": "{resultCount,plural, =1{# zoekresultaat}other{# zoekresultaten}}"
+   },
+   "7780849812478835865": {
+      "message": "Perzik"
+   },
+   "7819314041543176992": {
+      "message": "Sluiten"
+   },
+   "7911416166208830577": {
+      "message": "Help"
+   },
+   "8104421162933956065": {
+      "message": "Notities"
+   },
+   "8133866583554546341": {
+      "message": "$1​, $2​"
+   },
+   "8149439558305434788": {
+      "message": "$1​, $2​"
+   },
+   "8161188819557037260": {
+      "message": "Chrome-extensie Google Keep"
+   },
+   "8169232898590866289": {
+      "message": "+ ‘$1​’ maken"
+   },
+   "8193677552005249631": {
+      "message": "App-downloads"
+   },
+   "824468664656304495": {
+      "message": "Je bent offline. Sommige functies zijn mogelijk niet beschikbaar."
+   },
+   "8342620486324515462": {
+      "message": "Sluiten"
+   },
+   "8384308820923710821": {
+      "message": "Reizen"
+   },
+   "8388956891956075130": {
+      "message": "Krijt"
+   },
+   "8412733496413412439": {
+      "message": "Offline"
+   },
+   "8504497109904866374": {
+      "message": "Muziek"
+   },
+   "8506292502710287776": {
+      "message": "Maak je lange notities? Er wordt automatisch meer ruimte toegevoegd als je onderaan bent."
+   },
+   "8602525917014156029": {
+      "message": "Plaatsen"
+   },
+   "865638597375909527": {
+      "message": "Bloesem"
+   },
+   "900086393693234779": {
+      "message": "Thuis"
+   },
+   "9012868245012782693": {
+      "message": "Notities"
+   },
+   "9116610943383363940": {
+      "message": "Opgeslagen"
+   },
+   "911698676339750373": {
+      "message": "Gezinsgroep"
+   },
+   "9146862513672039744": {
+      "message": "Account wissen"
+   },
+   "9167784195765779453": {
+      "message": "Ga naar Keep"
+   },
+   "9218540601355708194": {
+      "message": "Notitie verwijderen"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Met één klik opslaan in Google Keep!"
+   },
+   "appName": {
+      "description": "App name",
+      "message": "Chrome-extensie voor Google Keep"
+   },
+   "shortName": {
+      "description": "App short name",
+      "message": "Opslaan in Keep"
+   }
+}

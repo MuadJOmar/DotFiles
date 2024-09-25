@@ -1,0 +1,419 @@
+{
+   "1055686627716339120": {
+      "message": "Archivovat"
+   },
+   "11138431688427255": {
+      "message": "Přidat štítek"
+   },
+   "1122146167985532789": {
+      "message": "včera"
+   },
+   "1333255388111908292": {
+      "message": "Potraviny"
+   },
+   "1338300799355131761": {
+      "message": "Poznámka bez názvu"
+   },
+   "1429848477922945853": {
+      "message": "Prázdná poznámka"
+   },
+   "1512114410402431831": {
+      "message": "Obnovit"
+   },
+   "156056758267077118": {
+      "message": "Máta"
+   },
+   "1694896269813520248": {
+      "message": "Přidat nákres"
+   },
+   "1796799676667865488": {
+      "message": "Poznámku nelze upravit kvůli změně v instalaci aplikace."
+   },
+   "1817584332952897497": {
+      "message": "Koráli"
+   },
+   "1943542607990075955": {
+      "message": "Zkusit znovu"
+   },
+   "1963323419655107448": {
+      "message": "Smazat zaškrtnuté položky"
+   },
+   "1986228872461282439": {
+      "message": "Výchozí"
+   },
+   "1988879857371940328": {
+      "message": "Odstranit štítek $1​"
+   },
+   "2054706891655675688": {
+      "message": "Jíl"
+   },
+   "2125543233832238809": {
+      "message": "Šalvěj"
+   },
+   "2159130950882492111": {
+      "message": "Zrušit"
+   },
+   "223492684871721243": {
+      "message": "Vytvořit poznámku"
+   },
+   "2259263507947555096": {
+      "message": "Zkopírovat do schránky"
+   },
+   "2269286357657606271": {
+      "message": "Adresa stránky byla odstraněna"
+   },
+   "2312889521150470080": {
+      "message": "Recepty"
+   },
+   "2323249770683736002": {
+      "message": "Vytvořit nový štítek"
+   },
+   "2336058986978607910": {
+      "message": "Něco se pokazilo. Zkuste to znovu."
+   },
+   "2452145367257933677": {
+      "message": "Vrátit zpět"
+   },
+   "2456149916345384862": {
+      "message": "Možnosti formátování"
+   },
+   "2583571751348768508": {
+      "message": "Soumrak"
+   },
+   "2633701539319779732": {
+      "message": "Odeslat zpětnou vazbu (pouze interní testování)"
+   },
+   "2680303811435018716": {
+      "message": "Další položky nelze přidat"
+   },
+   "2725627412280194969": {
+      "message": "Potraviny"
+   },
+   "2780054062282129350": {
+      "message": "Přidat název"
+   },
+   "2930974997943171554": {
+      "message": "Tmavý režim deaktivován"
+   },
+   "2971623719720688041": {
+      "message": "Akce byla vrácena"
+   },
+   "2973306402585941108": {
+      "message": "Ráno"
+   },
+   "2983318659047499045": {
+      "message": "Připomenutí"
+   },
+   "3091440425606975088": {
+      "message": "Seznam bez názvu"
+   },
+   "3121560585545725724": {
+      "message": "$1​, $2​"
+   },
+   "3190546672187601036": {
+      "message": "Noc"
+   },
+   "3249966726137025950": {
+      "message": "Rodinná skupina spolupracovníka"
+   },
+   "3258100527833044153": {
+      "message": "Prázdný nákres byl zahozen"
+   },
+   "3385831848537487538": {
+      "message": "Cestování"
+   },
+   "3411924303211138921": {
+      "message": "Video"
+   },
+   "3418677553313974490": {
+      "message": "Koš"
+   },
+   "3542768157572111342": {
+      "message": "Úpravy seznamu nejsou k dispozici"
+   },
+   "3551522853788442530": {
+      "message": "Zpět"
+   },
+   "3571704286086017611": {
+      "message": "Připomenutí smazáno"
+   },
+   "3623199266894863617": {
+      "message": "Vytvořit poznámku"
+   },
+   "3708201433602754428": {
+      "message": "Ukládání poznámky…"
+   },
+   "3714239567487848851": {
+      "message": "Tmavý režim aktivován"
+   },
+   "3769279410443855918": {
+      "message": "Kouzelný seznam"
+   },
+   "3907816292084809686": {
+      "message": "Akce byla zopakována"
+   },
+   "4035272937326361881": {
+      "message": "Poznámky nelze ukládat offline. Po opětovném připojení k internetu to zkuste znovu."
+   },
+   "4047470251075013857": {
+      "message": "Odstranit odkaz na stránku"
+   },
+   "4144331746856352764": {
+      "message": "Výchozí"
+   },
+   "4153306913989815073": {
+      "message": "Soukromý obrázek nelze uložit."
+   },
+   "4184329490330819477": {
+      "message": "Poznámku se nepodařilo uložit kvůli změně v instalaci aplikace."
+   },
+   "4343848624651344174": {
+      "message": "Odpoledne"
+   },
+   "4409688924773693376": {
+      "message": "Ukládání"
+   },
+   "4424410218593071962": {
+      "message": "Písek"
+   },
+   "4494250072784000771": {
+      "message": "Zjištěn stylus. Je aktivováno posouvání dotykem."
+   },
+   "4514241210910366093": {
+      "message": "Mřížka"
+   },
+   "4533605085334699862": {
+      "message": "Citáty"
+   },
+   "456512308416555173": {
+      "message": "Knihy"
+   },
+   "4701373951880414388": {
+      "message": "Místa"
+   },
+   "4840513623749850224": {
+      "message": "Filmy"
+   },
+   "4914875522213193145": {
+      "message": "Bouře"
+   },
+   "4930506384627295710": {
+      "message": "Nastavení"
+   },
+   "4962916837925056840": {
+      "message": "Pokud chcete pokračovat v úpravách, musíte se znovu připojit k internetu."
+   },
+   "4974261966265341751": {
+      "message": "Vypnout tmavý motiv"
+   },
+   "5061847320181369179": {
+      "message": "Zapsat poznámku…"
+   },
+   "5207635742003539443": {
+      "message": "Přihlaste se"
+   },
+   "5259541708332520733": {
+      "message": "Zdroj odebrán"
+   },
+   "5275304974990264425": {
+      "message": "Seznam"
+   },
+   "5403636185480096151": {
+      "message": "Televize"
+   },
+   "546766753072101168": {
+      "message": "Štítky"
+   },
+   "5510222038351634163": {
+      "message": "Další informace o ukončení podpory aplikace Keep pro Chrome"
+   },
+   "5570885401952336951": {
+      "message": "Protokol klienta"
+   },
+   "5592884381280360832": {
+      "message": "OK"
+   },
+   "5775346636203685655": {
+      "message": "Vrátit zpět"
+   },
+   "577539731512680648": {
+      "message": "Otevřít v aplikaci Keep"
+   },
+   "5782779707150593352": {
+      "message": "Offline"
+   },
+   "6069780031254134657": {
+      "message": "Označit jako vyřízené"
+   },
+   "6114840739553123863": {
+      "message": "Jídlo"
+   },
+   "6127627095904149725": {
+      "message": "Mlha"
+   },
+   "6175061706159277390": {
+      "message": "Adresa stránky uložena"
+   },
+   "6252259197986158120": {
+      "message": "Včera"
+   },
+   "6366376928558090914": {
+      "message": "Jídlo"
+   },
+   "6497197865876438261": {
+      "message": "Hudba"
+   },
+   "6510131849363684615": {
+      "message": "Zítra"
+   },
+   "6579707685908557993": {
+      "message": "Večer"
+   },
+   "6717438461651235082": {
+      "message": "Vaše poznámka byla úspěšně uložena."
+   },
+   "6731295782882669401": {
+      "message": "Oslava"
+   },
+   "6822520214440117457": {
+      "message": "Práce"
+   },
+   "6857703948759289202": {
+      "message": "Odkaz odstraněn."
+   },
+   "689017442055275529": {
+      "message": "Rodinná skupina uživatele $1​"
+   },
+   "6932835915069019531": {
+      "message": "Odstranit obrázek"
+   },
+   "7005745151564974365": {
+      "message": "Klávesové zkratky"
+   },
+   "7102649289752747375": {
+      "message": "Zpětná vazba"
+   },
+   "7253527966847172544": {
+      "message": "Od $1​ se zde vytvořené poznámky nebudou automaticky ukládat. Budete také muset otevřít a upravit existující poznámky, které jsou spojeny s adresou URL prostřednictvím služby Keep."
+   },
+   "7254411458460045711": {
+      "message": "Aktualizace se nezdařila, zkuste to znovu později. Pokud jste zrovna offline, před opakovaným pokusem se připojte k internetu."
+   },
+   "733701029503338559": {
+      "message": "Rozšíření Google Keep pro Chrome vyžaduje přihlášení"
+   },
+   "7384785369409503695": {
+      "message": "Zapnout tmavý motiv"
+   },
+   "7420364754178516134": {
+      "message": "Nástroje pro ladění"
+   },
+   "7528441140724145783": {
+      "message": "Upravit štítky"
+   },
+   "7585826646011739428": {
+      "message": "Upravit"
+   },
+   "7624042048123264803": {
+      "message": "Otevřít poznámku"
+   },
+   "7669846901402551021": {
+      "message": "Dnes"
+   },
+   "7687507512675715498": {
+      "message": "Zobrazit v aplikaci Keep"
+   },
+   "7733569569331009603": {
+      "message": "Přidán štítek $1​."
+   },
+   "7735981667219692675": {
+      "message": "{resultCount,plural, =1{# výsledek vyhledávání}few{# výsledky vyhledávání}many{# výsledku vyhledávání}other{# výsledků vyhledávání}}"
+   },
+   "7780849812478835865": {
+      "message": "Broskev"
+   },
+   "7819314041543176992": {
+      "message": "Zavřít"
+   },
+   "7911416166208830577": {
+      "message": "Nápověda"
+   },
+   "8104421162933956065": {
+      "message": "Poznámky"
+   },
+   "8133866583554546341": {
+      "message": "$1​ v $2​"
+   },
+   "8149439558305434788": {
+      "message": "$1​, $2​"
+   },
+   "8161188819557037260": {
+      "message": "Rozšíření Google Keep pro Chrome"
+   },
+   "8169232898590866289": {
+      "message": "+ Vytvořit „$1​“"
+   },
+   "8193677552005249631": {
+      "message": "Stažení aplikací"
+   },
+   "824468664656304495": {
+      "message": "Jste offline. Některé funkce nemusí být dostupné."
+   },
+   "8342620486324515462": {
+      "message": "Zavřít"
+   },
+   "8384308820923710821": {
+      "message": "Cestování"
+   },
+   "8388956891956075130": {
+      "message": "Křída"
+   },
+   "8412733496413412439": {
+      "message": "Offline"
+   },
+   "8504497109904866374": {
+      "message": "Hudba"
+   },
+   "8506292502710287776": {
+      "message": "Děláte si dlouhé poznámky? Když se dostanete na konec, automaticky přidáme více místa."
+   },
+   "8602525917014156029": {
+      "message": "Místa"
+   },
+   "865638597375909527": {
+      "message": "Květ"
+   },
+   "900086393693234779": {
+      "message": "Domov"
+   },
+   "9012868245012782693": {
+      "message": "Poznámky"
+   },
+   "9116610943383363940": {
+      "message": "Uloženo"
+   },
+   "911698676339750373": {
+      "message": "Rodinná skupina"
+   },
+   "9146862513672039744": {
+      "message": "Vymazat účet"
+   },
+   "9167784195765779453": {
+      "message": "Přejít na web Keep"
+   },
+   "9218540601355708194": {
+      "message": "Smazat poznámku"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Ukládejte do služby Google Keep jediným kliknutím!"
+   },
+   "appName": {
+      "description": "App name",
+      "message": "Rozšíření Google Keep pro Chrome"
+   },
+   "shortName": {
+      "description": "App short name",
+      "message": "Ukládání do služby Keep"
+   }
+}

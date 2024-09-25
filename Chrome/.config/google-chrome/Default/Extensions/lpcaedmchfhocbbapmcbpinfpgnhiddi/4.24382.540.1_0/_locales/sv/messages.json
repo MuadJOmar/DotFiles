@@ -1,0 +1,419 @@
+{
+   "1055686627716339120": {
+      "message": "Arkiv"
+   },
+   "11138431688427255": {
+      "message": "Lägg till etikett"
+   },
+   "1122146167985532789": {
+      "message": "i går"
+   },
+   "1333255388111908292": {
+      "message": "Specerier"
+   },
+   "1338300799355131761": {
+      "message": "Namnlös anteckning"
+   },
+   "1429848477922945853": {
+      "message": "Tom anteckning"
+   },
+   "1512114410402431831": {
+      "message": "Uppdatera"
+   },
+   "156056758267077118": {
+      "message": "Mint"
+   },
+   "1694896269813520248": {
+      "message": "Lägg till teckning"
+   },
+   "1796799676667865488": {
+      "message": "Det går inte att redigera anteckningen på grund av en ändring av appinstallationen."
+   },
+   "1817584332952897497": {
+      "message": "Korall"
+   },
+   "1943542607990075955": {
+      "message": "Försök igen"
+   },
+   "1963323419655107448": {
+      "message": "Radera markerade objekt"
+   },
+   "1986228872461282439": {
+      "message": "Standard"
+   },
+   "1988879857371940328": {
+      "message": "Ta bort etikett $1​"
+   },
+   "2054706891655675688": {
+      "message": "Lera"
+   },
+   "2125543233832238809": {
+      "message": "Sage"
+   },
+   "2159130950882492111": {
+      "message": "Avbryt"
+   },
+   "223492684871721243": {
+      "message": "Skapa anteckning"
+   },
+   "2259263507947555096": {
+      "message": "Kopiera till Urklipp"
+   },
+   "2269286357657606271": {
+      "message": "Sidans adress har tagits bort"
+   },
+   "2312889521150470080": {
+      "message": "Recept"
+   },
+   "2323249770683736002": {
+      "message": "Skapa ny etikett"
+   },
+   "2336058986978607910": {
+      "message": "Något gick fel. Försök igen."
+   },
+   "2452145367257933677": {
+      "message": "Ångra"
+   },
+   "2456149916345384862": {
+      "message": "Formateringsalternativ"
+   },
+   "2583571751348768508": {
+      "message": "Skymning"
+   },
+   "2633701539319779732": {
+      "message": "Skicka feedback (enbart internt test)"
+   },
+   "2680303811435018716": {
+      "message": "Det går inte att lägga till fler poster"
+   },
+   "2725627412280194969": {
+      "message": "Livsmedel"
+   },
+   "2780054062282129350": {
+      "message": "Lägg till titel"
+   },
+   "2930974997943171554": {
+      "message": "Mörkt tema har inaktiverats"
+   },
+   "2971623719720688041": {
+      "message": "Åtgärd ångrad"
+   },
+   "2973306402585941108": {
+      "message": "Morgon"
+   },
+   "2983318659047499045": {
+      "message": "Påminnelser"
+   },
+   "3091440425606975088": {
+      "message": "Namnlös lista"
+   },
+   "3121560585545725724": {
+      "message": "$1​, $2​"
+   },
+   "3190546672187601036": {
+      "message": "Natt"
+   },
+   "3249966726137025950": {
+      "message": "Familjegrupp för redigeringsbehörig"
+   },
+   "3258100527833044153": {
+      "message": "Den tomma teckningen har slängts"
+   },
+   "3385831848537487538": {
+      "message": "Resa"
+   },
+   "3411924303211138921": {
+      "message": "Video"
+   },
+   "3418677553313974490": {
+      "message": "Papperskorgen"
+   },
+   "3542768157572111342": {
+      "message": "Listredigering är inte tillgänglig"
+   },
+   "3551522853788442530": {
+      "message": "Tillbaka"
+   },
+   "3571704286086017611": {
+      "message": "Påminnelsen har raderats"
+   },
+   "3623199266894863617": {
+      "message": "Skapa anteckning"
+   },
+   "3708201433602754428": {
+      "message": "Sparar anteckningen …"
+   },
+   "3714239567487848851": {
+      "message": "Mörkt tema har aktiverats"
+   },
+   "3769279410443855918": {
+      "message": "Magisk lista"
+   },
+   "3907816292084809686": {
+      "message": "Åtgärd omgjord"
+   },
+   "4035272937326361881": {
+      "message": "Det går inte att spara anteckningar när du är offline. Försök igen när du är ansluten till internet."
+   },
+   "4047470251075013857": {
+      "message": "Ta bort sidlänk"
+   },
+   "4144331746856352764": {
+      "message": "Standard"
+   },
+   "4153306913989815073": {
+      "message": "Privat bild kan inte sparas."
+   },
+   "4184329490330819477": {
+      "message": "Det gick inte att spara anteckningen på grund av en ändring av appinstallationen."
+   },
+   "4343848624651344174": {
+      "message": "Eftermiddag"
+   },
+   "4409688924773693376": {
+      "message": "Sparar"
+   },
+   "4424410218593071962": {
+      "message": "Sand"
+   },
+   "4494250072784000771": {
+      "message": "E-penna identifierad. Panorera med tryck är aktiverat."
+   },
+   "4514241210910366093": {
+      "message": "Rutnätsvy"
+   },
+   "4533605085334699862": {
+      "message": "Citat"
+   },
+   "456512308416555173": {
+      "message": "Böcker"
+   },
+   "4701373951880414388": {
+      "message": "Platser"
+   },
+   "4840513623749850224": {
+      "message": "Filmer"
+   },
+   "4914875522213193145": {
+      "message": "Storm"
+   },
+   "4930506384627295710": {
+      "message": "Inställningar"
+   },
+   "4962916837925056840": {
+      "message": "Du måste ansluta till internet för att kunna fortsätta redigera."
+   },
+   "4974261966265341751": {
+      "message": "Inaktivera mörkt tema"
+   },
+   "5061847320181369179": {
+      "message": "Gör en anteckning  …"
+   },
+   "5207635742003539443": {
+      "message": "Logga in"
+   },
+   "5259541708332520733": {
+      "message": "Källan har tagits bort"
+   },
+   "5275304974990264425": {
+      "message": "Listvy"
+   },
+   "5403636185480096151": {
+      "message": "Tv"
+   },
+   "546766753072101168": {
+      "message": "Etiketter"
+   },
+   "5510222038351634163": {
+      "message": "Läs mer om utfasningen av Keep Chrome-appen"
+   },
+   "5570885401952336951": {
+      "message": "Klientlogg"
+   },
+   "5592884381280360832": {
+      "message": "OK"
+   },
+   "5775346636203685655": {
+      "message": "Ångra"
+   },
+   "577539731512680648": {
+      "message": "Öppna i Keep"
+   },
+   "5782779707150593352": {
+      "message": "Offline"
+   },
+   "6069780031254134657": {
+      "message": "Markera som klar"
+   },
+   "6114840739553123863": {
+      "message": "Mat"
+   },
+   "6127627095904149725": {
+      "message": "Fog"
+   },
+   "6175061706159277390": {
+      "message": "Sidans adress har sparats"
+   },
+   "6252259197986158120": {
+      "message": "I går"
+   },
+   "6366376928558090914": {
+      "message": "Mat"
+   },
+   "6497197865876438261": {
+      "message": "Musik"
+   },
+   "6510131849363684615": {
+      "message": "I morgon"
+   },
+   "6579707685908557993": {
+      "message": "Kväll"
+   },
+   "6717438461651235082": {
+      "message": "Anteckningen har sparats."
+   },
+   "6731295782882669401": {
+      "message": "Fira"
+   },
+   "6822520214440117457": {
+      "message": "Arbete"
+   },
+   "6857703948759289202": {
+      "message": "Länk borttagen."
+   },
+   "689017442055275529": {
+      "message": "Familjegrupp för $1​"
+   },
+   "6932835915069019531": {
+      "message": "Ta bort bild"
+   },
+   "7005745151564974365": {
+      "message": "Kortkommandon"
+   },
+   "7102649289752747375": {
+      "message": "Skicka feedback"
+   },
+   "7253527966847172544": {
+      "message": "Från och med $1​ sparas inte anteckningar som skapas här automatiskt. Du måste även öppna och redigera befintliga anteckningar som är kopplade till en webbadress via Keep."
+   },
+   "7254411458460045711": {
+      "message": "Uppdateringen misslyckades. Försök igen senare. Om du för närvarande är offline ansluter du till internet innan du försöker igen."
+   },
+   "733701029503338559": {
+      "message": "Du måste logga in om du ska kunna använda Chrome-tillägget Google Keep"
+   },
+   "7384785369409503695": {
+      "message": "Aktivera mörkt tema"
+   },
+   "7420364754178516134": {
+      "message": "Felsökningsverktyg"
+   },
+   "7528441140724145783": {
+      "message": "Redigera etiketter"
+   },
+   "7585826646011739428": {
+      "message": "Redigera"
+   },
+   "7624042048123264803": {
+      "message": "Öppna anteckning"
+   },
+   "7669846901402551021": {
+      "message": "I dag"
+   },
+   "7687507512675715498": {
+      "message": "Visa i Keep"
+   },
+   "7733569569331009603": {
+      "message": "Etiketten $1​ har lagts till."
+   },
+   "7735981667219692675": {
+      "message": "{resultCount,plural, =1{# sökresultat}other{# sökresultat}}"
+   },
+   "7780849812478835865": {
+      "message": "Persika"
+   },
+   "7819314041543176992": {
+      "message": "Stäng"
+   },
+   "7911416166208830577": {
+      "message": "Hjälp"
+   },
+   "8104421162933956065": {
+      "message": "Anteckningar"
+   },
+   "8133866583554546341": {
+      "message": "$1​ $2​"
+   },
+   "8149439558305434788": {
+      "message": "$1​, $2​"
+   },
+   "8161188819557037260": {
+      "message": "Chrome-tillägget Google Keep"
+   },
+   "8169232898590866289": {
+      "message": "+ Skapa $1​"
+   },
+   "8193677552005249631": {
+      "message": "Appnedladdningar"
+   },
+   "824468664656304495": {
+      "message": "Du är offline. Vissa funktioner är kanske inte tillgängliga."
+   },
+   "8342620486324515462": {
+      "message": "Ignorera"
+   },
+   "8384308820923710821": {
+      "message": "Resor"
+   },
+   "8388956891956075130": {
+      "message": "Chalk"
+   },
+   "8412733496413412439": {
+      "message": "Offline"
+   },
+   "8504497109904866374": {
+      "message": "Musik"
+   },
+   "8506292502710287776": {
+      "message": "Gör du långa anteckningar? Vi lägger automatiskt till mer utrymme när du når botten."
+   },
+   "8602525917014156029": {
+      "message": "Platser"
+   },
+   "865638597375909527": {
+      "message": "Blomma"
+   },
+   "900086393693234779": {
+      "message": "Hem"
+   },
+   "9012868245012782693": {
+      "message": "Noter"
+   },
+   "9116610943383363940": {
+      "message": "Sparat"
+   },
+   "911698676339750373": {
+      "message": "Familjegrupp"
+   },
+   "9146862513672039744": {
+      "message": "Rensa konto"
+   },
+   "9167784195765779453": {
+      "message": "Öppna Keep"
+   },
+   "9218540601355708194": {
+      "message": "Ta bort anteckning"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Spara i Google Keep med ett enda klick!"
+   },
+   "appName": {
+      "description": "App name",
+      "message": "Chrome-tillägg för Google Keep"
+   },
+   "shortName": {
+      "description": "App short name",
+      "message": "Spara i Keep"
+   }
+}

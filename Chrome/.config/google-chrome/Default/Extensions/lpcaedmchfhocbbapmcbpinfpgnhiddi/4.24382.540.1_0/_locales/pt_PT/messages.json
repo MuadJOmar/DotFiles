@@ -1,0 +1,419 @@
+{
+   "1055686627716339120": {
+      "message": "Arquivo"
+   },
+   "11138431688427255": {
+      "message": "Adicionar etiqueta"
+   },
+   "1122146167985532789": {
+      "message": "ontem"
+   },
+   "1333255388111908292": {
+      "message": "Compras de mercearia"
+   },
+   "1338300799355131761": {
+      "message": "Nota sem nome"
+   },
+   "1429848477922945853": {
+      "message": "Nota vazia"
+   },
+   "1512114410402431831": {
+      "message": "Atualizar"
+   },
+   "156056758267077118": {
+      "message": "Menta"
+   },
+   "1694896269813520248": {
+      "message": "Adicionar desenho"
+   },
+   "1796799676667865488": {
+      "message": "Não é possível editar a nota devido a uma alteração na instalação da app."
+   },
+   "1817584332952897497": {
+      "message": "Coral"
+   },
+   "1943542607990075955": {
+      "message": "Tentar novamente"
+   },
+   "1963323419655107448": {
+      "message": "Eliminar itens selecionados"
+   },
+   "1986228872461282439": {
+      "message": "Predefinição"
+   },
+   "1988879857371940328": {
+      "message": "Remover etiqueta $1​"
+   },
+   "2054706891655675688": {
+      "message": "Argila"
+   },
+   "2125543233832238809": {
+      "message": "Sálvia"
+   },
+   "2159130950882492111": {
+      "message": "Cancelar"
+   },
+   "223492684871721243": {
+      "message": "Criar nota"
+   },
+   "2259263507947555096": {
+      "message": "Copiar para a área de transferência"
+   },
+   "2269286357657606271": {
+      "message": "O endereço da página foi removido"
+   },
+   "2312889521150470080": {
+      "message": "Receitas"
+   },
+   "2323249770683736002": {
+      "message": "Criar nova etiqueta"
+   },
+   "2336058986978607910": {
+      "message": "Ocorreu um erro. Tente novamente."
+   },
+   "2452145367257933677": {
+      "message": "Anular"
+   },
+   "2456149916345384862": {
+      "message": "Opções de formatação"
+   },
+   "2583571751348768508": {
+      "message": "Obscuro"
+   },
+   "2633701539319779732": {
+      "message": "Enviar feedback (apenas para uso interno)"
+   },
+   "2680303811435018716": {
+      "message": "Não é possível adicionar mais itens"
+   },
+   "2725627412280194969": {
+      "message": "Mercearia"
+   },
+   "2780054062282129350": {
+      "message": "Adicione um título"
+   },
+   "2930974997943171554": {
+      "message": "Tema escuro desativado"
+   },
+   "2971623719720688041": {
+      "message": "Ação anulada"
+   },
+   "2973306402585941108": {
+      "message": "Manhã"
+   },
+   "2983318659047499045": {
+      "message": "Lembretes"
+   },
+   "3091440425606975088": {
+      "message": "Lista sem nome"
+   },
+   "3121560585545725724": {
+      "message": "$1​, $2​"
+   },
+   "3190546672187601036": {
+      "message": "Noite"
+   },
+   "3249966726137025950": {
+      "message": "Grupo familiar do colaborador"
+   },
+   "3258100527833044153": {
+      "message": "Desenho vazio rejeitado"
+   },
+   "3385831848537487538": {
+      "message": "Viagens"
+   },
+   "3411924303211138921": {
+      "message": "Vídeo"
+   },
+   "3418677553313974490": {
+      "message": "Lixo"
+   },
+   "3542768157572111342": {
+      "message": "A edição da lista não está disponível."
+   },
+   "3551522853788442530": {
+      "message": "Voltar"
+   },
+   "3571704286086017611": {
+      "message": "Lembrete eliminado"
+   },
+   "3623199266894863617": {
+      "message": "Criar nota"
+   },
+   "3708201433602754428": {
+      "message": "A guardar nota…"
+   },
+   "3714239567487848851": {
+      "message": "Tema escuro ativado"
+   },
+   "3769279410443855918": {
+      "message": "Lista mágica"
+   },
+   "3907816292084809686": {
+      "message": "Ação repetida"
+   },
+   "4035272937326361881": {
+      "message": "Não é possível guardar as notas enquanto está offline. Tente novamente após restabelecer a ligação à Internet."
+   },
+   "4047470251075013857": {
+      "message": "Remover link da página"
+   },
+   "4144331746856352764": {
+      "message": "Predefinição"
+   },
+   "4153306913989815073": {
+      "message": "A imagem privada não pode ser guardada."
+   },
+   "4184329490330819477": {
+      "message": "Não foi possível guardar a nota devido a uma alteração na instalação da app."
+   },
+   "4343848624651344174": {
+      "message": "Tarde"
+   },
+   "4409688924773693376": {
+      "message": "A guardar..."
+   },
+   "4424410218593071962": {
+      "message": "Areia"
+   },
+   "4494250072784000771": {
+      "message": "Caneta stylus detetada. A funcionalidade Deslocar com o toque está ativada."
+   },
+   "4514241210910366093": {
+      "message": "Vista de grelha"
+   },
+   "4533605085334699862": {
+      "message": "Citações"
+   },
+   "456512308416555173": {
+      "message": "Livros"
+   },
+   "4701373951880414388": {
+      "message": "Locais"
+   },
+   "4840513623749850224": {
+      "message": "Filmes"
+   },
+   "4914875522213193145": {
+      "message": "Tempestade"
+   },
+   "4930506384627295710": {
+      "message": "Definições"
+   },
+   "4962916837925056840": {
+      "message": "Tem de restabelecer a ligação à Internet para continuar a editar."
+   },
+   "4974261966265341751": {
+      "message": "Desativar tema escuro"
+   },
+   "5061847320181369179": {
+      "message": "Tirar uma nota..."
+   },
+   "5207635742003539443": {
+      "message": "Iniciar sessão"
+   },
+   "5259541708332520733": {
+      "message": "Origem removida"
+   },
+   "5275304974990264425": {
+      "message": "Vista de lista"
+   },
+   "5403636185480096151": {
+      "message": "TV"
+   },
+   "546766753072101168": {
+      "message": "Etiquetas"
+   },
+   "5510222038351634163": {
+      "message": "Saiba mais sobre a descontinuação do Keep na app Chrome"
+   },
+   "5570885401952336951": {
+      "message": "Registo do cliente"
+   },
+   "5592884381280360832": {
+      "message": "OK"
+   },
+   "5775346636203685655": {
+      "message": "Anular"
+   },
+   "577539731512680648": {
+      "message": "Abrir no Google Keep"
+   },
+   "5782779707150593352": {
+      "message": "Offline"
+   },
+   "6069780031254134657": {
+      "message": "Marcar como concluído"
+   },
+   "6114840739553123863": {
+      "message": "Comida"
+   },
+   "6127627095904149725": {
+      "message": "Neblina"
+   },
+   "6175061706159277390": {
+      "message": "Endereço da página guardado"
+   },
+   "6252259197986158120": {
+      "message": "Ontem"
+   },
+   "6366376928558090914": {
+      "message": "Comida"
+   },
+   "6497197865876438261": {
+      "message": "Música"
+   },
+   "6510131849363684615": {
+      "message": "Amanhã"
+   },
+   "6579707685908557993": {
+      "message": "Fim do dia"
+   },
+   "6717438461651235082": {
+      "message": "A sua nota foi guardada com êxito."
+   },
+   "6731295782882669401": {
+      "message": "Celebração"
+   },
+   "6822520214440117457": {
+      "message": "Trabalho"
+   },
+   "6857703948759289202": {
+      "message": "Link removido."
+   },
+   "689017442055275529": {
+      "message": "Grupo familiar de $1​"
+   },
+   "6932835915069019531": {
+      "message": "Remover imagem"
+   },
+   "7005745151564974365": {
+      "message": "Atalhos de teclado"
+   },
+   "7102649289752747375": {
+      "message": "Comentários"
+   },
+   "7253527966847172544": {
+      "message": "A partir de $1​, as notas criadas aqui não vão ser guardadas automaticamente. Também vai ter de aceder e editar as notas existentes associadas a um URL através do Keep."
+   },
+   "7254411458460045711": {
+      "message": "Ocorreu uma falha ao atualizar, tente novamente mais tarde. Se estiver offline, ligue-se à Internet antes de tentar novamente."
+   },
+   "733701029503338559": {
+      "message": "Tem de iniciar sessão para utilizar a extensão Google Keep do Chrome"
+   },
+   "7384785369409503695": {
+      "message": "Ativar tema escuro"
+   },
+   "7420364754178516134": {
+      "message": "Ferramentas de depuração"
+   },
+   "7528441140724145783": {
+      "message": "Editar etiquetas"
+   },
+   "7585826646011739428": {
+      "message": "Editar"
+   },
+   "7624042048123264803": {
+      "message": "Abrir nota"
+   },
+   "7669846901402551021": {
+      "message": "Hoje"
+   },
+   "7687507512675715498": {
+      "message": "Ver no Keep"
+   },
+   "7733569569331009603": {
+      "message": "Etiqueta $1​ adicionada."
+   },
+   "7735981667219692675": {
+      "message": "{resultCount,plural, =1{# resultado da pesquisa}other{# resultados da pesquisa}}"
+   },
+   "7780849812478835865": {
+      "message": "Pêssego"
+   },
+   "7819314041543176992": {
+      "message": "Fechar"
+   },
+   "7911416166208830577": {
+      "message": "Ajuda"
+   },
+   "8104421162933956065": {
+      "message": "Notas"
+   },
+   "8133866583554546341": {
+      "message": "$1​, $2​"
+   },
+   "8149439558305434788": {
+      "message": "$1​, $2​"
+   },
+   "8161188819557037260": {
+      "message": "Extensão Google Keep do Chrome"
+   },
+   "8169232898590866289": {
+      "message": "+ Criar \"$1​\""
+   },
+   "8193677552005249631": {
+      "message": "Transferências de aplicações"
+   },
+   "824468664656304495": {
+      "message": "Está offline. Algumas funcionalidades poderão não estar disponíveis."
+   },
+   "8342620486324515462": {
+      "message": "Ignorar"
+   },
+   "8384308820923710821": {
+      "message": "Viagens"
+   },
+   "8388956891956075130": {
+      "message": "Giz"
+   },
+   "8412733496413412439": {
+      "message": "Offline"
+   },
+   "8504497109904866374": {
+      "message": "Música"
+   },
+   "8506292502710287776": {
+      "message": "Quer tirar notas extensas? É adicionado automaticamente mais espaço assim que chegar ao fim da página."
+   },
+   "8602525917014156029": {
+      "message": "Locais"
+   },
+   "865638597375909527": {
+      "message": "Cerejeira em flor"
+   },
+   "900086393693234779": {
+      "message": "Casa"
+   },
+   "9012868245012782693": {
+      "message": "Notas"
+   },
+   "9116610943383363940": {
+      "message": "Guardado"
+   },
+   "911698676339750373": {
+      "message": "Grupo familiar"
+   },
+   "9146862513672039744": {
+      "message": "Limpar conta"
+   },
+   "9167784195765779453": {
+      "message": "Aceder ao Keep"
+   },
+   "9218540601355708194": {
+      "message": "Eliminar nota"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Guarde no Google Keep com apenas um clique!"
+   },
+   "appName": {
+      "description": "App name",
+      "message": "Extensão Google Keep do Chrome"
+   },
+   "shortName": {
+      "description": "App short name",
+      "message": "Guardar no Google Keep"
+   }
+}

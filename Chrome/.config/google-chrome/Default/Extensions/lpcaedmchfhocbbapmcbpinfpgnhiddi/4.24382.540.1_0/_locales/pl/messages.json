@@ -1,0 +1,419 @@
+{
+   "1055686627716339120": {
+      "message": "Archiwum"
+   },
+   "11138431688427255": {
+      "message": "Dodaj etykietę"
+   },
+   "1122146167985532789": {
+      "message": "wczoraj"
+   },
+   "1333255388111908292": {
+      "message": "Artykuły spożywcze"
+   },
+   "1338300799355131761": {
+      "message": "Notatka bez tytułu"
+   },
+   "1429848477922945853": {
+      "message": "Pusta notatka"
+   },
+   "1512114410402431831": {
+      "message": "Odśwież"
+   },
+   "156056758267077118": {
+      "message": "pistacjowy"
+   },
+   "1694896269813520248": {
+      "message": "Dodaj rysunek"
+   },
+   "1796799676667865488": {
+      "message": "Nie można edytować notatki z powodu zmiany stanu instalacji aplikacji."
+   },
+   "1817584332952897497": {
+      "message": "koralowy"
+   },
+   "1943542607990075955": {
+      "message": "Spróbuj ponownie"
+   },
+   "1963323419655107448": {
+      "message": "Usuń zaznaczone elementy"
+   },
+   "1986228872461282439": {
+      "message": "Domyślny"
+   },
+   "1988879857371940328": {
+      "message": "Usuń etykietę $1​"
+   },
+   "2054706891655675688": {
+      "message": "Glina"
+   },
+   "2125543233832238809": {
+      "message": "miętowy"
+   },
+   "2159130950882492111": {
+      "message": "Anuluj"
+   },
+   "223492684871721243": {
+      "message": "Utwórz notatkę"
+   },
+   "2259263507947555096": {
+      "message": "Kopiuj do schowka"
+   },
+   "2269286357657606271": {
+      "message": "Adres strony został usunięty"
+   },
+   "2312889521150470080": {
+      "message": "Przepisy"
+   },
+   "2323249770683736002": {
+      "message": "Utwórz nową etykietę"
+   },
+   "2336058986978607910": {
+      "message": "Coś poszło nie tak. Spróbuj ponownie."
+   },
+   "2452145367257933677": {
+      "message": "Cofnij"
+   },
+   "2456149916345384862": {
+      "message": "Opcje formatowania"
+   },
+   "2583571751348768508": {
+      "message": "Zmierzch"
+   },
+   "2633701539319779732": {
+      "message": "Prześlij opinię (tylko testy)"
+   },
+   "2680303811435018716": {
+      "message": "Nie można dodać kolejnych elementów"
+   },
+   "2725627412280194969": {
+      "message": "Produkty spożywcze"
+   },
+   "2780054062282129350": {
+      "message": "Dodaj tytuł"
+   },
+   "2930974997943171554": {
+      "message": "Ciemny motyw wyłączony"
+   },
+   "2971623719720688041": {
+      "message": "Czynność cofnięta"
+   },
+   "2973306402585941108": {
+      "message": "Rano"
+   },
+   "2983318659047499045": {
+      "message": "Przypomnienia"
+   },
+   "3091440425606975088": {
+      "message": "Lista bez tytułu"
+   },
+   "3121560585545725724": {
+      "message": "$1​, $2​"
+   },
+   "3190546672187601036": {
+      "message": "Wieczór"
+   },
+   "3249966726137025950": {
+      "message": "Rodzina współpracownika"
+   },
+   "3258100527833044153": {
+      "message": "Pusty rysunek został usunięty"
+   },
+   "3385831848537487538": {
+      "message": "Podróże"
+   },
+   "3411924303211138921": {
+      "message": "Film"
+   },
+   "3418677553313974490": {
+      "message": "Kosz"
+   },
+   "3542768157572111342": {
+      "message": "Listy nie można edytować"
+   },
+   "3551522853788442530": {
+      "message": "Wstecz"
+   },
+   "3571704286086017611": {
+      "message": "Przypomnienie usunięte"
+   },
+   "3623199266894863617": {
+      "message": "Utwórz notatkę"
+   },
+   "3708201433602754428": {
+      "message": "Zapisuję notatkę…"
+   },
+   "3714239567487848851": {
+      "message": "Ciemny motyw włączony"
+   },
+   "3769279410443855918": {
+      "message": "Magiczna lista"
+   },
+   "3907816292084809686": {
+      "message": "Czynność wykonana ponownie"
+   },
+   "4035272937326361881": {
+      "message": "Nie można zapisywać notatek w trybie offline. Spróbuj ponownie po połączeniu się z internetem."
+   },
+   "4047470251075013857": {
+      "message": "Usuń link do strony"
+   },
+   "4144331746856352764": {
+      "message": "Domyślne"
+   },
+   "4153306913989815073": {
+      "message": "Nie udało się zapisać prywatnego obrazu."
+   },
+   "4184329490330819477": {
+      "message": "Nie udało się zapisać notatki z powodu zmiany stanu instalacji aplikacji."
+   },
+   "4343848624651344174": {
+      "message": "Popołudnie"
+   },
+   "4409688924773693376": {
+      "message": "Zapisuję"
+   },
+   "4424410218593071962": {
+      "message": "blady róż"
+   },
+   "4494250072784000771": {
+      "message": "Wykryto rysik i włączono przesuwanie palcem."
+   },
+   "4514241210910366093": {
+      "message": "Widok siatki"
+   },
+   "4533605085334699862": {
+      "message": "Cytaty"
+   },
+   "456512308416555173": {
+      "message": "Książki"
+   },
+   "4701373951880414388": {
+      "message": "Miejsca"
+   },
+   "4840513623749850224": {
+      "message": "Filmy"
+   },
+   "4914875522213193145": {
+      "message": "Burza"
+   },
+   "4930506384627295710": {
+      "message": "Ustawienia"
+   },
+   "4962916837925056840": {
+      "message": "Aby kontynuować edytowanie, musisz ponownie połączyć się z internetem."
+   },
+   "4974261966265341751": {
+      "message": "Wyłącz ciemny motyw"
+   },
+   "5061847320181369179": {
+      "message": "Utwórz notatkę…"
+   },
+   "5207635742003539443": {
+      "message": "Zaloguj się"
+   },
+   "5259541708332520733": {
+      "message": "Źródło zostało usunięte"
+   },
+   "5275304974990264425": {
+      "message": "Widok listy"
+   },
+   "5403636185480096151": {
+      "message": "Telewizja"
+   },
+   "546766753072101168": {
+      "message": "Etykiety"
+   },
+   "5510222038351634163": {
+      "message": "Dowiedz się więcej o wycofaniu aplikacji Chrome Keep"
+   },
+   "5570885401952336951": {
+      "message": "Dziennik klienta"
+   },
+   "5592884381280360832": {
+      "message": "OK"
+   },
+   "5775346636203685655": {
+      "message": "Cofnij"
+   },
+   "577539731512680648": {
+      "message": "Otwórz w Keep"
+   },
+   "5782779707150593352": {
+      "message": "Offline"
+   },
+   "6069780031254134657": {
+      "message": "Oznacz jako wykonane"
+   },
+   "6114840739553123863": {
+      "message": "Jedzenie"
+   },
+   "6127627095904149725": {
+      "message": "jasnoszary"
+   },
+   "6175061706159277390": {
+      "message": "Adres strony został zapisany"
+   },
+   "6252259197986158120": {
+      "message": "Wczoraj"
+   },
+   "6366376928558090914": {
+      "message": "Jedzenie"
+   },
+   "6497197865876438261": {
+      "message": "Muzyka"
+   },
+   "6510131849363684615": {
+      "message": "Jutro"
+   },
+   "6579707685908557993": {
+      "message": "Późne popołudnie"
+   },
+   "6717438461651235082": {
+      "message": "Notatka została zapisana."
+   },
+   "6731295782882669401": {
+      "message": "Uroczystość"
+   },
+   "6822520214440117457": {
+      "message": "Praca"
+   },
+   "6857703948759289202": {
+      "message": "Link został usunięty."
+   },
+   "689017442055275529": {
+      "message": "Rodzina użytkownika $1​"
+   },
+   "6932835915069019531": {
+      "message": "Usuń obraz"
+   },
+   "7005745151564974365": {
+      "message": "Skróty klawiszowe"
+   },
+   "7102649289752747375": {
+      "message": "Prześlij opinię"
+   },
+   "7253527966847172544": {
+      "message": "Od $1​ notatki utworzone w tym miejscu nie będą automatycznie zapisywane. Konieczne też będzie wyedytowanie za pomocą Keep istniejących notatek powiązanych z URL-em."
+   },
+   "7254411458460045711": {
+      "message": "Nie udało się zaktualizować ustawień. Spróbuj ponownie później. Jeśli jesteś offline, połącz się z internetem, zanim spróbujesz ponownie."
+   },
+   "733701029503338559": {
+      "message": "Aby używać rozszerzenia Google Keep do Chrome, musisz się zalogować"
+   },
+   "7384785369409503695": {
+      "message": "Włącz ciemny motyw"
+   },
+   "7420364754178516134": {
+      "message": "Narzędzia debugowania"
+   },
+   "7528441140724145783": {
+      "message": "Edytuj etykiety"
+   },
+   "7585826646011739428": {
+      "message": "Edytuj"
+   },
+   "7624042048123264803": {
+      "message": "Otwórz notatkę"
+   },
+   "7669846901402551021": {
+      "message": "Dzisiaj"
+   },
+   "7687507512675715498": {
+      "message": "Wyświetl w Keep"
+   },
+   "7733569569331009603": {
+      "message": "Dodano etykietę $1​."
+   },
+   "7735981667219692675": {
+      "message": "{resultCount,plural, =1{# wynik wyszukiwania}few{# wyniki wyszukiwania}many{# wyników wyszukiwania}other{# wyniku wyszukiwania}}"
+   },
+   "7780849812478835865": {
+      "message": "brzoskwinia"
+   },
+   "7819314041543176992": {
+      "message": "Zamknij"
+   },
+   "7911416166208830577": {
+      "message": "Pomoc"
+   },
+   "8104421162933956065": {
+      "message": "Notatki"
+   },
+   "8133866583554546341": {
+      "message": "$1​, $2​"
+   },
+   "8149439558305434788": {
+      "message": "$1​, $2​"
+   },
+   "8161188819557037260": {
+      "message": "Rozszerzenie Google Keep do Chrome"
+   },
+   "8169232898590866289": {
+      "message": "+ Utwórz „$1​”"
+   },
+   "8193677552005249631": {
+      "message": "Pobierz aplikację"
+   },
+   "824468664656304495": {
+      "message": "Jesteś offline. Niektóre funkcje mogą być niedostępne."
+   },
+   "8342620486324515462": {
+      "message": "Zamknij"
+   },
+   "8384308820923710821": {
+      "message": "Podróże"
+   },
+   "8388956891956075130": {
+      "message": "szary"
+   },
+   "8412733496413412439": {
+      "message": "Brak połączenia"
+   },
+   "8504497109904866374": {
+      "message": "Muzyka"
+   },
+   "8506292502710287776": {
+      "message": "Robisz długie notatki? Automatycznie dodamy więcej miejsca, gdy będzie potrzebne."
+   },
+   "8602525917014156029": {
+      "message": "Miejsca"
+   },
+   "865638597375909527": {
+      "message": "Kwiat"
+   },
+   "900086393693234779": {
+      "message": "Dom"
+   },
+   "9012868245012782693": {
+      "message": "Nuty"
+   },
+   "9116610943383363940": {
+      "message": "Zapisano"
+   },
+   "911698676339750373": {
+      "message": "Rodzina"
+   },
+   "9146862513672039744": {
+      "message": "Wyczyść konto"
+   },
+   "9167784195765779453": {
+      "message": "Otwórz Keep"
+   },
+   "9218540601355708194": {
+      "message": "Usuń notatkę"
+   },
+   "appDesc": {
+      "description": "App description",
+      "message": "Twórz notatki w Google Keep jednym kliknięciem."
+   },
+   "appName": {
+      "description": "App name",
+      "message": "Rozszerzenie Google Keep do Chrome"
+   },
+   "shortName": {
+      "description": "App short name",
+      "message": "Zapisuj w Keep"
+   }
+}
