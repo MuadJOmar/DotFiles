@@ -1,3 +1,6 @@
 2024/09/25-07:38:00.143 4 Reusing MANIFEST /home/muadjomar/.config/google-chrome/Default/Local Storage/leveldb/MANIFEST-000001
 2024/09/25-07:38:00.155 4 Recovering log #6
 2024/09/25-07:38:00.157 4 Reusing old log /home/muadjomar/.config/google-chrome/Default/Local Storage/leveldb/000006.log 
+2024/09/25-07:40:07.381 5 Level-0 table #10: started
+2024/09/25-07:40:07.388 5 Level-0 table #10: 32938 bytes OK
+2024/09/25-07:40:07.392 5 Delete type=0 #6
