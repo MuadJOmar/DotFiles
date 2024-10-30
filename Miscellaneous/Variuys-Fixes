@@ -1,4 +1,7 @@
-															   Resolution-Fix																
-Added "video=(The Active Port):1440x900@60"
-You Can Find The Active Port By Going To "/sys/class/drm" & Find The Active One.
+			# Variuys-Fixes for some Problems 
 
+## • Screen Resolution Fix Using Grub Config
+Add This Line 
+"video=(The Active Port for Your Moniter):(The Resolution@The Refresh Rate)"
+ in The `/etc/default/grub` File in "GRUB_CMDLINE_LINUX_DEFAULT"
+- You Can Find The Active Port By Going To "/sys/class/drm".
