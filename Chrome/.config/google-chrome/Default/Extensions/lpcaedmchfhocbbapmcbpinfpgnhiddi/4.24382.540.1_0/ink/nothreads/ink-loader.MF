@@ -1,1 +1,0 @@
-third_party/sketchology/public/web/wasm/ink_wasm-bundle.js
