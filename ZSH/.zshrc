@@ -1,6 +1,8 @@
-fastfetch
+source $ZSH/oh-my-zsh.sh
 
 export ZSH="$HOME/.oh-my-zsh"
+export EDITOR="micro"
+export HISTCONTROL=ignoreboth:erasedups
 
 ZSH_THEME="dstufft"
 
@@ -18,17 +20,13 @@ plugins=(
 		fast-syntax-highlighting
 )
 
-source $ZSH/oh-my-zsh.sh
-export EDITOR="micro"
-export HISTCONTROL=ignoreboth:erasedups
 
 alias zshconfig="micro ~/.zshrc"
-alias ls="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias toipe="~/Apps/Toipe/toipe -w top5000 -n"
 alias rm='trash'
 alias pik='pikaur'
 alias grub-update='pikaur'
-
+alias ls="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 
 eval "$(zoxide init --cmd cd zsh)"
 
@@ -40,6 +38,8 @@ function y() {
         fi
         rm -f -- "$tmp"
 }
+
+fastfetch
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
