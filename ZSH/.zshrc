@@ -15,9 +15,9 @@ plugins=(
     	zoxide
     	fzf
     	themes
-  zsh-autosuggestions 
-  zsh-syntax-highlighting 
-  fast-syntax-highlighting
+     zsh-autosuggestions 
+     zsh-syntax-highlighting 
+     fast-syntax-highlighting
 )
 
 
