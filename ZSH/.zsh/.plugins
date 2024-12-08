@@ -1,0 +1,13 @@
+plugins=(
+	zsh-autosuggestions 
+	zsh-syntax-highlighting 
+	fast-syntax-highlighting
+    	git
+    	vscode
+    	archlinux
+    	systemd
+    	eza
+   	zoxide
+    	fzf
+    	themes
+)

@@ -1,0 +1,6 @@
+2024-12-06 19:50:24.810 [info] Started local extension host with pid 10334.
+2024-12-06 19:50:27.277 [error] [network] #1: https://open-vsx.org/vscode/gallery/extensionquery - error POST Offline
+2024-12-06 19:50:28.108 [info] [perf] Render performance baseline is 458ms
+2024-12-06 19:50:38.442 [info] Started local extension host with pid 10411.
+2024-12-06 19:50:40.934 [error] [network] #1: https://open-vsx.org/vscode/gallery/extensionquery - error POST Offline
+2024-12-06 19:50:41.431 [info] [perf] Render performance baseline is 226ms

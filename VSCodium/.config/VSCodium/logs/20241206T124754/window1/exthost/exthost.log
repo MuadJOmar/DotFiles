@@ -1,0 +1,7 @@
+2024-12-06 12:47:56.305 [info] Extension host with pid 14272 started
+2024-12-06 12:47:56.305 [info] Skipping acquiring lock for /home/muadjomar/.config/VSCodium/User/workspaceStorage/3f35c62789270c81aa37737932fb37a7.
+2024-12-06 12:47:56.442 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-12-06 12:47:56.458 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-12-06 12:47:56.577 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-12-06 12:47:56.635 [info] Extension host terminating: renderer closed the MessagePort
+2024-12-06 12:47:56.637 [info] Extension host with pid 14272 exiting with code 0

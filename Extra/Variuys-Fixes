@@ -1,0 +1,9 @@
+			Variuys-Fixes for some Problems 
+
+• Screen Resolution Fix Using Grub Config :
+Add This Line "video=The Active Port for Your Moniter:The Resolution@The Refresh Rate" in The `/etc/default/grub` File in "GRUB_CMDLINE_LINUX_DEFAULT"
+- You Can Find The Active Port By Going To "/sys/class/drm".
+
+• Set Nautluis as The Default File Manager :
+Writ This Command in The Terminal >> "xdg-mime default org.gnome.Nautilus.desktop inode/directory".
+

@@ -1,0 +1,4 @@
+2024-12-06 08:50:01.138 [info] Started local extension host with pid 25291.
+2024-12-06 08:50:06.891 [info] [perf] Render performance baseline is 75ms
+2024-12-06 08:50:18.708 [error] [File Watcher] Unexpected error: inotify_add_watch on '/home/muadjomar/dotfiles/VSCodium/.config/VSCodium/logs/20240920T034601/window1' failed: No such file or directory (EUNKNOWN) (path: /home/muadjomar)
+2024-12-06 08:50:18.713 [error] [File Watcher (universal)] inotify_add_watch on '/home/muadjomar/dotfiles/VSCodium/.config/VSCodium/logs/20240920T034601/window1' failed: No such file or directory

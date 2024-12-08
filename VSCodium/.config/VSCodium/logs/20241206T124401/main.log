@@ -1,0 +1,4 @@
+2024-12-06 12:44:01.841 [info] update#setState disabled
+2024-12-06 12:44:01.841 [info] update#ctor - updates are disabled as there is no update URL
+2024-12-06 12:44:08.261 [info] Extension host with pid 12922 exited with code: 0, signal: unknown.
+2024-12-06 12:44:08.298 [error] [UtilityProcessWorker]: terminated unexpectedly with code 82, signal: unknown
