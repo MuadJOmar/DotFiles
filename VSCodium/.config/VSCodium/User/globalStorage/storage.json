@@ -7,7 +7,8 @@
             "file:///run/user/1000/gvfs/mtp%3Ahost%3Drealme_realme_GT_Master_d5e96544": "__default__profile__",
             "file:///home/muadjomar/Documents/HTML-CSS%20Course": "__default__profile__",
             "file:///home/muadjomar": "__default__profile__",
-            "file:///home/muadjomar/.var/app/com.usebottles.bottles/data/bottles/bottles/NFS-Carbon/drive_c": "__default__profile__"
+            "file:///home/muadjomar/.var/app/com.usebottles.bottles/data/bottles/bottles/NFS-Carbon/drive_c": "__default__profile__",
+            "file:///home/muadjomar/dotfiles/ZSH/.zsh/plugins/zsh-syntax-highlighting": "__default__profile__"
         },
         "emptyWindows": {
             "1733515729724": "__default__profile__",
@@ -20,12 +21,12 @@
     "telemetry.devDeviceId": "9800e530-bbb5-4bc5-98e0-69e6d5bf4cb1",
     "backupWorkspaces": {
         "workspaces": [],
-        "folders": [],
-        "emptyWindows": [
+        "folders": [
             {
-                "backupFolder": "1733516295279"
+                "folderUri": "file:///home/muadjomar/dotfiles/ZSH/.zsh/plugins/zsh-syntax-highlighting"
             }
-        ]
+        ],
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -1792,13 +1793,14 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/muadjomar/.config/VSCodium/Backups/1733516295279",
+            "folder": "file:///home/muadjomar/dotfiles/ZSH/.zsh/plugins/zsh-syntax-highlighting",
+            "backupPath": "/home/muadjomar/.config/VSCodium/Backups/9bcf9213cc3689fd5df14a3c9a6464b9",
             "uiState": {
                 "mode": 1,
-                "x": 1920,
+                "x": 96,
                 "y": 68,
                 "width": 1440,
-                "height": 832
+                "height": 796
             }
         },
         "openedWindows": []
