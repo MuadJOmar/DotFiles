@@ -1,6 +1,0 @@
-2024-09-23 17:21:17.439 [info] Extension host with pid 5073 started
-2024-09-23 17:21:17.439 [info] Skipping acquiring lock for /home/muadjomar/.config/VSCodium/User/workspaceStorage/b31f1284f0dab8d7bcd03f341520a9ab.
-2024-09-23 17:21:18.274 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
-2024-09-23 17:21:18.293 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
-2024-09-23 17:21:18.512 [info] Extension host terminating: renderer closed the MessagePort
-2024-09-23 17:21:18.516 [info] Extension host with pid 5073 exiting with code 0

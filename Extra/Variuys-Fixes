@@ -5,5 +5,7 @@ Add This Line "video=The Active Port for Your Moniter:The Resolution@The Refresh
 - You Can Find The Active Port By Going To "/sys/class/drm".
 
 • Set Nautluis as The Default File Manager :
-Writ This Command in The Terminal >> "xdg-mime default org.gnome.Nautilus.desktop inode/directory".
+Writ This Command in The Terminal >> xdg-mime default org.gnome.Nautilus.desktop inode/directory.
 
+• Enable Fractional Scaling on Gnome :
+Writ This Command in The Terminal >> gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"

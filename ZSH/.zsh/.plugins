@@ -1,13 +1,16 @@
 plugins=(
-	zsh-autosuggestions 
-	zsh-syntax-highlighting 
-	fast-syntax-highlighting
-    	git
-    	vscode
-    	archlinux
-    	systemd
-    	eza
-   	zoxide
-    	fzf
-    	themes
+	aliases
+	alias-finder
+	common-aliases
+	git
+	zsh-autosuggestions
+	zsh-syntax-highlighting
 )
+
+source $ZSH/plugins/aliases/aliases.plugin.zsh
+source $ZSH/plugins/alias-finder/alias-finder.plugin.zsh
+source $ZSH/plugins/common-aliases/common-aliases.plugin.zsh
+source $ZSH/plugins/git/git.plugin.zsh
+source $ZSH/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+source $ZSH/plugins/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
+source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh

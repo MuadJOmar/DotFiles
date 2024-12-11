@@ -531,7 +531,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -1784,7 +1785,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 256,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -1794,7 +1795,7 @@
             "backupPath": "/home/muadjomar/.config/VSCodium/Backups/1733516295279",
             "uiState": {
                 "mode": 1,
-                "x": 480,
+                "x": 1920,
                 "y": 68,
                 "width": 1440,
                 "height": 832

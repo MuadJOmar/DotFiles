@@ -1,14 +1,15 @@
-export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
+export ZSH="$HOME/.zsh"
 
-source $HOME/.zsh/.aliases
-source $HOME/.zsh/.functions
-source $HOME/.zsh/.plugins
-
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export EDITOR="micro"
 export HISTCONTROL=ignoreboth:erasedups
+export PATH="$PATH:/home/muadjomar/.local/bin" # Created by `pipx` on 2024-12-08 13:18:06
 
-ZSH_THEME="dstufft"
+source $ZSH/.aliases
+source $ZSH/.functions
+source $ZSH/.plugins
+
+eval "$(starship init zsh)"
 
 fastfetch
 
