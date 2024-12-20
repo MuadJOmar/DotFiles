@@ -55,6 +55,7 @@
         {
             "type": "cpu",
             "key": "  ",
+            "format": "{1} @ {6}",
             "keyColor": "green"
         },
         {
@@ -76,13 +77,19 @@
             "keyColor": "green"
         },
         {
+            "type": "swap",
+            "key": "  󰰷",
+            "format": "Zram Sw:ap {1} {3}",
+            "keyColor": "green"
+        },
+        {
             "type": "custom",
             "format": "├───────────── \u001b[1mAudio Information\u001b[0m ────────────────┤"
         },
         {
             "type": "sound",
             "key": "  \ue638",
-            "format": "{2} {5}",
+            "format": "{2}",
             "keyColor": "yellow"
         },
        {
