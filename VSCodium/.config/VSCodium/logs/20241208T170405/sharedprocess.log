@@ -1,2 +1,0 @@
-2024-12-08 17:04:13.137 [info] Getting Manifest... eamodio.gitlens
-2024-12-08 17:04:21.869 [info] Installing extension: eamodio.gitlens {"productVersion":{"version":"1.95.3","date":"2024-11-16T01:21:03.577Z"},"pinned":false,"operation":3,"isApplicationScoped":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/muadjomar/.vscode-oss/extensions/extensions.json","path":"/home/muadjomar/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true}

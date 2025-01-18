@@ -1,3 +1,0 @@
-GitLens v15.5.1 activating in VSCodium (1.95.3) on the desktop; language='en', logLevel='warn', defaultDateLocale='null' (someValue.machineId|someValue.sessionId)
-To enable debug logging, set `"gitlens.outputLevel: "debug"` or run "GitLens: Enable Debug Logging" from the Command Palette
-[2024-12-06 10:46:36.947] [GIT          ] [/home/muadjomar/.var/app/com.usebottles.bottles/data/bottles/bottles/NFS-Carbon/drive_c] git rev-parse --show-toplevel • Command failed: /usr/bin/git -c core.quotepath=false -c color.ui=false rev-parse --show-toplevel • not a git repository (or any parent up to mount point /) • Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set). [78ms]
