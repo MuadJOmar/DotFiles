@@ -1,15 +1,14 @@
 export ZSH="$HOME/.zsh"
 
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
-export EDITOR="micro"
+export EDITOR="nvim"
 export HISTCONTROL=ignoreboth:erasedups
-export PATH="$PATH:/home/muadjomar/.local/bin" # Created by `pipx` on 2024-12-08 13:18:06
 
 source $ZSH/.aliases
 source $ZSH/.functions
-source $ZSH/.plugins
 
 eval "$(starship init zsh)"
+eval "$(sheldon source)"
 
 fastfetch
 
