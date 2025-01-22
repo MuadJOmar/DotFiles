@@ -41,9 +41,6 @@ github = "bossjones/boss-git-zsh-plugin"
 [plugins.Calculator]
 github = "Sam-programs/zsh-calc"
 
-[plugins.Colorize-Functions]
-github = "Freed-Wu/zsh-colorize-functions"
-
 [plugins.Colorize-Output]
 github = "zpm-zsh/colorize"
 
