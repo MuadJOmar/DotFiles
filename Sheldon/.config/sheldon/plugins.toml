@@ -33,7 +33,7 @@ github = "Anant-mishra1729/web-search"
 github = "Junker/zsh-archlinux"
 
 [plugins.Auto-Quote]
-github = "Junker/zsh-archlinux"
+github = "ianthehenry/zsh-autoquoter"
 
 [plugins.Git]
 github = "bossjones/boss-git-zsh-plugin"
