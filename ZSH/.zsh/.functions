@@ -33,8 +33,6 @@ yy() {
     fi
 }
 
------------------------------------------------
-
 
 #This function automatically lists directory contents `ls` after `cd`, excluding specified directories.
 
