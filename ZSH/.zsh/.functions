@@ -1,4 +1,4 @@
-#The function uses **Zoxide** to resolve a #directory and then launches **Yazi** in that #directory, and then changes to that directory #after quitting Yazi.
+#The function uses **Zoxide** to resolve a directory and then launches **Yazi** in that directory, and then changes to that directory after quitting Yazi.
 
 yy() {
     # Use zoxide to resolve the directory (fuzzy matching)
@@ -36,7 +36,7 @@ yy() {
 -----------------------------------------------
 
 
-#This function automatically lists directory #contents `ls` after `cd`, excluding specified #directories
+#This function automatically lists directory contents `ls` after `cd`, excluding specified directories.
 
 if ! (($chpwd_functions[(I)chpwd_cdls])); then
     chpwd_functions+=(chpwd_cdls)
