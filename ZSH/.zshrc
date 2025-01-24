@@ -1,6 +1,7 @@
 export ZSH="$HOME/.zsh"
+export CONF="$HOME/.config"
 
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
+export STARSHIP_CONFIG=$CONF/starship/starship.toml
 export EDITOR="nvim"
 export HISTCONTROL=ignoreboth:erasedups
 
