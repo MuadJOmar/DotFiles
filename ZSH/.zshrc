@@ -5,8 +5,9 @@ export STARSHIP_CONFIG=$CONF/starship/starship.toml
 export EDITOR="nvim"
 export HISTCONTROL=ignoreboth:erasedups
 
-source $ZSH/.aliases
-source $ZSH/.functions
+for file in $ZSH/*; do
+  source "$file"
+done
 
 eval "$(starship init zsh)"
 eval "$(sheldon source)"

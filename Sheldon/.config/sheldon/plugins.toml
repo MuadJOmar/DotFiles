@@ -35,17 +35,11 @@ github = "Junker/zsh-archlinux"
 [plugins.Auto-Quote]
 github = "ianthehenry/zsh-autoquoter"
 
-[plugins.Git]
-github = "bossjones/boss-git-zsh-plugin"
-
 [plugins.Calculator]
 github = "Sam-programs/zsh-calc"
 
 [plugins.Colorize-Output]
 github = "zpm-zsh/colorize"
-
-[plugins.Fzf-for-git]
-github = "wfxr/forgit"
 
 [plugins.Notes]
 github = "chipsenkbeil/zsh-notes"
