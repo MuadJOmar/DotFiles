@@ -1,12 +1,12 @@
 #The function uses **Zoxide** to resolve a directory and then launches **Yazi** in that directory, and then changes to that directory after quitting Yazi.
 
 yy() {
-    # Use zoxide to resolve the directory (fuzzy matching)
+    # Use zoxide to resolve the directory (fuzzy matching) if an argument is provided
     local target_dir
     if [ -n "$1" ]; then
         target_dir=$(zoxide query "$1")
     else
-        target_dir=$(zoxide query)  # Default to the most recent directory
+        target_dir="$PWD"  # Default to the current directory
     fi
 
     # Check if the directory exists
