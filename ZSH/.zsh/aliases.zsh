@@ -5,5 +5,10 @@ alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias plymouth-list="sudo plymouth-set-default-theme -l"
 alias plymouth-set="sudo plymouth-set-default-theme -R"
 alias vm="GTK_THEME=Adwaita:dark virt-manager"
+alias pass="bw get password "
+
+what() {
+    tldr "$(fc -ln -1)"
+}
 
 eval "$(zoxide init --cmd cd zsh)"
