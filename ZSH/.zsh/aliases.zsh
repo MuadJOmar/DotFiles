@@ -4,8 +4,7 @@ alias mkinitcpio="sudo mkinitcpio -p linux"
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias plymouth-list="sudo plymouth-set-default-theme -l"
 alias plymouth-set="sudo plymouth-set-default-theme -R"
-alias vm="GTK_THEME=Adwaita:dark virt-manager"
-alias pass="bw get password "
+alias wine="flatpak run --command=winetricks org.winehq.Wine"
 
 what() {
     tldr "$(fc -ln -1)"
