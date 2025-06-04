@@ -5,6 +5,8 @@ alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias plymouth-list="sudo plymouth-set-default-theme -l"
 alias plymouth-set="sudo plymouth-set-default-theme -R"
 alias wine="flatpak run --command=winetricks org.winehq.Wine"
+alias qemu-image="~/Apps/Scripts/qemu-image.sh"
+alias gcp="~/Apps/Scripts/gcp.sh"
 
 what() {
     tldr "$(fc -ln -1)"
