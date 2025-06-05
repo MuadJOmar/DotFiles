@@ -20,17 +20,11 @@ github = "zsh-users/zsh-autosuggestions"
 [plugins.Syntax-Highlighting]
 github = "zsh-users/zsh-syntax-highlighting"
 
-[plugins.Alias-Finder]
-github = "akash329d/zsh-alias-finder"
-
 [plugins.Home-Clear]
 github = "givensuman/zsh-allclear"
 
 [plugins.Web-Search]
 github = "Anant-mishra1729/web-search"
-
-[plugins.Arch-Linux]
-github = "Junker/zsh-archlinux"
 
 [plugins.Auto-Quote]
 github = "ianthehenry/zsh-autoquoter"
@@ -46,9 +40,6 @@ github = "chipsenkbeil/zsh-notes"
 
 [plugins.Sudo]
 github = "none9632/zsh-sudo"
-
-[plugins.Systemd]
-github = "le0me55i/zsh-systemd"
 
 [plugins.Unix-Simple]
 github = "redxtech/zsh-unix-simple"
