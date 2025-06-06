@@ -57,11 +57,11 @@ while true; do
   case "${choice,,}" in
     a)
       git add .
-      echo "\n  ${CHECK} ${GREEN}All changes staged${RESET}"
+      echo -e "\n  ${CHECK} ${GREEN}All changes staged${RESET}"
       break
       ;;
     l)
-      echo "\n${BOLD}${CYAN}📄 Unstaged Files:${RESET}"
+      echo -e "\n${BOLD}${CYAN}📄 Unstaged Files:${RESET}"
       git diff --name-only | sed 's/^/  • /'
       echo ""
       ;;
@@ -69,31 +69,31 @@ while true; do
       read -rp "  Enter files (space separated): " files
       if [ -n "$files" ]; then
         git add -- $files 2>/dev/null && {
-          echo "\n  ${CHECK} ${GREEN}Added specified files${RESET}"
+          echo -e "\n  ${CHECK} ${GREEN}Added specified files${RESET}"
           break
-        } || echo "\n  ${X} ${RED}Error adding files. Try again${RESET}"
+        } || echo -e "\n  ${X} ${RED}Error adding files. Try again${RESET}"
       else
-        echo "\n  ${X} ${RED}No files specified${RESET}"
+        echo -e "\n  ${X} ${RED}No files specified${RESET}"
       fi
       ;;
     c)
-      echo "\n  ${YELLOW}Operation cancelled${RESET}"
+      echo -e "\n  ${YELLOW}Operation cancelled${RESET}"
       exit 0
       ;;
     *)
-      echo "\n  ${X} ${RED}Invalid choice${RESET}"
+      echo -e "\n  ${X} ${RED}Invalid choice${RESET}"
       ;;
   esac
 done
 
 # Check for staged changes
 if git diff --cached --quiet; then
-  echo "\n${BOLD}${YELLOW}⚠️ No changes to commit${RESET}"
+  echo -e "\n${BOLD}${YELLOW}⚠️ No changes to commit${RESET}"
   exit 0
 fi
 
 # Commit message
-echo "\n${HR}"
+echo -e "\n${HR}"
 echo "${BOLD}${CYAN}📝 Commit Message:${RESET}"
 while true; do
   read -rp "  ${ARROW} Enter message: " msg
@@ -106,18 +106,18 @@ while true; do
 done
 
 # Branch selection
-echo "\n${HR}"
+echo -e "\n${HR}"
 echo "${BOLD}${CYAN}🌿 Push Destination:${RESET}"
 echo "  ${ARROW} Current branch: ${MAGENTA}${current_branch}${RESET}"
 read -rp "  ${ARROW} Push to branch? [Press Enter for '$current_branch' or type new]: " branch
 branch=${branch:-$current_branch}
 
 # Push confirmation
-echo "\n${BOLD}${CYAN}🚀 Push Confirmation:${RESET}"
+echo -e "\n${BOLD}${CYAN}🚀 Push Confirmation:${RESET}"
 read -rp "  ${ARROW} Push ${MAGENTA}${branch}${RESET} to origin? (y/N): " confirm
 
 if [[ ! "${confirm,,}" =~ ^(y|yes)$ ]]; then
-  echo "\n  ${YELLOW}Push cancelled${RESET}"
+  echo -e "\n  ${YELLOW}Push cancelled${RESET}"
   exit 0
 fi
 
@@ -130,7 +130,7 @@ if ! git ls-remote --exit-code origin "$branch" >/dev/null 2>&1; then
     echo ""
     git push -u origin HEAD:"$branch" | sed 's/^/  /'
   else
-    echo "\n  ${YELLOW}Operation aborted${RESET}"
+    echo -e "\n  ${YELLOW}Operation aborted${RESET}"
     exit 0
   fi
 else
@@ -138,7 +138,7 @@ else
 fi
 
 # Success message
-echo "\n${HR}"
+echo -e "\n${HR}"
 echo "${BOLD}${GREEN}✅ Successfully pushed to ${MAGENTA}${branch}${RESET}"
 echo "${BOLD}${GREEN}🚀 Your changes are now on origin/${branch}${RESET}"
 echo "${HR}"
