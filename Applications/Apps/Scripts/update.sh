@@ -2,16 +2,16 @@
 # Full system update with cleanup
 set -e
 
-echo "🚀 Starting system update..."
+echo "🚀 Starting a system update..."
 sudo pacman -Syu --noconfirm
 paru -Sua --noconfirm
 echo "✅ Updates installed"
 
-echo "🧹 Cleaning up..."
+echo -e "\n🧹 Cleaning up..."
 sudo pacman -Sc --noconfirm
 sudo pacman -Rns $(pacman -Qtdq) --noconfirm 2>/dev/null || echo "No orphans found"
 echo "✨ System clean!"
 
-echo "🚀 Starting  a flatpak update..."
+echo -e "\n🚀 Starting a flatpak update..."
 flatpak update
 echo "✅ Updates installed"
