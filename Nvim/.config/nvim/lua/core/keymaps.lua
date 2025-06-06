@@ -14,8 +14,6 @@ vim.keymap.set("v", ">", ">gv", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>e", vim.cmd.Neotree)
 vim.keymap.set("n", "<C-d>", "<C-d>zz", { desc = "move down in buffer with cursor centered" })
 vim.keymap.set("n", "<C-u>", "<C-u>zz", { desc = "move up in buffer with cursor centered" })
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
 
 --Clipboard & Paste Behavior
 vim.keymap.set("x", "<leader>p", [["_dP]])
@@ -25,7 +23,7 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 vim.keymap.set("n", "x", '"_x', { noremap = true, silent = true })
 
 --Search Utilities
-vim.keymap.set("n", "<C-c>", ":nohl<CR>", { desc = "Clear search hl", silent = true })
+vim.keymap.set("n", "<leader>C", ":nohl<CR>", { desc = "Clear search hl", silent = true })
 
 --General Editor Behavior
 vim.keymap.set("n", "Q", "<nop>")
