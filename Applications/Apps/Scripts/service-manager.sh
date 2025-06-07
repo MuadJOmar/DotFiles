@@ -1,14 +1,34 @@
 #!/bin/bash
-# Ultimate Service Manager with Fixed Non-Interactive Mode
-# Supports flexible argument ordering in command-line mode
+# Ultimate Service Manager with Visual Enhancements
 
-# Colors for better UX
-RED='\033[0;31m'
-GREEN='\033[0;32m'
-YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
-CYAN='\033[0;36m'
+# Catppuccin Mocha Colors
+RED='\033[38;2;243;139;168m'
+GREEN='\033[38;2;166;227;161m'
+YELLOW='\033[1;38;2;249;226;175m'
+BLUE='\033[38;2;137;180;250m'
+PINK='\033[1;38;2;245;194;231m'
+TEAL='\033[38;2;148;226;213m'
 NC='\033[0m' # No Color
+
+# UI Elements - Fixed box rendering
+DIVIDER="${BLUE}══════════════════════════════════════════════════════════════${NC}"
+BOX_TOP="${PINK}╔══════════════════════════════════════════════════════════════╗${NC}"
+BOX_MID="${PINK}║${NC}"
+BOX_BOT="${PINK}╚══════════════════════════════════════════════════════════════╝${NC}"
+ARROW="${TEAL}➜${NC}"
+CHECK="${GREEN}✓${NC}"
+WARN="${YELLOW}⚠${NC}"
+
+# Truncate long strings with ellipsis
+truncate() {
+    local str="$1"
+    local max="$2"
+    if [ ${#str} -gt $max ]; then
+        echo "${str:0:$((max-3))}..."
+    else
+        echo "$str"
+    fi
+}
 
 # Check systemd availability
 if ! command -v systemctl &> /dev/null; then
@@ -90,16 +110,20 @@ select_service_interactive() {
     
     while true; do
         clear
-        echo -e "${YELLOW}╔═══════════════════════════╗"
-        echo -e "║    ${BLUE}SERVICE SELECTION${YELLOW}    ║"
-        echo -e "╚═══════════════════════════╝${NC}"
-        echo -e "Service type: ${BLUE}$service_type${NC}"
-        echo -e "\nEnter service name (partial match OK)"
-        echo -e "Type 'list' to see all services"
-        echo -e "Type 'back' to return"
-        echo -e "Type 'exit' to quit"
+        echo -e "${BOX_TOP}"
+        echo -e "${BOX_MID}    ${PINK}S E R V I C E   S E L E C T I O N${NC}              ${BOX_MID}"
+        echo -e "${PINK}╠${DIVIDER}╣${NC}"
+        echo -e "${BOX_MID}  Service type: ${BLUE}$service_type${NC}                     ${BOX_MID}"
+        echo -e "${BOX_MID}                                              ${BOX_MID}"
+        echo -e "${BOX_MID}  Enter service name (partial match OK)        ${BOX_MID}"
+        echo -e "${BOX_MID}  Type 'list' to see all services              ${BOX_MID}"
+        echo -e "${BOX_MID}  Type 'back' to return                        ${BOX_MID}"
+        echo -e "${BOX_MID}  Type 'exit' to quit                          ${BOX_MID}"
+        echo -e "${BOX_BOT}"
         
-        read -rp "Search: " input
+        # Make input prompt visually distinct
+        echo -en "${YELLOW}${ARROW} Search: ${NC}"
+        read -r input
         
         # Handle special commands
         case $input in
@@ -132,21 +156,29 @@ select_service_interactive() {
         
         # Multiple matches - show selection menu
         clear
-        echo -e "${YELLOW}╔═══════════════════════════╗"
-        echo -e "║    ${BLUE}MATCHING SERVICES${YELLOW}   ║"
-        echo -e "╚═══════════════════════════╝${NC}"
-        echo -e "Found multiple services:"
+        echo -e "${BOX_TOP}"
+        echo -e "${BOX_MID}    ${PINK}M A T C H I N G   S E R V I C E S${NC}            ${BOX_MID}"
+        echo -e "${PINK}╠${DIVIDER}╣${NC}"
+        echo -e "${BOX_MID}  Found multiple services:                     ${BOX_MID}"
         
-        # Show services with numbers
+        # Show services with numbers - fixed alignment for 3-digit numbers
         COUNT=1
         while IFS= read -r service; do
-            printf "%2d) %s\n" $COUNT "$service"
+            # Truncate long service names
+            service_display=$(truncate "$service" 55)
+            # Format numbers to 3 digits for alignment
+            printf -v count_padded "%3d" $COUNT
+            echo -e "${BOX_MID}  ${BLUE}$count_padded${NC}) $service_display"
             ((COUNT++))
         done <<< "$matches"
         
-        echo -e "\n0) Back to search"
+        echo -e "${BOX_MID}                                              ${BOX_MID}"
+        echo -e "${BOX_MID}  0) Back to search                           ${BOX_MID}"
+        echo -e "${BOX_BOT}"
         
-        read -rp "Select service (number or name): " choice
+        # Make input prompt visually distinct
+        echo -en "${YELLOW}${ARROW} Select service (number or name): ${NC}"
+        read -r choice
         
         # Handle back option
         if [[ "$choice" == "0" || "$choice" =~ [Bb]ack ]]; then
@@ -182,23 +214,31 @@ list_services_interactive() {
     local service_type="$1"
     
     clear
-    echo -e "${YELLOW}╔═══════════════════════════╗"
-    echo -e "║    ${BLUE}ALL SERVICES${YELLOW}        ║"
-    echo -e "╚═══════════════════════════╝${NC}"
+    echo -e "${BOX_TOP}"
+    echo -e "${BOX_MID}    ${PINK}A L L   S E R V I C E S${NC}                   ${BOX_MID}"
+    echo -e "${PINK}╠${DIVIDER}╣${NC}"
     
     # Get services
     services=$(find_service_matches "$service_type" ".*")
     
-    # Show services with numbers
+    # Show services with numbers - fixed alignment for 3-digit numbers
     COUNT=1
     while IFS= read -r service; do
-        printf "%3d) %s\n" $COUNT "$service"
+        # Truncate long service names
+        service_display=$(truncate "$service" 50)
+        # Format numbers to 3 digits for alignment
+        printf -v count_padded "%3d" $COUNT
+        printf "${BOX_MID}  ${BLUE}%s${NC}) %-50s ${BOX_MID}\n" "$count_padded" "$service_display"
         ((COUNT++))
     done <<< "$services"
     
-    echo -e "\n0) Back to search"
+    echo -e "${BOX_MID}                                              ${BOX_MID}"
+    echo -e "${BOX_MID}  0) Back to search                           ${BOX_MID}"
+    echo -e "${BOX_BOT}"
     
-    read -rp "Select service (number or name): " choice
+    # Make input prompt visually distinct
+    echo -en "${YELLOW}${ARROW} Select service (number or name): ${NC}"
+    read -r choice
     
     # Handle back option
     if [[ "$choice" == "0" || "$choice" =~ [Bb]ack ]]; then
@@ -229,126 +269,119 @@ list_services_interactive() {
     list_services_interactive "$service_type"
 }
 
-# Interactive action menu
+# Enhanced action menu
 action_menu_interactive() {
     local service_type="$1"
     local service_name="$2"
     
+    # Truncate long service names
+    local display_name
+    display_name=$(truncate "$service_name" 30)
+    
     while true; do
         clear
-        echo -e "${YELLOW}╔═══════════════════════════╗"
-        echo -e "║     ${BLUE}SERVICE ACTIONS${YELLOW}     ║"
-        echo -e "╚═══════════════════════════╝${NC}"
-        echo -e "Service: ${GREEN}$service_name${NC} (${BLUE}$service_type${NC})"
-        echo -e "\nActions:"
-        echo -e "  [1] Status    [5] Enable"
-        echo -e "  [2] Start     [6] Disable"
-        echo -e "  [3] Stop      [7] Logs"
-        echo -e "  [4] Restart   [8] Back"
-        echo -e "               [9] Main Menu"
+        echo -e "${BOX_TOP}"
+        echo -e "${BOX_MID}    ${PINK}S E R V I C E   A C T I O N S${NC} [${TEAL}${display_name}${NC}] ${BOX_MID}"
+        echo -e "${PINK}╠${DIVIDER}╣${NC}"
+        echo -e "${BOX_MID}  ${BLUE}1${NC}  ${ARROW} Status        ${BLUE}5${NC}  ${ARROW} Enable       ${BOX_MID}"
+        echo -e "${BOX_MID}  ${BLUE}2${NC}  ${ARROW} Start         ${BLUE}6${NC}  ${ARROW} Disable      ${BOX_MID}"
+        echo -e "${BOX_MID}  ${BLUE}3${NC}  ${ARROW} Stop          ${BLUE}7${NC}  ${ARROW} Logs         ${BOX_MID}"
+        echo -e "${BOX_MID}  ${BLUE}4${NC}  ${ARROW} Restart       ${BLUE}8${NC}  ${ARROW} Back         ${BOX_MID}"
+        echo -e "${BOX_MID}                     ${BLUE}9${NC}  ${ARROW} Main Menu    ${BOX_MID}"
+        echo -e "${BOX_BOT}"
+        echo
         
-        echo -e "\n${CYAN}Enter number or action name${NC}"
-        echo -e "Examples: 'status', 'start', 'logs', 'back'"
-        
-        read -rp "Action: " input
+        # Make input prompt visually distinct
+        echo -en "${YELLOW}${ARROW} Select action [1-9 or name]: ${NC}"
+        read -r input
         
         # Convert to lowercase for matching
-        action_input=$(echo "$input" | tr '[:upper:]' '[:lower:]')
+        input_lower=$(echo "$input" | tr '[:upper:]' '[:lower:]')
         
-        # Handle input
-        case $action_input in
-            1|status|s)
+        case $input_lower in
+            1|status|stat)
                 execute_action "$service_type" "$service_name" "status"
-                read -rp $'\n'"Press Enter to continue..."
                 ;;
-            2|start|st)
+            2|start|sta)
                 execute_action "$service_type" "$service_name" "start"
-                read -rp $'\n'"Press Enter to continue..."
                 ;;
-            3|stop|sp)
+            3|stop|sto)
                 execute_action "$service_type" "$service_name" "stop"
-                read -rp $'\n'"Press Enter to continue..."
                 ;;
-            4|restart|r)
+            4|restart|res)
                 execute_action "$service_type" "$service_name" "restart"
-                read -rp $'\n'"Press Enter to continue..."
                 ;;
-            5|enable|e)
+            5|enable|ena)
                 execute_action "$service_type" "$service_name" "enable"
-                read -rp $'\n'"Press Enter to continue..."
                 ;;
-            6|disable|d)
+            6|disable|dis)
                 execute_action "$service_type" "$service_name" "disable"
-                read -rp $'\n'"Press Enter to continue..."
                 ;;
-            7|logs|l|log)
+            7|logs|log)
                 execute_action "$service_type" "$service_name" "logs"
-                read -rp $'\n'"Press Enter to continue..."
                 ;;
-            8|back|b)
+            8|back|bac)
                 return 0
                 ;;
-            9|menu|m)
+            9|menu|main)
                 return 1
                 ;;
-            exit)
-                exit 0
-                ;;
-            *)
-                echo -e "${RED}Invalid action: '$input'${NC}"
-                sleep 1
+            *) 
+                echo -e "\n${RED}✗ Invalid action!${NC}"
+                sleep 1 
                 ;;
         esac
+        
+        [[ ! $input_lower =~ ^(8|9|back|bac|menu|main)$ ]] && read -rp $'\n'"$(echo -e "${YELLOW}${ARROW} Press Enter to continue...${NC}")"
     done
 }
 
-# Main interactive menu
+# Enhanced interactive mode - FIXED MAIN MENU RENDERING
 interactive_mode() {
     while true; do
         clear
-        echo -e "${YELLOW}╔═══════════════════════════╗"
-        echo -e "║    ${BLUE}SERVICE MANAGER${YELLOW}    ║"
-        echo -e "╚═══════════════════════════╝${NC}"
-        echo -e "1) System services (sudo)"
-        echo -e "2) User services"
-        echo -e "3) Exit"
-        echo -e "\n${CYAN}Enter number or name${NC}"
-        echo -e "Examples: 'system', 'user', 'exit'"
+        # FIXED: Apply box elements to main menu
+        echo -e "${BOX_TOP}"
+        echo -e "${BOX_MID}    ${PINK}S E R V I C E   M A N A G E R${NC}               ${BOX_MID}"
+        echo -e "${PINK}╠${DIVIDER}╣${NC}"
+        echo -e "${BOX_MID}  ${BLUE}1${NC}  ${ARROW} System services (sudo)             ${BOX_MID}"
+        echo -e "${BOX_MID}  ${BLUE}2${NC}  ${ARROW} User services                      ${BOX_MID}"
+        echo -e "${BOX_MID}  ${BLUE}3${NC}  ${ARROW} Exit                               ${BOX_MID}"
+        echo -e "${BOX_BOT}"
+        echo
         
-        read -rp "Choice: " choice
+        # Make input prompt visually distinct
+        echo -en "${YELLOW}${ARROW} Enter choice [1-3 or name]: ${NC}"
+        read -r choice
         
         # Convert to lowercase for matching
-        choice_input=$(echo "$choice" | tr '[:upper:]' '[:lower:]')
+        choice_lower=$(echo "$choice" | tr '[:upper:]' '[:lower:]')
         
-        case $choice_input in
+        case $choice_lower in
             1|system|sys)
-                SERVICE_TYPE="system"
+                SERVICE_TYPE="system" 
                 ;;
             2|user|usr)
-                SERVICE_TYPE="user"
+                SERVICE_TYPE="user" 
                 ;;
-            3|exit|quit|q)
-                exit 0
+            3|exit|exi)
+                echo -e "\n${GREEN}${CHECK} Exiting. Goodbye!${NC}\n"
+                exit 0 
                 ;;
-            *)
-                echo -e "${RED}Invalid option: '$choice'${NC}"
+            *) 
+                echo -e "\n${RED}✗ Invalid selection!${NC}"
                 sleep 1
-                continue
+                continue 
                 ;;
         esac
         
-        # Service selection
         if select_service_interactive "$SERVICE_TYPE"; then
-            # Action menu
             if action_menu_interactive "$SERVICE_TYPE" "$SERVICE_NAME"; then
-                # Back to service selection
                 continue
             else
-                # Back to main menu
                 continue
             fi
         else
-            # Back to main menu
             continue
         fi
     done

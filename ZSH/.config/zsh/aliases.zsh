@@ -1,6 +1,6 @@
 alias alias-add="$Scripts/make-alias.sh"
 alias toipe="~/Apps/Toipe/toipe -w top5000 -n"
-alias ls="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ls="eza -a --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions --group-directories-first"
 alias mkinitcpio="sudo mkinitcpio -p linux"
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias plymouth-list="sudo plymouth-set-default-theme -l"
