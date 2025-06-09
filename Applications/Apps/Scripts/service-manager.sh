@@ -25,26 +25,30 @@ crust="\033[38;2;22;19;32m"
 reset="\033[0m"
 bold="\033[1m"
 
-OPERATIONS="start stop restart reload enable disable status is-active is-enabled list ls"
+OPERATIONS="start stop restart reload enable disable status is-active is-enabled list ls search"
 
 # Show colorized usage/help
 function usage() {
     echo -e "${overlay}${bold}"
-    echo -e "╭───────────────────────────────────────────────────────────────╮"
+    echo -e "╭─────────────────────────────────────────────────────────────╮"
     echo -e "│                       ${mauve}Service Manager${overlay}                         │"
-    echo -e "╰───────────────────────────────────────────────────────────────╯${reset}"
+    echo -e "╰─────────────────────────────────────────────────────────────╯${reset}"
     echo -e " ${yellow}Usage:${reset}"
     echo -e "   ${blue}Service Manager <service> <operation>${reset} ${subtext}"
     echo -e "   ${blue}Service Manager <service>${reset} ${subtext}(defaults to 'status')${reset}"
+    echo -e "   ${blue}Service Manager <operation>${reset} ${subtext}(fzf to select service)${reset}"
+    echo -e "   ${blue}Service Manager search${reset} ${subtext}(fzf to select service, then status)${reset}"
     echo -e "   ${blue}Service Manager list${reset} ${subtext}(lists all services)${reset}"
     echo -e ""
     echo -e " ${yellow}Examples:${reset}"
-    echo -e "   ${green}Service Manager Service Manager nginx restart${reset}"
+    echo -e "   ${green}Service Manager nginx restart${reset}"
     echo -e "   ${green}Service Manager restart nginx${reset}"
     echo -e "   ${green}Service Manager nginx${reset}"
+    echo -e "   ${green}Service Manager restart${reset}"
+    echo -e "   ${green}Service Manager search${reset}"
     echo -e "   ${green}Service Manager list${reset}"
     echo -e ""
-    echo -e " ${yellow}Supported operations:${reset} ${pink}start${reset}, ${pink}stop${reset}, ${pink}restart${reset}, ${pink}reload${reset}, ${pink}enable${reset}, ${pink}disable${reset}, ${pink}status${reset}, ${pink}is-active${reset}, ${pink}is-enabled${reset}"
+    echo -e " ${yellow}Supported operations:${reset} ${pink}start${reset}, ${pink}stop${reset}, ${pink}restart${reset}, ${pink}reload${reset}, ${pink}enable${reset}, ${pink}disable${reset}, ${pink}status${reset}, ${pink}is-active${reset}, ${pink}is-enabled${reset}, ${pink}search${reset}"
     echo -e ""
     echo -e " ${subtext}Service Manager by Muad Omar${reset}"
 }
@@ -58,6 +62,21 @@ function list_services() {
         | sed "s/active/${green}&${reset}/g; s/inactive/${red}&${reset}/g"
 }
 
+# Use fzf to select a service
+function fzf_select_service() {
+    if ! command -v fzf >/dev/null 2>&1; then
+        echo -e "${red}fzf not found! Please install fzf to use interactive search.${reset}"
+        exit 2
+    fi
+    local svc
+    svc=$(systemctl list-unit-files --type=service --no-legend | awk '{print $1}' | fzf --prompt="Select a service: ")
+    if [[ -z "$svc" ]]; then
+        echo -e "${red}No service selected.${reset}"
+        exit 3
+    fi
+    echo "$svc"
+}
+
 # Detect operation and service name
 service=""
 operation=""
@@ -66,6 +85,8 @@ for arg in "$@"; do
     # Accept both list and ls as a command
     if [[ "${arg,,}" == "list" || "${arg,,}" == "ls" ]]; then
         operation="list"
+    elif [[ "${arg,,}" == "search" ]]; then
+        operation="search"
     elif [[ $OPERATIONS =~ (^|[[:space:]])$arg($|[[:space:]]) ]]; then
         operation="$arg"
     else
@@ -83,6 +104,17 @@ fi
 if [[ "${operation,,}" == "list" || "${operation,,}" == "ls" ]]; then
     list_services
     exit 0
+fi
+
+# Search mode: fzf for service, then status
+if [[ "${operation,,}" == "search" ]]; then
+    service=$(fzf_select_service)
+    operation="status"
+fi
+
+# If only operation is provided, use fzf to pick service
+if [[ -z "$service" && -n "$operation" && "$operation" != "search" && "$operation" != "list" ]]; then
+    service=$(fzf_select_service)
 fi
 
 # If only one arg and it's not an operation: default to status
