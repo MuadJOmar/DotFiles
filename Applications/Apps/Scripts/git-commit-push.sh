@@ -24,13 +24,14 @@ WARN="${YELLOW}⚠${RESET}"
 # Header
 header_text="Git Commit Push"
 header_padding=$(( (BOX_WIDTH - ${#header_text}) / 2 ))
-printf "\n%s\n" "${BOX_TOP}"
+echo -e "\n${BOX_TOP}"
+# Center the header text, color the background and text
 printf "${PINK}║${RESET}"
 printf "%*s" $header_padding ""
 printf "${BG_HEADER}${WHITE}%s${RESET}" "$header_text"
 printf "%*s" $((BOX_WIDTH - header_padding - ${#header_text})) ""
 printf "${PINK}║${RESET}\n"
-printf "%s\n\n" "${BOX_BOT}"
+echo -e "${BOX_BOT}\n"
 
 # Ensure inside a git repo
 if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
@@ -58,7 +59,8 @@ fi
 echo -e "  ${GREEN}a${RESET} ${ARROW} Stage all"
 echo -e "  ${BLUE}i${RESET} ${ARROW} Interactive (fzf)"
 echo -e "  ${RED}c${RESET} ${ARROW} Cancel"
-read -rp "$(echo -e "${YELLOW}${ARROW} Choice: ${RESET}")" stage
+echo -en "${YELLOW}${ARROW} Choice: ${RESET}"
+read stage
 stage=${stage,,}
 
 if [[ $stage == "c" ]]; then
@@ -76,7 +78,6 @@ elif [[ $stage == "i" ]]; then
   if [ -z "$files" ]; then
     echo -e "  ${WARN} ${RED}No files selected.${RESET}"; exit 0
   fi
-  # Use IFS to handle spaces in file names
   IFS=$'\n'
   for f in $files; do
     git add "$f"
@@ -95,17 +96,20 @@ fi
 # Commit
 echo -e "\n${DIVIDER}\n${BLUE}📝 Commit message${RESET}\n${DIVIDER}"
 while true; do
-  read -rp "  ${ARROW} Message: " msg
+  echo -en "  ${ARROW} Message: "
+  read msg
   [ -z "$msg" ] && echo -e "  ${WARN} ${RED}Cannot be empty.${RESET}" || break
 done
-git commit -m "$msg" | sed 's/^/  /'
+git commit -m "$msg" | while IFS= read -r line; do echo -e "  $line"; done
 
 # Push
 echo -e "\n${DIVIDER}\n${BLUE}🚀 Push branch${RESET}\n${DIVIDER}"
-read -rp "  ${ARROW} Push to branch [${current_branch}]: " branch
+echo -en "  ${ARROW} Push to branch [${current_branch}]: "
+read branch
 branch=${branch:-$current_branch}
 
-read -rp "  ${ARROW} Push '${branch}' to origin? (y/N): " confirm
+echo -en "  ${ARROW} Push '${branch}' to origin? (y/N): "
+read confirm
 if [[ ! "${confirm,,}" =~ ^(y|yes)$ ]]; then
   echo -e "\n  ${YELLOW}Push cancelled${RESET}"
   exit 0
@@ -113,18 +117,19 @@ fi
 
 if ! git ls-remote --exit-code origin "$branch" >/dev/null 2>&1; then
   echo -e "  ${YELLOW}${WARN} Branch does not exist remotely.${RESET}"
-  read -rp "  ${ARROW} Create and push new branch? (y/N): " create
+  echo -en "  ${ARROW} Create and push new branch? (y/N): "
+  read create
   if [[ "${create,,}" =~ ^(y|yes)$ ]]; then
-    git push -u origin HEAD:"$branch" | sed 's/^/  /'
+    git push -u origin HEAD:"$branch" | while IFS= read -r line; do echo -e "  $line"; done
   else
     echo -e "  ${YELLOW}Aborted.${RESET}"; exit 0
   fi
 else
-  git push origin HEAD:"$branch" | sed 's/^/  /'
+  git push origin HEAD:"$branch" | while IFS= read -r line; do echo -e "  $line"; done
 fi
 
 # Success
-printf "\n%s\n" "${BOX_TOP}"
+echo -e "\n${BOX_TOP}"
 success_msg="✓ Success: pushed to $branch"
 success_padding=$(( (BOX_WIDTH - ${#success_msg}) / 2 ))
 printf "${PINK}║${RESET}"
@@ -132,4 +137,4 @@ printf "%*s" $success_padding ""
 printf "${GREEN}%s${RESET}" "$success_msg"
 printf "%*s" $((BOX_WIDTH - success_padding - ${#success_msg})) ""
 printf "${PINK}║${RESET}\n"
-printf "%s\n\n" "${BOX_BOT}"
+echo -e "${BOX_BOT}\n"
