@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-# Catppuccin Mocha color scheme
+# Catppuccin Mocha colors with improved header contrast
 GREEN='\033[38;2;166;227;161m'
 YELLOW='\033[38;2;249;226;175m'
 RED='\033[38;2;243;139;168m'
@@ -9,149 +9,127 @@ BLUE='\033[38;2;137;180;250m'
 PINK='\033[38;2;245;194;231m'
 TEAL='\033[38;2;148;226;213m'
 WHITE='\033[38;2;205;214;244m'
-BG_BLUE='\033[48;2;137;180;250m'
+BG_HEADER='\033[48;2;40;42;54m'  # Deep gray for header background
 RESET='\033[0m'
 
-# UI Elements
-DIVIDER="${BLUE}════════════════════════════════════════════════════════${RESET}"
+# UI elements
+BOX_WIDTH=54
 BOX_TOP="${PINK}╔════════════════════════════════════════════════════════╗${RESET}"
-BOX_MID="${PINK}║${RESET}"
 BOX_BOT="${PINK}╚════════════════════════════════════════════════════════╝${RESET}"
+DIVIDER="${BLUE}════════════════════════════════════════════════════════${RESET}"
 ARROW="${TEAL}➜${RESET}"
 CHECK="${GREEN}✓${RESET}"
 WARN="${YELLOW}⚠${RESET}"
 
-# Enhanced header
-echo -e "\n${BOX_TOP}"
-echo -e "${BOX_MID}  ${BG_BLUE}${WHITE}🚀  G I T   C O M M I T   &   P U S H  🚀  ${RESET}  ${BOX_MID}"
-echo -e "${BOX_MID}  ${WHITE}Manage your commits with elegance and precision${RESET} ${BOX_MID}"
-echo -e "${BOX_BOT}\n"
+# Header
+header_text="Git Commit Push"
+header_padding=$(( (BOX_WIDTH - ${#header_text}) / 2 ))
+printf "\n%s\n" "${BOX_TOP}"
+printf "${PINK}║${RESET}"
+printf "%*s" $header_padding ""
+printf "${BG_HEADER}${WHITE}%s${RESET}" "$header_text"
+printf "%*s" $((BOX_WIDTH - header_padding - ${#header_text})) ""
+printf "${PINK}║${RESET}\n"
+printf "%s\n\n" "${BOX_BOT}"
 
-# Check Git repo
-git rev-parse --is-inside-work-tree >/dev/null 2>&1 || {
-  echo -e "${RED}${WARN} Error: Not a Git repository${RESET}" >&2
+# Ensure inside a git repo
+if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  echo -e "${RED}${WARN} Not a git repository.${RESET}"
   exit 1
-}
+fi
 
-# Repository info
-repo_name=$(basename -s .git $(git config --get remote.origin.url))
-current_branch=$(git branch --show-current 2>/dev/null || echo "")
-[ -z "$current_branch" ] && current_branch="detached HEAD"
-
-echo -e "${DIVIDER}"
-echo -e "  ${PINK}${ARROW} Repository: ${TEAL}${repo_name}${RESET}"
-echo -e "  ${PINK}${ARROW} Branch:     ${PINK}${current_branch}${RESET}"
-echo -e "${DIVIDER}\n"
+# Repo info
+repo_name=$(basename -s .git "$(git config --get remote.origin.url 2>/dev/null)")
+current_branch=$(git branch --show-current 2>/dev/null || echo "detached HEAD")
+echo -e "${DIVIDER}\n${PINK}${ARROW} Repo:${TEAL} $repo_name${RESET}   ${PINK}${ARROW} Branch:${TEAL} $current_branch${RESET}\n${DIVIDER}"
 
 # Show git status
-echo -e "${BLUE}📋 Current Status:${RESET}"
+echo -e "${BLUE}📋 Status:${RESET}"
 git -c color.status=always status | sed 's/^/  /'
 echo ""
 
-# File selection
-while true; do
-  echo -e "${DIVIDER}"
-  echo -e "  ${PINK}📦 Stage Files${RESET}"
-  echo -e "${DIVIDER}"
-  echo -e "  ${GREEN}a${RESET}  ${ARROW} Stage all changes"
-  echo -e "  ${BLUE}l${RESET}  ${ARROW} List uncommitted files"
-  echo -e "  ${TEAL}s${RESET}  ${ARROW} Enter specific files"
-  echo -e "  ${RED}c${RESET}  ${ARROW} Cancel"
-  echo -e "${DIVIDER}"
-  
-  read -rp "$(echo -e "${YELLOW}${ARROW} Select option: ${RESET}")" choice
-  
-  case "${choice,,}" in
-    a)
-      git add .
-      echo -e "\n  ${CHECK} ${GREEN}All changes staged${RESET}"
-      break
-      ;;
-    l)
-      echo -e "\n${BLUE}📄 Unstaged Files:${RESET}"
-      git diff --name-only | sed 's/^/  • /'
-      echo ""
-      ;;
-    s)
-      read -rp "  ${ARROW} Enter files (space separated): " files
-      if [ -n "$files" ]; then
-        git add -- $files 2>/dev/null && {
-          echo -e "\n  ${CHECK} ${GREEN}Added specified files${RESET}"
-          break
-        } || echo -e "\n  ${WARN} ${RED}Error adding files. Try again${RESET}"
-      else
-        echo -e "\n  ${WARN} ${RED}No files specified${RESET}"
-      fi
-      ;;
-    c)
-      echo -e "\n  ${YELLOW}Operation cancelled${RESET}"
-      exit 0
-      ;;
-    *)
-      echo -e "\n  ${WARN} ${RED}Invalid choice${RESET}"
-      ;;
-  esac
-done
-
-# Check for staged changes
-if git diff --cached --quiet; then
-  echo -e "\n${YELLOW}${WARN} No changes to commit${RESET}"
-  exit 0
+# Stage files (fzf or all)
+echo -e "${DIVIDER}\n${PINK}📦 Stage files${RESET}\n${DIVIDER}"
+unstaged=$(git ls-files -o -m --exclude-standard)
+if [ -z "$unstaged" ]; then
+  echo -e "${YELLOW}${WARN} Nothing to stage.${RESET}"; exit 0
 fi
 
-# Commit message
-echo -e "\n${DIVIDER}"
-echo -e "  ${BLUE}📝 Commit Message${RESET}"
-echo -e "${DIVIDER}"
-while true; do
-  read -rp "  ${ARROW} Enter message: " msg
-  if [ -z "$msg" ]; then
-    echo "  ${WARN} ${RED}Commit message cannot be empty${RESET}"
-  else
-    git commit -m "$msg" | sed 's/^/  /'
-    break
-  fi
-done
+echo -e "  ${GREEN}a${RESET} ${ARROW} Stage all"
+echo -e "  ${BLUE}i${RESET} ${ARROW} Interactive (fzf)"
+echo -e "  ${RED}c${RESET} ${ARROW} Cancel"
+read -rp "$(echo -e "${YELLOW}${ARROW} Choice: ${RESET}")" stage
+stage=${stage,,}
 
-# Branch selection
-echo -e "\n${DIVIDER}"
-echo -e "  ${BLUE}🌿 Push Destination${RESET}"
-echo -e "${DIVIDER}"
-echo -e "  ${ARROW} Current branch: ${PINK}${current_branch}${RESET}"
-read -rp "  ${ARROW} Push to branch? [Press Enter for '$current_branch' or type new]: " branch
+if [[ $stage == "c" ]]; then
+  echo -e "\n  ${YELLOW}Operation cancelled${RESET}"
+  exit 0
+elif [[ $stage == "a" ]]; then
+  git add .
+  echo -e "  ${CHECK} ${GREEN}All files staged.${RESET}"
+elif [[ $stage == "i" ]]; then
+  if ! command -v fzf >/dev/null 2>&1; then
+    echo -e "  ${WARN} ${RED}fzf not installed (required for interactive mode).${RESET}"
+    exit 1
+  fi
+  files=$(echo "$unstaged" | fzf --multi --prompt="Select files (tab for multi): " --preview "git diff --color=always -- {}" --border --color=dark)
+  if [ -z "$files" ]; then
+    echo -e "  ${WARN} ${RED}No files selected.${RESET}"; exit 0
+  fi
+  # Use IFS to handle spaces in file names
+  IFS=$'\n'
+  for f in $files; do
+    git add "$f"
+  done
+  unset IFS
+  echo -e "  ${CHECK} ${GREEN}Selected files staged.${RESET}"
+else
+  echo -e "  ${WARN} ${RED}Invalid choice.${RESET}"; exit 1
+fi
+
+# Confirm staged
+if git diff --cached --quiet; then
+  echo -e "\n${YELLOW}${WARN} No changes to commit.${RESET}"; exit 0
+fi
+
+# Commit
+echo -e "\n${DIVIDER}\n${BLUE}📝 Commit message${RESET}\n${DIVIDER}"
+while true; do
+  read -rp "  ${ARROW} Message: " msg
+  [ -z "$msg" ] && echo -e "  ${WARN} ${RED}Cannot be empty.${RESET}" || break
+done
+git commit -m "$msg" | sed 's/^/  /'
+
+# Push
+echo -e "\n${DIVIDER}\n${BLUE}🚀 Push branch${RESET}\n${DIVIDER}"
+read -rp "  ${ARROW} Push to branch [${current_branch}]: " branch
 branch=${branch:-$current_branch}
 
-# Push confirmation
-echo -e "\n${DIVIDER}"
-echo -e "  ${BLUE}🚀 Push Confirmation${RESET}"
-echo -e "${DIVIDER}"
-read -rp "  ${ARROW} Push ${PINK}${branch}${RESET} to origin? (y/N): " confirm
-
+read -rp "  ${ARROW} Push '${branch}' to origin? (y/N): " confirm
 if [[ ! "${confirm,,}" =~ ^(y|yes)$ ]]; then
   echo -e "\n  ${YELLOW}Push cancelled${RESET}"
   exit 0
 fi
 
-# Push execution
-echo ""
 if ! git ls-remote --exit-code origin "$branch" >/dev/null 2>&1; then
-  echo "  ${YELLOW}${WARN} Branch '$branch' doesn't exist on remote${RESET}"
+  echo -e "  ${YELLOW}${WARN} Branch does not exist remotely.${RESET}"
   read -rp "  ${ARROW} Create and push new branch? (y/N): " create
   if [[ "${create,,}" =~ ^(y|yes)$ ]]; then
-    echo ""
     git push -u origin HEAD:"$branch" | sed 's/^/  /'
   else
-    echo -e "\n  ${YELLOW}Operation aborted${RESET}"
-    exit 0
+    echo -e "  ${YELLOW}Aborted.${RESET}"; exit 0
   fi
 else
   git push origin HEAD:"$branch" | sed 's/^/  /'
 fi
 
-# Enhanced success message
-echo -e "\n${BOX_TOP}"
-echo -e "${BOX_MID}  ${GREEN}✅  S U C C E S S !  ✅${RESET}                      ${BOX_MID}"
-echo -e "${PINK}╠${DIVIDER}╣${RESET}"
-echo -e "${BOX_MID}  ${GREEN}Successfully pushed to: ${PINK}${branch}${RESET}         ${BOX_MID}"
-echo -e "${BOX_MID}  ${GREEN}Your changes are now on ${PINK}origin/${branch}${RESET}  ${BOX_MID}"
-echo -e "${BOX_BOT}\n"
+# Success
+printf "\n%s\n" "${BOX_TOP}"
+success_msg="✓ Success: pushed to $branch"
+success_padding=$(( (BOX_WIDTH - ${#success_msg}) / 2 ))
+printf "${PINK}║${RESET}"
+printf "%*s" $success_padding ""
+printf "${GREEN}%s${RESET}" "$success_msg"
+printf "%*s" $((BOX_WIDTH - success_padding - ${#success_msg})) ""
+printf "${PINK}║${RESET}\n"
+printf "%s\n\n" "${BOX_BOT}"
