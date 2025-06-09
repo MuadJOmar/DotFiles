@@ -9,3 +9,13 @@ Writ This Command in The Terminal >> xdg-mime default org.gnome.Nautilus.desktop
 
 • Enable Fractional Scaling on Gnome :
 Writ This Command in The Terminal >> gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+
+• Enable Zram :
+Add This to /usr/lib/systemd/zram-generator.conf
+
+[zram0]
+zram-size=ram
+compression-algorithm=zstd
+swap-priority=60
+
+
