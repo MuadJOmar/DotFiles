@@ -1,6 +1,7 @@
 export CONF="$HOME/.config"
 export ZSH="$CONF/zsh"
 export Scripts="$HOME/Apps/Scripts"
+export DotFiles="$HOME/DotFiles"
 
 export STARSHIP_CONFIG=$CONF/starship/starship.toml
 export EDITOR="nvim"
