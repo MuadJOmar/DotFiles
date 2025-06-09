@@ -12,26 +12,43 @@ WHITE='\033[38;2;205;214;244m'
 BG_HEADER='\033[48;2;40;42;54m'  # Deep gray for header background
 RESET='\033[0m'
 
-# UI elements
 BOX_WIDTH=54
-BOX_TOP="${PINK}╔════════════════════════════════════════════════════════╗${RESET}"
-BOX_BOT="${PINK}╚════════════════════════════════════════════════════════╝${RESET}"
-DIVIDER="${BLUE}════════════════════════════════════════════════════════${RESET}"
+DIVIDER="${BLUE}$(printf '═%.0s' $(seq 1 $BOX_WIDTH))${RESET}"
 ARROW="${TEAL}➜${RESET}"
 CHECK="${GREEN}✓${RESET}"
 WARN="${YELLOW}⚠${RESET}"
 
+# Helper: Strip ANSI color codes for length calculation
+strip_ansi() { sed 's/\x1b\[[0-9;]*m//g'; }
+
+# Function to print a centered, colored, boxed message
+print_boxed_centered() {
+  local msg="$1"
+  local box_color="$2"
+  local msg_color="$3"
+  local bg_color="$4"
+  local width=$BOX_WIDTH
+
+  # Remove ANSI codes for length calculation
+  local msg_noansi
+  msg_noansi=$(echo -e "$msg" | strip_ansi)
+  local msg_len=${#msg_noansi}
+  local left_pad=$(( (width - msg_len) / 2 ))
+  local right_pad=$(( width - msg_len - left_pad ))
+
+  # Print box
+  echo -e "${box_color}╔$(printf '═%.0s' $(seq 1 $width))╗${RESET}"
+  echo -en "${box_color}║${RESET}"
+  printf "%*s" $left_pad ""
+  echo -en "${bg_color}${msg_color}${msg}${RESET}"
+  printf "%*s" $right_pad ""
+  echo -e "${box_color}║${RESET}"
+  echo -e "${box_color}╚$(printf '═%.0s' $(seq 1 $width))╝${RESET}"
+}
+
 # Header
-header_text="Git Commit Push"
-header_padding=$(( (BOX_WIDTH - ${#header_text}) / 2 ))
-echo -e "\n${BOX_TOP}"
-# Center the header text, color the background and text
-printf "${PINK}║${RESET}"
-printf "%*s" $header_padding ""
-printf "${BG_HEADER}${WHITE}%s${RESET}" "$header_text"
-printf "%*s" $((BOX_WIDTH - header_padding - ${#header_text})) ""
-printf "${PINK}║${RESET}\n"
-echo -e "${BOX_BOT}\n"
+print_boxed_centered "Git Commit Push" "$PINK" "$WHITE" "$BG_HEADER"
+echo
 
 # Ensure inside a git repo
 if ! git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
@@ -129,12 +146,5 @@ else
 fi
 
 # Success
-echo -e "\n${BOX_TOP}"
-success_msg="✓ Success: pushed to $branch"
-success_padding=$(( (BOX_WIDTH - ${#success_msg}) / 2 ))
-printf "${PINK}║${RESET}"
-printf "%*s" $success_padding ""
-printf "${GREEN}%s${RESET}" "$success_msg"
-printf "%*s" $((BOX_WIDTH - success_padding - ${#success_msg})) ""
-printf "${PINK}║${RESET}\n"
-echo -e "${BOX_BOT}\n"
+print_boxed_centered "${CHECK} Success: pushed to $branch" "$PINK" "$GREEN" ""
+echo
