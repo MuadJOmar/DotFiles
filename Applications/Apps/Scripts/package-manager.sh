@@ -260,11 +260,34 @@ remove_package() {
     sleep 2
 }
 
+search_menu() {
+    while true; do
+        display_header
+        echo -e "${DIVIDER}"
+        echo -e "  ${COLOR_OPTION}🔍 Search Menu${COLOR_RESET}"
+        echo -e "${DIVIDER}"
+        echo -e "  ${DOT} ${COLOR_OPTION}Search Packages${COLOR_RESET}   [pkg]"
+        echo -e "  ${DOT} ${COLOR_OPTION}Search Categories${COLOR_RESET} [cat]"
+        echo -e "  ${DOT} ${COLOR_OPTION}Back${COLOR_RESET}             [back]"
+        echo -e "${DIVIDER}\n"
+        read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Enter choice: ${COLOR_RESET}")" search_choice
+        case "$search_choice" in
+            pkg) search_packages ;;
+            cat) search_categories ;;
+            back|"") return ;;
+            *)
+                echo -e "${COLOR_ERROR}✗ Invalid option.${COLOR_RESET}"
+                sleep 1
+                ;;
+        esac
+    done
+}
+
 search_packages() {
     ensure_fzf_installed || return
     display_header
     echo -e "${DIVIDER}"
-    echo -e "  ${COLOR_OPTION}🔍 Search Packages & Categories${COLOR_RESET}"
+    echo -e "  ${COLOR_OPTION}🔍 Search Packages${COLOR_RESET}"
     echo -e "${DIVIDER}"
     echo
     mapfile -t packages < <(awk -F'\t' '{printf "%-30s | %-40s | %-20s\n", $1, $2, $3}' "$DB_FILE")
@@ -273,31 +296,47 @@ search_packages() {
         read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Press Enter to continue...${COLOR_RESET}")"
         return
     fi
-    categories=($(cut -f3 "$DB_FILE" | sort | uniq))
-    search_items=("${packages[@]}" "---- CATEGORIES ----" "${categories[@]}")
-    result=$(printf '%s\n' "${search_items[@]}" | fzf --prompt="Search: " --height=20 --border --ansi)
+    result=$(printf '%s\n' "${packages[@]}" | fzf --prompt="Search packages: " --height=20 --border --ansi)
     if [ -z "$result" ]; then
         echo -e "${COLOR_WARNING}⚠ No selection made.${COLOR_RESET}"
         sleep 1
         return
     fi
-    if [[ " ${categories[*]} " == *" $result "* ]]; then
-        display_header
-        echo -e "${COLOR_HEADER}Packages in category: $result${COLOR_RESET}"
-        echo -e "${DIVIDER}"
-        awk -F'\t' -v cat="$result" '{if ($3 == cat) printf "%-30s | %-40s\n", $1, $2}' "$DB_FILE"
-        echo
+    pkg_name=$(echo "$result" | awk -F '|' '{print $1}' | xargs)
+    awk -F'\t' -v pkg="$pkg_name" '$1 == pkg { 
+        print "\n'"${COLOR_HEADER}"'Package:'"${COLOR_RESET}"' " $1
+        print "'"${COLOR_HEADER}"'Description:'"${COLOR_RESET}"' " $2
+        print "'"${COLOR_HEADER}"'Category:'"${COLOR_RESET}"' " $3
+    }' "$DB_FILE"
+    echo
+    read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Press Enter to continue...${COLOR_RESET}")"
+}
+
+search_categories() {
+    ensure_fzf_installed || return
+    display_header
+    echo -e "${DIVIDER}"
+    echo -e "  ${COLOR_OPTION}🔍 Search Categories${COLOR_RESET}"
+    echo -e "${DIVIDER}"
+    echo
+    mapfile -t categories < <(cut -f3 "$DB_FILE" | sort | uniq)
+    if [ ${#categories[@]} -eq 0 ]; then
+        echo -e "${COLOR_INFO}No categories in database${COLOR_RESET}"
         read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Press Enter to continue...${COLOR_RESET}")"
-    else
-        pkg_name=$(echo "$result" | awk -F '|' '{print $1}' | xargs)
-        awk -F'\t' -v pkg="$pkg_name" '$1 == pkg { 
-            print "\n'"${COLOR_HEADER}"'Package:'"${COLOR_RESET}"' " $1
-            print "'"${COLOR_HEADER}"'Description:'"${COLOR_RESET}"' " $2
-            print "'"${COLOR_HEADER}"'Category:'"${COLOR_RESET}"' " $3
-        }' "$DB_FILE"
-        echo
-        read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Press Enter to continue...${COLOR_RESET}")"
+        return
     fi
+    result=$(printf '%s\n' "${categories[@]}" | fzf --prompt="Search categories: " --height=20 --border --ansi)
+    if [ -z "$result" ]; then
+        echo -e "${COLOR_WARNING}⚠ No category selected.${COLOR_RESET}"
+        sleep 1
+        return
+    fi
+    display_header
+    echo -e "${COLOR_HEADER}Packages in category: $result${COLOR_RESET}"
+    echo -e "${DIVIDER}"
+    awk -F'\t' -v cat="$result" '{if ($3 == cat) printf "%-30s | %-40s\n", $1, $2}' "$DB_FILE"
+    echo
+    read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Press Enter to continue...${COLOR_RESET}")"
 }
 
 view_database() {
@@ -412,30 +451,43 @@ restore_backup() {
     echo -e "${DIVIDER}"
     echo
     mapfile -t backups < <(ls -t "$BACKUP_DIR"/* 2>/dev/null | grep -vF "$DB_FILE")
+
     if [ ${#backups[@]} -eq 0 ]; then
         echo -e "${COLOR_WARNING}No backups found in $BACKUP_DIR${COLOR_RESET}"
         sleep 2
         return
     fi
+
     echo -e "${COLOR_INFO}Available backups:${COLOR_RESET}"
     for i in "${!backups[@]}"; do
         echo "  $((i+1)). $(basename "${backups[$i]}")"
     done
-    echo
-    read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Enter number to restore (or 0 to cancel): ${COLOR_RESET}")" num
-    [[ ! "$num" =~ ^[0-9]+$ ]] && { echo -e "${COLOR_ERROR}✗ Invalid number${COLOR_RESET}"; sleep 1; return; }
-    if [ "$num" -eq 0 ]; then
-        echo -e "${COLOR_WARNING}⚠ Restore canceled${COLOR_RESET}"
+    echo -e "${COLOR_INFO}Enter a number to restore that backup, or 'i' for interactive selection, or 0 to cancel.${COLOR_RESET}"
+    read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Enter choice: ${COLOR_RESET}")" num
+    local restore_file=""
+    if [[ "$num" =~ ^[0-9]+$ ]]; then
+        if [ "$num" -eq 0 ]; then
+            echo -e "${COLOR_WARNING}⚠ Restore canceled${COLOR_RESET}"
+            sleep 1
+            return
+        fi
+        idx=$((num-1))
+        if [ "$idx" -lt 0 ] || [ "$idx" -ge "${#backups[@]}" ]; then
+            echo -e "${COLOR_ERROR}✗ Invalid selection${COLOR_RESET}"
+            sleep 1
+            return
+        fi
+        restore_file="${backups[$idx]}"
+    elif [[ "$num" =~ ^[iI]$ ]]; then
+        ensure_fzf_installed || return
+        file=$(printf '%s\n' "${backups[@]}" | xargs -n1 basename | fzf --prompt="Select backup to restore: " --height=20 --border --ansi)
+        [ -z "$file" ] && { echo -e "${COLOR_WARNING}⚠ Restore canceled${COLOR_RESET}"; sleep 1; return; }
+        restore_file="$BACKUP_DIR/$file"
+    else
+        echo -e "${COLOR_ERROR}✗ Invalid input. Please try again.${COLOR_RESET}"
         sleep 1
         return
     fi
-    idx=$((num-1))
-    if [ "$idx" -lt 0 ] || [ "$idx" -ge "${#backups[@]}" ]; then
-        echo -e "${COLOR_ERROR}✗ Invalid selection${COLOR_RESET}"
-        sleep 1
-        return
-    fi
-    restore_file="${backups[$idx]}"
     echo -e "${COLOR_WARNING}Are you sure you want to restore '$(basename "$restore_file")'? This will overwrite your package database!${COLOR_RESET}"
     read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Confirm restore? (y/N): ${COLOR_RESET}")" confirm
     [[ ! "$confirm" =~ ^[Yy]$ ]] && { echo -e "${COLOR_WARNING}⚠ Restore canceled${COLOR_RESET}"; sleep 1; return; }
@@ -450,13 +502,14 @@ restore_backup() {
 }
 
 manage_categories() {
+    ensure_fzf_installed || return
     while true; do
         display_header
         echo -e "${DIVIDER}"
         echo -e "  ${COLOR_OPTION}📂 Manage Categories${COLOR_RESET}"
         echo -e "${DIVIDER}"
         echo -e "${COLOR_INFO}Press Enter with no input to go back.${COLOR_RESET}"
-        categories=($(cut -f3 "$DB_FILE" | sort | uniq))
+        mapfile -t categories < <(cut -f3 "$DB_FILE" | sort | uniq)
         if [ ${#categories[@]} -eq 0 ]; then
             echo -e "${COLOR_INFO}No categories found${COLOR_RESET}"
             read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Press Enter to continue...${COLOR_RESET}")"
@@ -479,21 +532,17 @@ manage_categories() {
                 read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Press Enter to continue...${COLOR_RESET}")"
                 ;;
             rename)
-                echo -e "\n${COLOR_HEADER}Available Categories:${COLOR_RESET}"
-                for cat in "${categories[@]}"; do echo "- $cat"; done
-                read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Enter category to rename: ${COLOR_RESET}")" old_cat
-                [[ -z "$old_cat" ]] && continue
+                old_cat=$(printf '%s\n' "${categories[@]}" | fzf --prompt="Select category to rename: " --height=20 --border --ansi)
+                [ -z "$old_cat" ] && continue
                 read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} New name for '$old_cat': ${COLOR_RESET}")" new_cat
-                [[ -z "$new_cat" ]] && continue
+                [ -z "$new_cat" ] && continue
                 sed -i "s/\t$old_cat$/\t$new_cat/" "$DB_FILE"
                 echo -e "\n${COLOR_SUCCESS}${CHECK} Category renamed${COLOR_RESET}"
                 sleep 1
                 ;;
             delete)
-                echo -e "\n${COLOR_HEADER}Available Categories:${COLOR_RESET}"
-                for cat in "${categories[@]}"; do echo "- $cat"; done
-                read -e -p "$(echo -e "${COLOR_INPUT}${ARROW} Enter category to delete: ${COLOR_RESET}")" del_cat
-                [[ -z "$del_cat" ]] && continue
+                del_cat=$(printf '%s\n' "${categories[@]}" | fzf --prompt="Select category to delete: " --height=20 --border --ansi)
+                [ -z "$del_cat" ] && continue
                 grep -v $'\t'"$del_cat"$ "$DB_FILE" > "${DB_FILE}.tmp"
                 mv "${DB_FILE}.tmp" "$DB_FILE"
                 echo -e "\n${COLOR_SUCCESS}${CHECK} Category '$del_cat' removed${COLOR_RESET}"
@@ -517,7 +566,7 @@ main_menu() {
         echo -e "  ${DOT} ${COLOR_OPTION}Backup packages${COLOR_RESET}    [backup]"
         echo -e "  ${DOT} ${COLOR_OPTION}Restore backup${COLOR_RESET}     [restore]"
         echo -e "  ${DOT} ${COLOR_OPTION}Remove package${COLOR_RESET}     [remove]"
-        echo -e "  ${DOT} ${COLOR_OPTION}Search packages${COLOR_RESET}    [search]"
+        echo -e "  ${DOT} ${COLOR_OPTION}Search${COLOR_RESET}             [search]"
         echo -e "  ${DOT} ${COLOR_OPTION}Manage categories${COLOR_RESET}  [manage]"
         echo -e "${DIVIDER}"
         echo -e "  ${DOT} ${COLOR_OPTION}System update${COLOR_RESET}      [update]"
@@ -533,7 +582,7 @@ main_menu() {
             backup) backup_packages ;;
             restore) restore_backup ;;
             remove) remove_package ;;
-            search) search_packages ;;
+            search) search_menu ;;
             manage) manage_categories ;;
             update) run_update_script ;;
             exit|quit)
