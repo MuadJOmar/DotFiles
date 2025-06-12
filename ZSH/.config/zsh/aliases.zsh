@@ -15,3 +15,4 @@ alias add-vm="$Scripts/qemu-image.sh"
 alias gcp="$Scripts/git-commit-push.sh"
 alias sm="$Scripts/service-manager.sh"
 alias pm="$Scripts/package-manager.sh"
+alias dm='$DotFiles/dotfiles-manager.sh'
